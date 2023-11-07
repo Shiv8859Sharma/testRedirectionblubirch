@@ -1,0 +1,458 @@
+.self-assess-right-side h4 {
+    font-size: 20px;
+    text-align: center;
+    line-height: 28px;
+    font-weight: 700;
+    padding: 0px 17px 0px 17px;
+    text-shadow: 0px 2.1125826835632324px #00000033;
+}
+
+.bar-label {
+    position: absolute;
+    bottom: -57px;
+    left: 0;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 700;
+    text-shadow: 0px 4px #0000002E;
+    text-align: center;
+}
+
+.bar-last_label {
+    right: 0;
+    left: unset;
+}
+
+.green-bar {
+    background: linear-gradient(180.02deg, #00B10D 0.02%, #A7F794 137.99%), linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5));
+    width: 73px;
+    height: 50px;
+    border-radius: 8px 8px 0 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translate(0, 0);
+    animation-name: moveBar1;
+    animation-fill-mode: forwards;
+    /* animation-duration: 5s; */
+    animation-iteration-count: infinite;
+    border-width: 1px 1px 0px 1px;
+    border-style: solid;
+    border-color: #FFFFFF80;
+    animation-duration: 10s;
+}
+
+@keyframes moveBar1 {
+    0% {
+        transform: translate(0%, 0%);
+        height: 50px;
+
+    }
+
+    45% {
+        height: 292px;
+        bottom: 0;
+    }
+
+    55% {
+        height: 292px;
+        bottom: 0;
+    }
+
+    100% {
+        height: 50px;
+
+    }
+}
+
+.blue-bar {
+    background: linear-gradient(180deg, #002271 0%, #2555A4 100%), linear-gradient(0deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7));
+    width: 73px;
+    border-radius: 8px 8px 0 0;
+    border-width: 1px 1px 0px 1px;
+    border-style: solid;
+    border-color: #FFFFFF80;
+    position: absolute;
+    bottom: 0;
+    transform: translate(0, 0);
+    animation-name: moveBar2;
+    animation-fill-mode: forwards;
+    /* animation-duration: 5s; */
+    animation-iteration-count: infinite;
+    animation-delay: 0.5s;
+    animation-duration: 10s;
+    height: 122px;
+
+}
+
+@keyframes moveBar2 {
+    0% {
+        transform: translate(0%, 0%);
+        height: 122px;
+    }
+
+    45% {
+        height: 50px;
+        bottom: 0;
+    }
+
+    55% {
+        height: 50px;
+        bottom: 0;
+    }
+
+    100% {
+        height: 122px;
+    }
+}
+
+.blue-bar2 {
+    background: linear-gradient(180deg, #002271 0%, #2555A4 100%), linear-gradient(0deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7));
+    width: 73px;
+    border-radius: 8px 8px 0 0;
+    border-width: 1px 1px 0px 1px;
+    border-style: solid;
+    border-color: #FFFFFF80;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: translate(0, 0);
+    animation-name: moveBar3;
+    animation-fill-mode: forwards;
+    /* animation-duration: 5s; */
+    animation-iteration-count: infinite;
+    animation-delay: 0.5s;
+    animation-duration: 10s;
+    height: 292px;
+}
+
+@keyframes moveBar3 {
+    0% {
+        transform: translate(0%, 0%);
+        height: 292px;
+    }
+
+    45% {
+        height: 122px;
+        bottom: 0;
+    }
+
+    55% {
+        height: 122px;
+        bottom: 0;
+    }
+
+    100% {
+        transform: translate(0%, 0%);
+        height: 292px;
+    }
+}
+
+.returns-impact-bottom_bar {
+    background-color: #2E2F4F;
+    height: 6px;
+    border-radius: 6px;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    box-shadow: 0px 0px 6px 0px #FFFFFF33 inset;
+}
+
+.returns-impact_animation-container {
+    position: relative;
+    height: 300px;
+    padding: 0 33px;
+}
+
+.impact-form_container {
+    background-color: #F6F6FB;
+}
+
+.logistic-cost_hidden-section {
+    visibility: hidden;
+}
+
+.impact-form .input-pre-icon {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
+.impact-form .input-post-icon {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.impact-form_header {
+    background-color: #002271;
+    color: #ffffff;
+    border-radius: 16px 16px 0 0;
+}
+
+.impact-form_header p {
+    min-height: 48px;
+}
+
+.impact-form_header h1 {
+    color: #ffffff;
+    font-size: 24px;
+}
+
+.impact-form_header p small {
+    color: #ffffff;
+}
+
+.impact-form_header .text-green {
+    color: #00B10D;
+}
+
+.actual-value-label {
+    font-size: 18px;
+}
+
+.result-section_container {
+    background-color: #F6F6FB;
+    border-radius: 16px;
+}
+
+.result-section_top-header {
+    background-color: #F6F6FB;
+    border-bottom: 1px solid #E0E1EB;
+    padding: 28px;
+    border-radius: 12px;
+}
+
+.result-section_content-section {
+    padding: 28px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.result-section_table {
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 14px;
+    font-size: 14px;
+    color: #1A1B35;
+}
+
+.result-section_table td {
+    border: none;
+    padding: 10px 6px 5px 0 !important;
+}
+
+.result-section_table table {
+    table-layout: fixed;
+}
+
+.result-section_table th {
+    border-bottom-color: #C7C8D7 !important;
+    padding: 10px 6px 8px 0 !important;
+    word-break: break-word;
+    vertical-align: baseline;
+}
+
+.result-section_table .text-green {
+    color: #00B10D;
+}
+
+.impact-form_container input {
+    background-color: #FFFFFF !important;
+    background: #FFFFFF !important;
+    margin-bottom: 2.3rem;
+}
+
+.impact-form-label p{
+    color:  #6E7089 !important;
+}
+.return-impact_tooltip-container .return-impact_tooltip {
+    position: absolute;
+    left: 0;
+    background-color: #fff;
+    font-size: 12px;
+    color: #6E7089;
+    display: flex;
+    white-space: nowrap;
+    box-shadow: 0px 4px 44px -1px #1018281F;
+    padding: 10px;
+    border-radius: 10px;
+    display: none;
+}
+
+.return-impact_tooltip-container:hover .return-impact_tooltip {
+    display: block;
+    cursor: pointer;
+}
+
+.result-graph-details{
+    height: 300px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 15px 10px;
+}
+.graph-dot{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+
+.red-dot{
+    background: #D13F12;
+}
+.green-dot{
+    background-color: #00B10D;
+}
+.result-graph{
+    height: 250px;
+    padding: 10px;
+}
+.graph-bar{
+    height: 200px;
+    justify-content: center;
+}
+.graph-bar .graph-left{
+    height: 100%;
+    width: 52%;
+    border-right: 1px solid #000; 
+    border-bottom: 1px solid #000;
+
+}
+.graph-bar .graph-right{
+    border-bottom: 1px solid #000;
+    /* border-right: 0.5px solid #000; */
+    width: 50%;
+    height: 100%;
+}
+.graph-bar  .bar{
+    height: 50px;
+    width: 0%;
+    color: #fff;
+    font-size: 20px;
+    /* padding: 10px 15px; */
+}
+
+.graph-bar .graph-left .bar{
+    background: #D13F12;
+    border-radius: 10px 0px 0px 10px;
+    /* margin-top: 36%; */
+}
+
+.graph-bar .graph-right .bar{
+    background: #00B10D;
+    border-radius: 0% 10px 10px 0px;
+
+}
+.less_value{
+    display: none;
+    margin: 0px 8px;
+    font-size: 20px;
+}
+/* .less-red-value{
+    margin-top: 30%;
+} */
+@media screen and (max-width: 1200px) {
+    .green-bar {
+        width: 55px;
+    }
+    .blue-bar {
+        width: 55px;
+    }
+    .blue-bar2 {
+        width: 55px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .green-bar {
+        width: 38.55px;
+        height: 26.94px;
+    }
+    @keyframes moveBar1 {
+        0% {
+            transform: translate(0%, 0%);
+            height: 26.94px;
+    
+        }
+    
+        45% {
+            height: 200.22px;
+            bottom: 0;
+        }
+    
+        55% {
+            height: 200.22px;
+            bottom: 0;
+        }
+    
+        100% {
+            height: 26.94px;
+    
+        }
+    }
+    .blue-bar {
+        width: 38.55px;
+        height: 61.79px;
+    }
+    @keyframes moveBar2 {
+        0% {
+            transform: translate(0%, 0%);
+            height: 150.22px;
+        }
+    
+        45% {
+            height: 61.79px;
+            bottom: 0;
+        }
+    
+        55% {
+            height: 61.79px;
+            bottom: 0;
+        }
+    
+        100% {
+            height: 150.22px;
+        }
+    }
+    .blue-bar2 {
+        width: 38.55px;
+        height: 200.22px;
+    }
+    @keyframes moveBar3 {
+        0% {
+            transform: translate(0%, 0%);
+            height: 200.22px;
+        }
+    
+        45% {
+            height: 154.22px;
+            bottom: 0;
+        }
+    
+        55% {
+            height: 154.22px;
+            bottom: 0;
+        }
+    
+        100% {
+            transform: translate(0%, 0%);
+            height: 200.22px;
+        }
+    }
+    .bar-label {
+        font-size: 10px !important;
+        bottom: -46px !important;
+    }
+    .less_value,
+    .graph-bar .bar {
+        
+        font-size: 10px;
+        font-weight: 600;
+        line-height: 31px;
+    }
+    .returns-impact_animation-container {
+        height: 205px;
+    }
+    .self-assess-right-side h4 {
+        font-size: 10px !important;
+        line-height: 14px !important;
+    }
+}

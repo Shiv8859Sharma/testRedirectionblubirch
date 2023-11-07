@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Blog | Blubirch</title>
+      <link rel="stylesheet" href="assets/css/style.css">
+      <link rel="stylesheet" href="assets/css/responsive.css">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+      <link rel="shortcut icon" href="assets/img/favicon.ico" />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+         rel="stylesheet">
+      <link
+         href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+         rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+         crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.3/css/intlTelInput.min.css" />
+      <!-- JS -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.3/js/intlTelInput.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.3/js/utils.min.js"></script>
+   </head>
+   <body>
+      <section class="header" id="myHeader">
+         <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+               <a class="navbar-brand" href="index.html">
+                  <img src="assets/img/home-new/logo.svg" alt="logo">
+               </a>
+               <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                  aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+               </button>
+               <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                     <li class="nav-item">
+                        <a class="nav-link" href="solutions.html">
+                        Solutions
+                        </a>
+                     </li>
+                     <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                           data-bs-toggle="dropdown" aria-expanded="false">
+                        Company
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                           <li>
+                              <a href="about-us.html" class="dropdown-item d-flex li-cus">
+                                 <img src="assets/img/menu/hi1.svg"
+                                    alt="icon" class="w-100">
+                                 <p>About Us <br><span>Get to know us better</span></p>
+                              </a>
+                           </li>
+                           <li>
+                              <a href="careers.html" class="dropdown-item d-flex li-cus">
+                                 <img src="assets/img/menu/hi2.svg"
+                                    alt="icon" class="w-100">
+                                 <p>Careers <br><span>Join our talent network</span></p>
+                              </a>
+                           </li>
+                           <li>
+                              <a href="technology.html" class="dropdown-item d-flex li-cus">
+                        <img src="assets/img/menu/hi3.svg"
+                                    alt="icon" class="w-100">
+                        <p>Technology <br><span>Learn about security, scalability <br>
+                                    and integration</span>
+                                 </p>
+                              </a>
+                           </li>
+                           <li>
+                              <a href="privacy-policy.html" class="dropdown-item d-flex li-cus">
+                                 <img src="assets/img/menu/hi4.svg"
+                                    alt="icon" class="w-100">
+                                 <p>Privacy policy <br><span></span></p>
+                              </a>
+                           </li>
+                        </ul>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="impact.html">
+                        Impact
+                        </a>
+                     </li><li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                           data-bs-toggle="dropdown" aria-expanded="false">
+                        Resources
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                           <li>
+                              <a class="dropdown-item d-flex li-cus" href="blog.html">
+                                 <img src="assets/img/menu/hi5.svg"
+                                    alt="icon" class="w-100">
+                                 <p>Blogs<br><span>Delve into topics that may <br>
+                                    interest you</span>
+                                 </p>
+                              </a>
+                           </li>
+                           <li>
+                              <a class="dropdown-item d-flex li-cus" href="blog.html">
+                                 <img src="assets/img/menu/hi6.svg"
+                                    alt="icon" class="w-100">
+                                 <p>Case studies <br><span>Insights on industry-specific <br>
+                                    scenarios</span>
+                                 </p>
+                              </a>
+                           </li>
+                           <li>
+                              <a class="dropdown-item d-flex li-cus" href="news.html">
+                                 <img src="assets/img/menu/hi7.svg"
+                                    alt="icon" class="w-100">
+                                 <p>News <br><span>Press releases, announcements <br>
+                                    and articles</span>
+                                 </p>
+                              </a>
+                           </li>
+                        </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                           data-bs-toggle="dropdown" aria-expanded="false">
+                        Tools
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                           <li>
+                              <a href="self-assessment.html" class="dropdown-item d-flex li-cus">
+                                 <img src="assets/img/menu/hi8.svg"
+                                    alt="icon" class="w-100">
+                                 <p>Self assessment <br><span>Evaluate your returns journey</span></p>
+                              </a>
+                           </li>
+                           <li>
+                              <a href="returns-impact-calculator.html" class="dropdown-item d-flex li-cus">
+                                 <img src="assets/img/menu/hi9.svg"
+                                    alt="icon" class="w-100">
+                                 <p>Returns impact calculator <br><span>Reality check on the returns issue</span>
+                                 </p>
+                              </a>
+                           </li>
+                        </ul>
+                        </li>
+                  </ul>
+                  <div class="nav-btn">
+                     <a href="contact-us.html" class="mc-btn">Get in touch</a>
+                      <a href="book-a-demo.html" class="c-btn ">Book a demo</a>
+                  </div>
+               </div>
+            </div>
+         </nav>
+      </section>
+      <section class="resources-blog-detail">
+         <div class="container">
+            <h1>Resources</h1>
+            <h2 class="mbnn">Creating sustainable value in reverse supply chain</h2>
+<h2 class="dsknn">Creating sustainable value in reverse supply chain</h2>
+            <div class="row">
+               <div class="col-lg-9">
+                  <ul class="resources-blog-detail-list floatnn">
+                     <li class="d-flex justify-content-center align-items-center">                        
+                        <a href="" class="latest-content-para">
+                        <img src="assets/img/blog-details/blog-a2.svg">
+                        </a>
+                        <p class="text-content ms-2">By Sapan</p>
+                     </li>
+                     <li>
+                        <!-- <p class="text-content mbnn">By Sapan | 12th Apr 2016 • 8 min</p> -->
+                        <!-- <p class="text-content dsknn">By Sapan | 12th Apr 16 • 8 min </p> -->
+                        <p class="text-content mbnn">|</p>
+                     </li>
+                     <li><p class="text-content"> 12th Apr 2016 • 8 min</p></li>
+                  </ul>
+               </div>
+               <div class="col-lg-3 mbnn">
+                  <div class="float-right">
+                     <a href="#" id="sharedrpdwn" role="button" data-bs-toggle="dropdown" class="blog-share-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                           <g clip-path="url(#clip0_4589_66674)">
+                              <path fill-rule="evenodd" clip-rule="evenodd"
+                                 d="M12.666 6.00001C14.1388 6.00001 15.3327 4.8061 15.3327 3.33334C15.3327 1.86058 14.1388 0.666672 12.666 0.666672C11.1933 0.666672 9.99935 1.86058 9.99935 3.33334C9.99935 3.52493 10.0196 3.71181 10.058 3.89195L5.34394 6.24895C4.85506 5.68791 4.13528 5.33334 3.33268 5.33334C1.85992 5.33334 0.666016 6.52725 0.666016 8.00001C0.666016 9.47276 1.85992 10.6667 3.33268 10.6667C4.21803 10.6667 5.00261 10.2352 5.48762 9.5711L10.0666 12.0687C10.0226 12.261 9.99935 12.4611 9.99935 12.6667C9.99935 14.1394 11.1933 15.3333 12.666 15.3333C14.1388 15.3333 15.3327 14.1394 15.3327 12.6667C15.3327 11.1939 14.1388 10 12.666 10C11.8779 10 11.1697 10.3419 10.6815 10.8854L5.98023 8.32101C5.99285 8.21577 5.99935 8.10865 5.99935 8.00001C5.99935 7.80837 5.97914 7.62145 5.94072 7.44127L10.6547 5.08429C11.1436 5.64539 11.8634 6.00001 12.666 6.00001ZM12.666 4.66667C13.4024 4.66667 13.9994 4.06972 13.9994 3.33334C13.9994 2.59696 13.4024 2.00001 12.666 2.00001C11.9296 2.00001 11.3327 2.59696 11.3327 3.33334C11.3327 4.06972 11.9296 4.66667 12.666 4.66667ZM3.33268 9.33334C4.06906 9.33334 4.66602 8.73639 4.66602 8.00001C4.66602 7.26363 4.06906 6.66667 3.33268 6.66667C2.5963 6.66667 1.99935 7.26363 1.99935 8.00001C1.99935 8.73639 2.5963 9.33334 3.33268 9.33334ZM13.9994 12.6667C13.9994 13.4031 13.4024 14 12.666 14C11.9296 14 11.3327 13.4031 11.3327 12.6667C11.3327 11.9303 11.9296 11.3333 12.666 11.3333C13.4024 11.3333 13.9994 11.9303 13.9994 12.6667Z"
+                                 fill="#1A1B35" />
+                           </g>
+                           <defs>
+                              <clipPath id="clip0_4589_66674">
+                                 <rect width="16" height="16" fill="white" />
+                              </clipPath>
+                           </defs>
+                        </svg>
+                        &nbsp;Share
+                     </a>
+               
+               
+                     <ul class="dropdown-menu share-link" aria-labelledby="sharedrpdwn" style="min-width: 0rem !important;">
+                        <li>
+                           <a class="dropdown-item d-flex li-cus" href="https://www.linkedin.com/shareArticle?url=https://new-website.blubirch.com//blog3.html" target="_blank">
+                              <img src="assets/img/blog/in.png" class="w-100" style="max-width: 20px;"> Linkedin
+                          </a>
+                       </li>
+                       <li>
+                        <a class="dropdown-item d-flex li-cus" href="https://twitter.com/intent/tweet?url=https://new-website.blubirch.com//blog3.html&text=Blog:Creating sustainable value in reverse supply chain."
+                            target="_blank">
+                            <img src="assets/img/blog/tw.png" class="w-100" style="max-width: 20px;"> Twitter
+                        </a>
+                       </li>
+                       <li>
+                        <a class="dropdown-item d-flex li-cus" href="https://www.facebook.com/sharer/sharer.php?u=https://new-website.blubirch.com//blog3.html&title=Blog%20Title%3A%20Title%20Goes%20Here" target="_blank">
+                           <img src="assets/img/blog/fb.png" class="w-100" style="max-width: 20px;"> Facebook
+                       </a>
+                       </li>
+                       <li>
+                        <a class="dropdown-item d-flex li-cus" href="mailto:?subject=Creating sustainable value in reverse supply chain&body=Check%20out%20this%20blog%20post:%20https://new-website.blubirch.com//blog3.html">
+                           <img src="assets/img/blog/enve.png" class="w-100" style="max-width: 20px;"> Email
+                       </a>
+                       </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="blog-det-bg1">
+         <img src="assets/img/blog-details/blog3.svg" class="w-100">
+      </section>
+      <section class="blog-detail-leftside">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-9">
+                 
+                  <div class="blog-paragraph">
+                     <div class="row">
+                        <div class="col-lg-12">
+                           <div class="blog-para">
+                              <p>WHAT IS REVERSE SUPPLY CHAIN?</p>
+                              <p>
+
+Reverse supply chain includes moving returned merchandize due to defect, damage, overstock, exchange program, decommissioning of obsolete equipment and recycling programs from the consumption point to the origination point to dispose or to recapture value. Key activities in reverse supply chain includes gatekeeping to decide product validity for reverse supply chain; collection to deal with uncertainty of location, quantity and timing; inspection and sorting to decide downstream action; reconditioning to extend asset life for reuse or resale; disposition based on product quality and condition; and redistribution of products for optimal recovery through sale.</p>
+<img src="assets/img/blog-details/blog31.svg" class="w-100 blg3img-spc">
+<center style="margin-bottom: 30px"><span class="img-caption p-56">Image credit goes here</span></center>
+                             
+ <p>Traditionally, companies have been spending more time and resources towards forward supply chain while ignoring their reverse supply chain. However with growing e-commerce and lenient return policies, increasing competition and tightening waste management regulations, companies are increasingly recognizing the value that can be recaptured through an efficient reverse supply chain while increasing customer satisfaction and contributing to green environment. However compared to forward supply chain reverse supply chain has to deal with ambiguity related to location, timing, quantity, condition and pricing. Most existing forward supply chains are not designed to handle ambiguity related to reverse supply chain resulting in inefficiencies, value erosion and waste generation.</p>                         
+<p style="padding: 10px 0 48px 0;"><span style="color:#2E2F4F !important;    padding: 48px 0;">MANAGING DECOMMISSIONED IT ASSETS EFFECTIVELY TO ENSURE REUSE IS NO LONGER A "NICE TO DO" AND A "SOCIAL" RESPONSIBILITY BUT A CORPORATE RESPONSIBILITY.</span></p>
+                              
+                              
+                           </div>
+                        </div>
+                       
+                     </div>
+                   
+                  </div>
+                  <div class="blog-lft-inner">
+
+                     <p>"Reverse inventory supply chain has ambiguities at every stage and it can be overcome only through smart use of technology. Value erosion because of inefficient reverse inventory management can not be overlooked as cost of doing business but should be attended to with urgency to uncover hidden profits for the companies."</p>
+                     <p class="italic">- Mr. Sanjeev Jain, Group CFO GATI</p>
+                  </div>
+                
+                  <div class="row mt-4">
+                     <div class="col-lg-12">
+                        <h2 class="blog-sub-head">PREVAILING HURDLES IN THE REVERSE SUPPLY CHAIN LANDSCAPE</h2>
+                        <div class="blog-para">
+                           <p style="margin-bottom: 0">LACK OF MANAGEMENT FOCUS</p>
+<p>Most companies view reverse supply chain as cost of doing business and an unavoidable problem of back end process. This results in lack of commitment and focus from senior management. Companies accumulate reverse inventory in the back of warehouse or stores with suboptimal packaging resulting in value erosion from damage and pilferage.</p>
+                          <p style="margin-bottom: 0">LACK OF PROCESSES AND SYSTEMS</p>
+<p>Most companies do not understand and appreciate the benefits and profits an efficient reverse supply chain can bring and hence do not have clearly defined policies and processes to achieve desired outcomes. Additionally, companies either do not have systems to handle reverse supply chain or have disconnected applications with limited functionalities resulting in inherent inefficiencies and potential customer dissatisfaction.</p>
+                          <p style="margin-bottom: 0">SLOW DECISION MAKING</p>
+<p>For the lack of information on product quality, configuration and other variables companies are not able to take timely decisions on reverse inventory disposition resulting in lose in inventory value. Decline in value depends on type product however for consumer electronics products like Mobile, value lose can be in excess of 1% per week. This can be worse for products nearing the end of its life cycle.</p>
+<p style="margin-bottom: 0">LACK OF PRICING GUIDANCE AND LIMITED BUYERS</p>
+<p>Unlike new assets, assessing the value of reverse inventory with varied quality is not easy. In the absence of pricing guidance, most companies work with limited buyers and get 3 quotes over email resulting in suboptimal recovery.</p>
+<p style="margin-bottom: 0" >LACK OF TRANSPARENCY</p>
+<p>Most companies use email based quotes for selling reverse inventory, which is leakage prone making it difficult to ensure the fairness of the process and to eliminate resulting losses to companies. Also companies have no visibility of reverse inventory post sales to brokers resulting in potential regulatory and brand image risks.</p>
+
+
+<h2 class="blog-sub-head">HOW CAN WE SCALE OVER THESE CHALLENGES TO CREATE SUSTAINABLE VALUE?</h2>
+
+                        </div>
+                     <div class="blog-lft-inner">
+                     <p>"Measurement is the first step that leads to control and eventually to improvement. If you can't measure something, you can't understand it. If you can't understand it, you can't control it. If you can't control it, you can't improve it."</p>
+                     <p class="italic">- H. James Harrington</p>
+                  </div>
+<div class="blog-para">
+   
+   <p style="margin-bottom: 0" >PROCESSES AND SYSTEMS ALIGNED TO OUTCOME</p>
+<p>A seamless reverse supply chain system provides real time granular data streamlining the process and helps improve customer satisfaction. With improved understanding of reverse supply chain clients can define desired outcomes and align policies and processes to achieve the same. This will result in reductions in unused inventory, improved cash flow and lesser efforts</p>
+<p style="margin-bottom: 0" >SPEEDY DECISION MAKING</p>
+<p>Discretely defined return diagnostic provides accurate information on quality and configuration along with better understanding of return reasons i.e. were the returns because of defects, change of mind, damage or incorrect labeling. Having accurate data timely help companies in taking corrective actions and automate downstream actions mitigating the waste and cost generated from inventory aging and return leakages.</p>
+<p style="margin-bottom: 0" >EFFICIENT RECONDITIONING AND REMANUFACTURING</p>
+<p>Companies can enhance the value captured from returned products by reconditioning or remanufacturing the products for reuse or resale. An integrated gatekeeping, sorting and diagnostics can help mitigate uncertainties related to timing and quality of returned products and hence more predictable refurbishment or remanufacturing process with lesser waste and cost. This will also ensure that these assets are put back to use instead of being put as waste in landfills and hence contributing to a more sustainable environment.</p>
+</div>
+
+ <div class="blog-lft-inner">
+                     <p>"Corporates should no longer pile-up the decommissioned assets in warehouses or treat them as e-waste by default. There is infinite possibility to generate Social, Environmental and Economical value by putting these assets in the hands of users instead of landfills."</p>
+                     <p class="italic">- Anthony Thomas, CIO, GE Global Growth Organization</p>
+                  </div>
+
+                  <div class="blog-para">
+                     <p style="margin-bottom: 0">REAL TIME PRICING GUIDANCE AND ACCESS TO LARGE POOL OF BUYERS</p>
+<p>Companies should come out of the practice of 3 quotes on email and instead have access to a large set of resellers or end users to optimize recovery. Specialized reverse supply chain systems can not only provide them pricing guidance but also connect them to large pool of buyers via technology platform ensuring a fair and controlled mode to recover optimally.</p>
+                     <p style="margin-bottom: 0">ENHANCED CUSTOMER SATISFACTION</p>
+<p>With fast changing technology, fashion and customer needs, companies are increasingly under pressure to introduce new products to maintain the “Freshness” of distribution channel. A reverse supply chain that is predictable, efficient and fast will ensure that companies are able to clear the obsolete or used items from channel more frequently and smoothly enhancing customer satisfaction.</p>
+                     <p style="margin-bottom: 0">END-TO-END TRACKING</p>
+<p>Government is increasingly tightening the laws around product recycling or disposal especially the ones that are hazardous to environment. A system driven reverse supply chain can provide tracking capability right from origination to disposal safeguarding companies against regulatory and reputational risk.</p>
+                     <p style="margin-bottom: 0;color:#2E2F4F !important">In Summary, technology can dramatically reduce inspection; grading, refurbishment and disposition cost and enable companies to extract hidden profit from unused assets optimally and in environment friendly manner while being in control of the disposition process. Forward thinking pays big dividends even with Reverse Supply Chain.</p>
+
+                  </div>
+                     </div>
+                  </div>
+                 
+               </div>
+               <div class="col-lg-3">
+                 
+                        <a href="#" id="sharedrpdwn" role="button" data-bs-toggle="dropdown" class="blog-share-btn">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                              <g clip-path="url(#clip0_4589_66674)">
+                                 <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M12.666 6.00001C14.1388 6.00001 15.3327 4.8061 15.3327 3.33334C15.3327 1.86058 14.1388 0.666672 12.666 0.666672C11.1933 0.666672 9.99935 1.86058 9.99935 3.33334C9.99935 3.52493 10.0196 3.71181 10.058 3.89195L5.34394 6.24895C4.85506 5.68791 4.13528 5.33334 3.33268 5.33334C1.85992 5.33334 0.666016 6.52725 0.666016 8.00001C0.666016 9.47276 1.85992 10.6667 3.33268 10.6667C4.21803 10.6667 5.00261 10.2352 5.48762 9.5711L10.0666 12.0687C10.0226 12.261 9.99935 12.4611 9.99935 12.6667C9.99935 14.1394 11.1933 15.3333 12.666 15.3333C14.1388 15.3333 15.3327 14.1394 15.3327 12.6667C15.3327 11.1939 14.1388 10 12.666 10C11.8779 10 11.1697 10.3419 10.6815 10.8854L5.98023 8.32101C5.99285 8.21577 5.99935 8.10865 5.99935 8.00001C5.99935 7.80837 5.97914 7.62145 5.94072 7.44127L10.6547 5.08429C11.1436 5.64539 11.8634 6.00001 12.666 6.00001ZM12.666 4.66667C13.4024 4.66667 13.9994 4.06972 13.9994 3.33334C13.9994 2.59696 13.4024 2.00001 12.666 2.00001C11.9296 2.00001 11.3327 2.59696 11.3327 3.33334C11.3327 4.06972 11.9296 4.66667 12.666 4.66667ZM3.33268 9.33334C4.06906 9.33334 4.66602 8.73639 4.66602 8.00001C4.66602 7.26363 4.06906 6.66667 3.33268 6.66667C2.5963 6.66667 1.99935 7.26363 1.99935 8.00001C1.99935 8.73639 2.5963 9.33334 3.33268 9.33334ZM13.9994 12.6667C13.9994 13.4031 13.4024 14 12.666 14C11.9296 14 11.3327 13.4031 11.3327 12.6667C11.3327 11.9303 11.9296 11.3333 12.666 11.3333C13.4024 11.3333 13.9994 11.9303 13.9994 12.6667Z"
+                                    fill="#1A1B35" />
+                              </g>
+                              <defs>
+                                 <clipPath id="clip0_4589_66674">
+                                    <rect width="16" height="16" fill="white" />
+                                 </clipPath>
+                              </defs>
+                           </svg>
+                           &nbsp;Share
+                        </a>
+                  
+                       
+                        <ul class="dropdown-menu share-link" aria-labelledby="sharedrpdwn" style="min-width: 0rem !important;">
+                           <li>
+                              <a class="dropdown-item d-flex li-cus" href="https://www.linkedin.com/shareArticle?url=https://new-website.blubirch.com//blog3.html" target="_blank">
+                                 <img src="assets/img/blog/in.png" class="w-100" style="max-width: 20px;"> Linkedin
+                             </a>
+                          </li>
+                          <li>
+                           <a class="dropdown-item d-flex li-cus" href="https://twitter.com/intent/tweet?url=https://new-website.blubirch.com//blog3.html&text=Blog:Creating sustainable value in reverse supply chain."
+                               target="_blank">
+                               <img src="assets/img/blog/tw.png" class="w-100" style="max-width: 20px;"> Twitter
+                           </a>
+                          </li>
+                          <li>
+                           <a class="dropdown-item d-flex li-cus" href="https://www.facebook.com/sharer/sharer.php?u=https://new-website.blubirch.com//blog3.html&title=Blog%20Title%3A%20Title%20Goes%20Here" target="_blank">
+                              <img src="assets/img/blog/fb.png" class="w-100" style="max-width: 20px;"> Facebook
+                          </a>
+                          </li>
+                          <li>
+                           <a class="dropdown-item d-flex li-cus" href="mailto:?subject=Creating sustainable value in reverse supply chain&body=Check%20out%20this%20blog%20post:%20https://new-website.blubirch.com//blog3.html">
+                              <img src="assets/img/blog/enve.png" class="w-100" style="max-width: 20px;"> Email
+                          </a>
+                          </li>
+                        </ul>
+                 
+                  <ul class="blg-tag-list">
+                     <li>Reverse Supply Chain</li>
+                    
+                     <li>Sustainable Value</li>
+                      <li>Returns Policy</li>
+                      <li>Speedy</li>
+                      <li>Waste Management</li>
+                      <li>Optimal Recoveery</li>
+                      <li>Customer Satisfaction</li>
+                      <li>Efficiency</li>
+                      <li>Transparency</li>
+                      <li>Improve Cash Flow</li>
+                      <li>Decision Making</li>
+                      <li>Social, Environmental and 
+Economic Value</li>
+                      <li>Pricing Guidance</li>
+                      <li>End-To-End Tracking</li>
+                      <li>Product Recycling</li>
+                      <li>Predictability</li>
+                      <li>Green Environment</li>
+                      <li>Hidden Profit</li>
+                  
+                  </ul>
+               </div>
+            </div>
+            <div class="col-lg-9">
+               
+             <div class="authors ">
+                     <div class="row">
+                        <div class="col-lg-8">
+                           <h2>Authors</h2>
+                        </div>
+                        <div class="col-lg-4 mbnn">
+                           <a href="" class="author-btn" data-bs-toggle="modal" data-bs-target="#writeauthor">Write to the author/s</a>
+                        </div>
+                     </div>
+                     <div class="author-box">
+                        <div class="row ">
+                           <div class="col-lg-2 col-5">
+                              <img src="assets/img/blog-details/blog-a3.svg" class="img-fluid">
+                           </div>
+                           <div class="col-lg-10 col-7 pl-0">
+                              <h2>Sapan</h2>
+                              <p>Sapan Kumar Jain is the CEO of Blubirch, holds a Bachelor's degree in Pharmaceutical Engineering from IIT BHU and an MBA from INSEAD. His distinguished career, spanning over two decades, is enriched by substantial expertise across diverse domains.</p>
+                           </div>
+                        </div>
+                     </div>
+                    
+                     <div class="row dsknn">
+                        <a href="" class="author-btn" data-bs-toggle="modal" data-bs-target="#writeauthor">Write to the author/s</a>
+                     </div>
+                  </div>
+               </div>
+         </div>
+      </section>
+      <section class="resources-all-res">
+         <div class="container">
+            <h2>Similar</h2>
+           
+            <div class="row">               
+               <div class="col-lg-6">
+                  <div class="latest-right-box">
+                     <a href="blog4.html">
+                        <div class="latest-right-box-inner">
+                           <div class="row ">
+                              <div class="col-lg-5 col-5">
+               
+                                 <img src="assets/img/blog/bbm4.svg" class="w-100 ">
+                                 <div class="tag-abs">
+                                    <span class="tag-categ-r">Blog</span>
+                                 </div>
+                              </div>
+                              <div class="col-lg-7 col-7">
+                                 <p class="latest-right-box-p">How technology brings transparency to the
+                                    reverse inventory supply chain</p>
+                                 <p class="latest-right-box-desc"><span>Blubirch</span> became the first ever
+                                    Indian company to become one of the top 3 providers of reverse...</p>
+                                 <p class="latest-right-box-date">12th Apr 2023 • 8 min</p>
+                                 <div class="blog-m-tags-r ">
+                                    <button href="" class="blog-tags-r">Technology</button>
+                                    <button href="" class="blog-tags-r">Transparency</button>
+               
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </a>
+                  </div>
+               </div>
+            </div>
+           
+         </div>
+      </section>
+     <footer class="dark-2-bg">
+         <div class="footer-inner container">
+            <div class="row">
+               <div class="col-lg-3 col-sm-6 col-12 fc1 fc">
+                   <a href="index.html"><img src="assets/img/home-new/logo.svg" alt="logo" class="w-100">
+                  </a>
+                  <p class="mb-0 light-2-color">Abhaya Heights, 2nd floor, Sarakki Industrial Layout, 3rd Phase,
+                     J.P.Nagar, Bengaluru, Karnataka - 560078
+                  </p>
+                  <div class="Social-media">
+                     <a href="https://in.linkedin.com/company/blubirch" target="_blank"><span><i class="fab media-icons fa-linkedin-in"></i></span></a>
+                     <a href="https://twitter.com/Blubirch_RAPaaS" target="_blank"><span><i class="fab media-icons fa-twitter"></i></span></a>
+                     <a href="https://www.youtube.com/channel/UC4k15lcbBGi2SzI39ccmHug" target="_blank"><span><i class="fab media-icons fa-youtube"></i></a></span>
+                   </div>
+               </div>
+               <div class="col-lg-2 col-sm-6 col-12 fc2 fc">
+                  <h5 class="light-2-color">Solutions</h5>
+                   <ul class="mbnn">
+                     <li><a href="solutions.html#bb1" class="light-2-color">BB Markdown</a></li>
+                     <li><a href="solutions.html#bb2" class="light-2-color">BB Customer Returns</a></li>
+                     <li><a href="solutions.html#bb3" class="light-2-color">BB Warranty Returns</a></li>
+                     <li><a href="solutions.html#bb4" class="light-2-color">BB EOL Returns</a></li>
+                     <li><a href="solutions.html#bb5" class="light-2-color">BB Trade-in</a></li>
+                     <li><a href="solutions.html#bb6" class="light-2-color">BB Returns Processing</a></li>
+                     <li><a href="solutions.html#bb7" class="light-2-color">BB Remarketing</a></li>
+                     <li><a href="solutions.html#bb8" class="light-2-color">BB Renewed</a></li>
+                     <li><a href="https://bbgrading.blubirch.com"  class="light-2-color">BB Grading</a></li>
+                  </ul>
+                  <ul class="dsknn">
+                     <li><a href="solutions.html#bbmb1" class="light-2-color">BB Markdown</a></li>
+                     <li><a href="solutions.html#bbmb2" class="light-2-color">BB Customer Returns</a></li>
+                     <li><a href="solutions.html#bbmb3" class="light-2-color">BB Warranty Returns</a></li>
+                     <li><a href="solutions.html#bbmb4" class="light-2-color">BB EOL Returns</a></li>
+                     <li><a href="solutions.html#bbmb5" class="light-2-color">BB Trade-in</a></li>
+                     <li><a href="solutions.html#bbmb6" class="light-2-color">BB Returns Processing</a></li>
+                     <li><a href="solutions.html#bbmb7" class="light-2-color">BB Remarketing</a></li>
+                     <li><a href="solutions.html#bbmb8" class="light-2-color">BB Renewed</a></li>
+                     <li><a href="https://bbgrading.blubirch.com" class="light-2-color">BB Grading</a></li>
+                  </ul>
+               </div>
+               <div class="col-lg-2 col-sm-6 col-12 fc3 fc">
+                  <h5 class="light-2-color">Company</h5>
+                  <ul>
+                     <li><a href="about-us.html" class="light-2-color">About us</a></li>
+                     <li><a href="careers.html" class="light-2-color">Careers</a></li>
+                     <li><a href="technology.html" class="light-2-color">Technology</a></li>
+                  </ul>
+               </div>
+               <div class="col-lg-2 col-sm-6 col-12 fc4 fc">
+                  <h5 class="light-2-color">Resources</h5>
+                  <ul>
+                     <li><a href="blog.html" class="light-2-color">Blogs</a></li>
+                     <li><a href="blog.html" class="light-2-color">Case studies</a></li>
+                     <li><a href="news.html" class="light-2-color">News</a></li>
+                  </ul>
+               </div>
+               <div class="col-lg-3 col-sm-6 col-12 fc4 fc">
+                  <h5 class="light-2-color">Tools</h5>
+                  <ul>
+                     <li><a href="self-assessment.html" class="light-2-color">Self assessment</a></li>
+                      <li><a href="returns-impact-calculator.html" class="light-2-color">Returns Impact calculator</a></li>
+                  </ul>
+               </div>
+            </div>
+            <hr>
+            <div class="copy-bar d-md-flex d-block justify-content-between">
+               <div class="copyright-text">
+                  <p class="mb-0 f-color"><span class="f-color">© Blubirch - </span>Trademark of Green Enabled IT Solutions Pvt. Ltd.</p>
+               </div>
+               <div class="privacy-a">
+                  <a href="privacy-policy.html" class="f-color">Privacy & Security Policy</a>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <div class="modal fade" id="writeauthor" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+         <div class="modal-dialog">
+          <div>
+             <div class="alert alert-success w-100" style="display: none" role="alert" id="success-alert">
+               Successfully submitted.
+             </div>
+             <div class="alert alert-danger w-100" style="display: none" role="alert" id="error-alert">
+               Something went wrong.
+             </div>
+          </div>
+           <div class="modal-content">
+             <div class="modal-header">         
+               <h5 class="modal-title" id="staticBackdropLabel">Write to the author/s</h5>
+               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" id="closeModalButton"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+         <path d="M7.29289 7.29289C7.68342 6.90237 8.31658 6.90237 8.70711 7.29289L12 10.5857L15.2929 7.2928C15.6834 6.90228 16.3166 6.90228 16.7071 7.2928C17.0976 7.68332 17.0976 8.31649 16.7071 8.70701L13.4142 12L16.7071 15.2929C17.0976 15.6834 17.0976 16.3166 16.7071 16.7071C16.3166 17.0976 15.6834 17.0976 15.2929 16.7071L12 13.4142L8.70711 16.707C8.31658 17.0975 7.68342 17.0975 7.29289 16.707C6.90237 16.3165 6.90237 15.6833 7.29289 15.2928L10.5857 12L7.29289 8.70711C6.90237 8.31658 6.90237 7.68342 7.29289 7.29289Z" fill="#1E1E1E"/>
+         <path fill-rule="evenodd" clip-rule="evenodd" d="M12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24ZM12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" fill="#1E1E1E"/>
+       </svg></button>
+             </div>
+             <div class="modal-body">
+                <div class="author-form">
+               <div class="row">
+                         <div class="col-lg-6">
+                            <label class="custom-label">First name <span>*</span></label>
+                            <input type="text" name="" class="form-control placehold join-netwk-frm required-field" placeholder="Akul" id='name'>
+                         </div>
+                         <div class="col-lg-6">
+                            <label class="custom-label">Last name <span>*</span></label>
+                            <input type="text" name="" class="form-control placehold join-netwk-frm required-field" placeholder="Raj" id="last_name">
+                         </div>
+                          <div class="col-lg-6">
+                            <label class="custom-label">Phone Number<span>*</span></label>
+                            <input type="text" name="" class="form-control placehold join-netwk-frm required-field" placeholder="9740227494" id="phone">
+                         </div>
+                         <div class="col-lg-6">
+                            <label class="custom-label">Email ID <span>*</span></label>
+                            <input type="text" name="" class="form-control placehold join-netwk-frm required-field" placeholder="akulraj@gmail.com" id="email">
+                         </div>
+                        
+                         <div class="col-lg-12">
+                            <label class="custom-label">Message for the author <span>*</span></label>
+                            <!-- <textarea  name="" class="form-control placehold join-netwk-frm" placeholder="Ex: Senior Business Associate"></textarea> -->
+                            <textarea class="form-control sales-textarea aut-textarea required-field" placeholder="Ex: How can the product help me improve profits" id="message"></textarea>
+                         </div>
+                        
+                         
+                      </div>
+            </div>
+             </div>
+             <div class="modal-footer">
+               <button type="button" class="btn btn-cancel" data-bs-dismiss="modal">Cancel</button>
+               <button type="button" class="btn btn-send jeby-submit-api" id="sendApi" disabled>Send</button>
+             </div>
+           </div>
+         </div>
+       </div>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+         crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/jquery.slick/1.4.1/slick.min.js"></script>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+         var input = document.querySelector("#phone");
+         intlTelInput(input, {
+           initialCountry: "auto",
+           geoIpLookup: function (success, failure) {
+             $.get("https://ipinfo.io", function () { }, "jsonp").always(function (resp) {
+               var countryCode = (resp && resp.country) ? resp.country : "us";
+               success(countryCode);
+             });
+           },
+         });
+      </script>
+      <script>
+         AOS.init({
+         duration: 1200,
+         })
+      </script>
+      <script>
+         // fade in grid items  ==================================
+         
+         $(document).on("scroll", function () {
+         var pageTop = $(document).scrollTop()
+         var pageBottom = pageTop + $(window).height()
+         var tags = $(".fadein")
+         
+         for (var i = 0; i < tags.length; i++) {
+         var tag = tags[i]
+         
+         if ($(tag).offset().top < pageBottom) {
+          $(tag).addClass("visible")
+         } else {
+          $(tag).removeClass("visible")
+         }
+         }
+         })      
+      </script>
+      <script>
+         $('.res-news-slider').slick({
+            centerMode: false,
+                 centerPadding: '60px',
+                 slidesToShow: 2,
+                 arrows: true,
+                 order:1,
+                 responsive: [
+                     {
+                         breakpoint: 768,
+                         settings: {
+                             arrows: false,
+                             dots:true,
+                             centerMode: true,
+                             centerPadding: '40px',
+                             slidesToShow: 1
+                         }
+                     }
+                 ]
+             });
+      </script>
+       <script>
+         $(".jeby-submit-api").click(function (event) {
+              event.preventDefault();
+              var formData = {
+                 name: $("#name").val(),
+                 last_name: $("#last_name").val(),
+                 phone: $("#phone").val(),
+                 email: $("#email").val(),
+                 message: $("#message").val(),
+                 blog_name: "Creating sustainable value in reverse supply chain"
+              };
+              $.ajax({
+                 type: "POST",
+                 dataType: "json",
+                 url: "https://beam.blubirch.com/reseller_registrations/write_to_author",
+                 data: formData,
+                 success: function (data) {
+                    if (data.status == "success") {
+                       $("#name").val(''),
+                       $("#last_name").val(''),
+                       $("#phone").val(''),
+                       $("#email").val(''),
+                       $("#message").val(''),
+                       $("#error-alert").hide();
+                       $("#success-alert").show();
+                       setTimeout(function () {
+                       $('#success-alert').hide();
+                   }, 4000);
+                    } else {
+                       $("#success-alert").hide();
+                       $("#error-alert").show();
+                       setTimeout(function () {
+                       $('#error-alert').hide();
+                   }, 4000);
+                    }
+                 },
+                 error: function (error) {
+                    $("#success-alert").hide();
+                    $("#error-alert").show();
+                    setTimeout(function () {
+                       $('#error-alert').hide();
+                   }, 4000);
+                 },
+              });
+           });
+     </script>
+     <script>
+        document.addEventListener("DOMContentLoaded", function() {
+              const requiredFields = document.querySelectorAll(".required-field");
+              const sendButton = document.getElementById("sendApi");
+              function checkFields() {
+                 let allFieldsFilled = true;
+                 requiredFields.forEach(field => {
+                    if (field.value.trim() === "") {
+                    allFieldsFilled = false;
+                    }
+                 });
+
+                 if (allFieldsFilled) {
+                    sendButton.disabled = false;
+                 } else {
+                    sendButton.disabled = true;
+                 }
+              }
+
+              requiredFields.forEach(field => {
+                 field.addEventListener("input", checkFields);
+              });ds
+              checkFields();
+              });
+
+              document.addEventListener("DOMContentLoaded", function() {
+                 const requiredFields = document.querySelectorAll(".required-field");
+                 const sendButton = document.getElementById("sendApi");
+                 const closeModalButton = document.getElementById("closeModalButton");
+                 function resetFields() {
+                    requiredFields.forEach(field => {
+                       field.value = "";
+                    });
+
+                    sendButton.disabled = true;
+                 }
+                 closeModalButton.addEventListener("click", resetFields);
+                 });
+        </script>
+   </body>
+</html>

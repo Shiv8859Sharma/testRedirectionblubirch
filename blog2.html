@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Blog | Blubirch</title>
+      <link rel="stylesheet" href="assets/css/style.css">
+      <link rel="stylesheet" href="assets/css/responsive.css">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+      <link rel="shortcut icon" href="assets/img/favicon.ico" />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+         rel="stylesheet">
+      <link
+         href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+         rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+         crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.3/css/intlTelInput.min.css" />
+      <!-- JS -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.3/js/intlTelInput.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.3/js/utils.min.js"></script>
+   </head>
+   <body>
+      <section class="header" id="myHeader">
+         <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+               <a class="navbar-brand" href="index.html">
+                  <img src="assets/img/home-new/logo.svg" alt="logo">
+               </a>
+               <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                  aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+               </button>
+               <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                     <li class="nav-item">
+                        <a class="nav-link" href="solutions.html">
+                        Solutions
+                        </a>
+                     </li>
+                     <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                           data-bs-toggle="dropdown" aria-expanded="false">
+                        Company
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                           <li>
+                              <a href="about-us.html" class="dropdown-item d-flex li-cus">
+                                 <img src="assets/img/menu/hi1.svg"
+                                    alt="icon" class="w-100">
+                                 <p>About Us <br><span>Get to know us better</span></p>
+                              </a>
+                           </li>
+                           <li>
+                              <a href="careers.html" class="dropdown-item d-flex li-cus">
+                                 <img src="assets/img/menu/hi2.svg"
+                                    alt="icon" class="w-100">
+                                 <p>Careers <br><span>Join our talent network</span></p>
+                              </a>
+                           </li>
+                           <li>
+                              <a href="technology.html" class="dropdown-item d-flex li-cus">
+                        <img src="assets/img/menu/hi3.svg"
+                                    alt="icon" class="w-100">
+                        <p>Technology <br><span>Learn about security, scalability <br>
+                                    and integration</span>
+                                 </p>
+                              </a>
+                           </li>
+                           <li>
+                              <a href="privacy-policy.html" class="dropdown-item d-flex li-cus">
+                                 <img src="assets/img/menu/hi4.svg"
+                                    alt="icon" class="w-100">
+                                 <p>Privacy policy <br><span></span></p>
+                              </a>
+                           </li>
+                        </ul>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="impact.html">
+                        Impact
+                        </a>
+                     </li><li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                           data-bs-toggle="dropdown" aria-expanded="false">
+                        Resources
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                           <li>
+                              <a class="dropdown-item d-flex li-cus" href="blog.html">
+                                 <img src="assets/img/menu/hi5.svg"
+                                    alt="icon" class="w-100">
+                                 <p>Blogs<br><span>Delve into topics that may <br>
+                                    interest you</span>
+                                 </p>
+                              </a>
+                           </li>
+                           <li>
+                              <a class="dropdown-item d-flex li-cus" href="blog.html">
+                                 <img src="assets/img/menu/hi6.svg"
+                                    alt="icon" class="w-100">
+                                 <p>Case studies <br><span>Insights on industry-specific <br>
+                                    scenarios</span>
+                                 </p>
+                              </a>
+                           </li>
+                           <li>
+                              <a class="dropdown-item d-flex li-cus" href="news.html">
+                                 <img src="assets/img/menu/hi7.svg"
+                                    alt="icon" class="w-100">
+                                 <p>News <br><span>Press releases, announcements <br>
+                                    and articles</span>
+                                 </p>
+                              </a>
+                           </li>
+                        </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                           data-bs-toggle="dropdown" aria-expanded="false">
+                        Tools
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                           <li>
+                              <a href="self-assessment.html" class="dropdown-item d-flex li-cus">
+                                 <img src="assets/img/menu/hi8.svg"
+                                    alt="icon" class="w-100">
+                                 <p>Self assessment <br><span>Evaluate your returns journey</span></p>
+                              </a>
+                           </li>
+                           <li>
+                              <a href="returns-impact-calculator.html" class="dropdown-item d-flex li-cus">
+                                 <img src="assets/img/menu/hi9.svg"
+                                    alt="icon" class="w-100">
+                                 <p>Returns impact calculator <br><span>Reality check on the returns issue</span>
+                                 </p>
+                              </a>
+                           </li>
+                        </ul>
+                        </li>
+                  </ul>
+                  <div class="nav-btn">
+                     <a href="contact-us.html" class="mc-btn">Get in touch</a>
+                      <a href="book-a-demo.html" class="c-btn ">Book a demo</a>
+                  </div>
+               </div>
+            </div>
+         </nav>
+      </section>
+      <section class="resources-blog-detail">
+         <div class="container">
+            <h1>Resources</h1>
+            <h2 class="mbnn">Effective management of decommissioned<br>
+IT assets - CSR or CR</h2>
+<h2 class="dsknn">Effective management of decommissioned IT assets - CSR or CR</h2>
+            <div class="row">
+               <div class="col-lg-9">
+                 <ul class="resources-blog-detail-list floatnn">
+                     <li class="d-flex justify-content-center align-items-center">
+                        <a href="" class="latest-content-para">
+                        <img src="assets/img/blog-details/blog-a1.svg">
+                        </a>
+                        <p class="text-content ms-2">By Jeby Cherian</p>
+                     </li>
+                     <li>
+                        <!-- <p class="text-content mbnn">By Jeby Cherian | 12th Apr 2023 • 8 min</p> -->
+                        <!-- <p class="text-content dsknn ">By Jeby Cherian | 12th Apr 23 • 8 min </p> -->
+                        <p class="text-content mbnn">|</p>
+                     </li>
+                     <li>
+                          <p class="text-content">12th Apr 2023 • 8 min </p>
+                     </li>
+                  </ul>
+               </div>
+               <div class="col-lg-3 mbnn">
+                  <div class="float-right">
+                     <a href="#" id="sharedrpdwn" role="button" data-bs-toggle="dropdown" class="blog-share-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                           <g clip-path="url(#clip0_4589_66674)">
+                              <path fill-rule="evenodd" clip-rule="evenodd"
+                                 d="M12.666 6.00001C14.1388 6.00001 15.3327 4.8061 15.3327 3.33334C15.3327 1.86058 14.1388 0.666672 12.666 0.666672C11.1933 0.666672 9.99935 1.86058 9.99935 3.33334C9.99935 3.52493 10.0196 3.71181 10.058 3.89195L5.34394 6.24895C4.85506 5.68791 4.13528 5.33334 3.33268 5.33334C1.85992 5.33334 0.666016 6.52725 0.666016 8.00001C0.666016 9.47276 1.85992 10.6667 3.33268 10.6667C4.21803 10.6667 5.00261 10.2352 5.48762 9.5711L10.0666 12.0687C10.0226 12.261 9.99935 12.4611 9.99935 12.6667C9.99935 14.1394 11.1933 15.3333 12.666 15.3333C14.1388 15.3333 15.3327 14.1394 15.3327 12.6667C15.3327 11.1939 14.1388 10 12.666 10C11.8779 10 11.1697 10.3419 10.6815 10.8854L5.98023 8.32101C5.99285 8.21577 5.99935 8.10865 5.99935 8.00001C5.99935 7.80837 5.97914 7.62145 5.94072 7.44127L10.6547 5.08429C11.1436 5.64539 11.8634 6.00001 12.666 6.00001ZM12.666 4.66667C13.4024 4.66667 13.9994 4.06972 13.9994 3.33334C13.9994 2.59696 13.4024 2.00001 12.666 2.00001C11.9296 2.00001 11.3327 2.59696 11.3327 3.33334C11.3327 4.06972 11.9296 4.66667 12.666 4.66667ZM3.33268 9.33334C4.06906 9.33334 4.66602 8.73639 4.66602 8.00001C4.66602 7.26363 4.06906 6.66667 3.33268 6.66667C2.5963 6.66667 1.99935 7.26363 1.99935 8.00001C1.99935 8.73639 2.5963 9.33334 3.33268 9.33334ZM13.9994 12.6667C13.9994 13.4031 13.4024 14 12.666 14C11.9296 14 11.3327 13.4031 11.3327 12.6667C11.3327 11.9303 11.9296 11.3333 12.666 11.3333C13.4024 11.3333 13.9994 11.9303 13.9994 12.6667Z"
+                                 fill="#1A1B35" />
+                           </g>
+                           <defs>
+                              <clipPath id="clip0_4589_66674">
+                                 <rect width="16" height="16" fill="white" />
+                              </clipPath>
+                           </defs>
+                        </svg>
+                        &nbsp;Share
+                     </a>
+               
+               
+                     <ul class="dropdown-menu share-link" aria-labelledby="sharedrpdwn" style="min-width: 0rem !important;">
+                        <li>
+                           <a class="dropdown-item d-flex li-cus" href="https://www.linkedin.com/shareArticle?url=https://new-website.blubirch.com//blog2.html" target="_blank">
+                              <img src="assets/img/blog/in.png" class="w-100" style="max-width: 20px;"> Linkedin
+                          </a>
+                       </li>
+                       <li>
+                        <a class="dropdown-item d-flex li-cus" href="https://twitter.com/intent/tweet?url=https://new-website.blubirch.com//blog2.html&text=Effective management of decommissioned IT assets - CSR or CR."
+                            target="_blank">
+                            <img src="assets/img/blog/tw.png" class="w-100" style="max-width: 20px;"> Twitter
+                        </a>
+                       </li>
+                       <li>
+                        <a class="dropdown-item d-flex li-cus" href="https://www.facebook.com/sharer/sharer.php?u=https://new-website.blubirch.com//blog2.html&title=Blog%20Title%3A%20Title%20Goes%20Here" target="_blank">
+                           <img src="assets/img/blog/fb.png" class="w-100" style="max-width: 20px;"> Facebook
+                       </a>
+                       </li>
+                       <li>
+                        <a class="dropdown-item d-flex li-cus" href="mailto:?subject=Effective management of decommissioned IT assets - CSR or CR&body=Check%20out%20this%20blog%20post:%20https://new-website.blubirch.com//blog2.html">
+                           <img src="assets/img/blog/enve.png" class="w-100" style="max-width: 20px;"> Email
+                       </a>
+                       </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="blog-det-bg1">
+         <img src="assets/img/blog-details/blog2.svg" class="w-100">
+      </section>
+      <section class="blog-detail-leftside">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-9">
+                  <div class="blog-lft-inner">
+                     <p>"Think about it...if we throw it away, we had to buy it first. So we pay twice, once to get it, once to have it taken away. What if we reverse that cycle? What if our suppliers send us less, and everything they send us has value as a recycled product? No waste, and we get paid instead."</p>
+                     <p class="italic">- Lee Scott, Chief Executive, Wal-Mart (October 2005)</p>
+                  </div>
+                  <div class="blog-paragraph">
+                     <div class="row">
+                        <div class="col-lg-12">
+                           <div class="blog-para">
+                              <p>There has been a lot of focus on corporate social responsibility, with even the government now getting into the act mandating CSR spend. This seems to imply that outside of the mandatory spending on CSR, Corporates can afford to be socially irresponsible. Such behavior has led to significant challenges with exploitation of <span style="color:#2E2F4F;font-weight: 700;">natural resources and communities.</span> We need to change the paradigm from Corporate Social Responsibility, to Corporate Responsibility and thus bring the significant competencies that exists within the Corporation to solve the challenges we face as communities - rain water harvesting, waste management, and the like.</p>
+
+                              <p>One immediate area that Corporates can bring an immediate, significant and noticeable impact is in the management of IT assets. Most IT assets from servers to phones, have a depreciable life of three to four years but an economic and functional life that far extends it. Most of these assets end up in bonded warehouses, gathering dust until they are given off to an e-waste handler for final disposal. What a waste! Especially when you consider that the manufacturing of each of these assets takes up almost eight times the energy as its full functional life. In not extending the life of these assets, <b>Corporates are negatively contributing to an existing and growing problem of efficient returns management and pollution.</b> There is another way to handle to this!</p>
+
+                              
+                              
+                           </div>
+                        </div>
+                       
+                     </div>
+                   
+                  </div>
+                  <div class="blog-lft-inner">
+
+                     <p>"The linear 'Take - Make - Dispose' system, which depletes natural resources and generates waste, is deeply flawed and can be productively replaced by a restorative model in which waste does not exist as such but is only food for the next cycle"</p>
+                     <p class="italic">- Ellen MacArthur (Round-the-world yachtswoman)</p>
+                  </div>
+                
+                  <div class="row mt-4">
+                     <div class="col-lg-12">
+                        <div class="blog-para">
+                           <p>Blubirch analysis shows that <b>80% of the assets that have been fully depreciated can be reconditioned to </b>extend its life and put back to reuse. These refurbished assets, can be redeployed back in the organization, distributed to education institutions, given to charitable organizations or even sold back to people who otherwise could not afford one. Imagine the productivity and the nation building energy that come out of it - a rural school where children can now access the power of the internet, a company benefiting from affordable technology, a charitable institution that can now run more efficiently and stretch its contributions to cover more people or services, increased employee loyalty through employee purchase programs, decrease IT investment and costs and most importantly a greener and sustainable earth that seems to growing warmer and warmer every year!!</p>
+                          <p><span>MANAGING DECOMMISSIONED IT ASSETS EFFECTIVELY TO ENSURE REUSE IS NO LONGER A "NICE TO DO" AND A "SOCIAL" RESPONSIBILITY BUT A CORPORATE RESPONSIBILITY.</span></p>
+                          <p>Put the decommissioned assets back in the hands of a user instead of in the landfill</p>
+                        </div>
+                     </div>
+                  </div>
+                 
+               </div>
+               <div class="col-lg-3">
+                 
+                         <a href="#" id="sharedrpdwn" role="button" data-bs-toggle="dropdown" class="blog-share-btn">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <g clip-path="url(#clip0_4589_66674)">
+                           <path fill-rule="evenodd" clip-rule="evenodd" d="M12.666 6.00001C14.1388 6.00001 15.3327 4.8061 15.3327 3.33334C15.3327 1.86058 14.1388 0.666672 12.666 0.666672C11.1933 0.666672 9.99935 1.86058 9.99935 3.33334C9.99935 3.52493 10.0196 3.71181 10.058 3.89195L5.34394 6.24895C4.85506 5.68791 4.13528 5.33334 3.33268 5.33334C1.85992 5.33334 0.666016 6.52725 0.666016 8.00001C0.666016 9.47276 1.85992 10.6667 3.33268 10.6667C4.21803 10.6667 5.00261 10.2352 5.48762 9.5711L10.0666 12.0687C10.0226 12.261 9.99935 12.4611 9.99935 12.6667C9.99935 14.1394 11.1933 15.3333 12.666 15.3333C14.1388 15.3333 15.3327 14.1394 15.3327 12.6667C15.3327 11.1939 14.1388 10 12.666 10C11.8779 10 11.1697 10.3419 10.6815 10.8854L5.98023 8.32101C5.99285 8.21577 5.99935 8.10865 5.99935 8.00001C5.99935 7.80837 5.97914 7.62145 5.94072 7.44127L10.6547 5.08429C11.1436 5.64539 11.8634 6.00001 12.666 6.00001ZM12.666 4.66667C13.4024 4.66667 13.9994 4.06972 13.9994 3.33334C13.9994 2.59696 13.4024 2.00001 12.666 2.00001C11.9296 2.00001 11.3327 2.59696 11.3327 3.33334C11.3327 4.06972 11.9296 4.66667 12.666 4.66667ZM3.33268 9.33334C4.06906 9.33334 4.66602 8.73639 4.66602 8.00001C4.66602 7.26363 4.06906 6.66667 3.33268 6.66667C2.5963 6.66667 1.99935 7.26363 1.99935 8.00001C1.99935 8.73639 2.5963 9.33334 3.33268 9.33334ZM13.9994 12.6667C13.9994 13.4031 13.4024 14 12.666 14C11.9296 14 11.3327 13.4031 11.3327 12.6667C11.3327 11.9303 11.9296 11.3333 12.666 11.3333C13.4024 11.3333 13.9994 11.9303 13.9994 12.6667Z" fill="#1A1B35"/>
+                        </g>
+                        <defs>
+                           <clipPath id="clip0_4589_66674">
+                              <rect width="16" height="16" fill="white"/>
+                           </clipPath>
+                        </defs>
+                     </svg>
+                     &nbsp;Share
+                  </a>
+                  
+                       
+                        <ul class="dropdown-menu share-link" aria-labelledby="sharedrpdwn" style="min-width: 0rem !important;">
+                           <li>
+                              <a class="dropdown-item d-flex li-cus" href="https://www.linkedin.com/shareArticle?url=https://new-website.blubirch.com//blog2.html" target="_blank">
+                                 <img src="assets/img/blog/in.png" class="w-100" style="max-width: 20px;"> Linkedin
+                             </a>
+                          </li>
+                          <li>
+                           <a class="dropdown-item d-flex li-cus" href="https://twitter.com/intent/tweet?url=https://new-website.blubirch.com//blog2.html&text=Blog:%20Our%20number%20one%20priority%20is%20company%20culture.%20Our%20whole%20belief%20is%20that%20if%20you%20get%20the%20culture%20right,%20most%20of%20the%20other%20stuff%20like%20delivering%20great%20customer%20service%20or%20building%20a%20long-term%20enduring%20brand%20will%20just%20happen%20naturally%20on%20its%20own."
+                               target="_blank">
+                               <img src="assets/img/blog/tw.png" class="w-100" style="max-width: 20px;"> Twitter
+                           </a>
+                          </li>
+                          <li>
+                           <a class="dropdown-item d-flex li-cus" href="https://www.facebook.com/sharer/sharer.php?u=https://new-website.blubirch.com//blog2.html&title=Blog%20Title%3A%20Title%20Goes%20Here" target="_blank">
+                              <img src="assets/img/blog/fb.png" class="w-100" style="max-width: 20px;"> Facebook
+                          </a>
+                          </li>
+                          <li>
+                           <a class="dropdown-item d-flex li-cus" href="mailto:?subject=How%20we%20are%20creating%20a%20unique%20culture%20at%20Blubirch&body=Check%20out%20this%20blog%20post:%20https://new-website.blubirch.com//blog2.html">
+                              <img src="assets/img/blog/enve.png" class="w-100" style="max-width: 20px;"> Email
+                          </a>
+                          </li>
+                        </ul>
+                 
+                  <ul class="blg-tag-list">
+                     <li>Decommissioned IT Assets</li>
+                    
+                     <li>Corporate Responsibility</li>
+                      
+                     <li>Green Planet</li>
+                     <li>Reuse</li>
+                     
+                     <li>Sustainable Earth</li>
+                     <li>CSR</li>
+                     <li>Management of IT Assets</li>
+                     <li>Decrease IT Investment</li>
+                     <li>Affordable Technology</li>
+                     <li>E-waste Management</li>
+                  </ul>
+               </div>
+            </div>
+            <div class="col-lg-9">
+             <div class="authors ">
+                     <div class="row">
+                        <div class="col-lg-8">
+                           <h2>Authors</h2>
+                        </div>
+                        <div class="col-lg-4 mbnn">
+                           <a href="" class="author-btn" data-bs-toggle="modal" data-bs-target="#writeauthor">Write to the author/s</a>
+                        </div>
+                     </div>
+                     <div class="author-box">
+                        <div class="row ">
+                           <div class="col-lg-2 col-5">
+                              <img src="assets/img/blog-details/team1.svg" class="img-fluid">
+                           </div>
+                           <div class="col-lg-10 col-7 pl-0">
+                              <h2>Jeby Cherian</h2>
+                              <p>Jeby Cherian, is the Chairman & COO of Blubirch. He is a CPA with an MBA from University of Chicago’s Booth School of Business.</p>
+                           </div>
+                        </div>
+                     </div>
+                    
+                     <div class="row dsknn">
+                        <a href="" class="author-btn" data-bs-toggle="modal" data-bs-target="#writeauthor">Write to the author/s</a>
+                     </div>
+                  </div>
+               </div>
+         </div>
+      </section>
+      <section class="resources-all-res">
+         <div class="container">
+            <h2>Similar</h2>
+           
+            <div class="row">
+               <div class="col-12">
+                  <h5 class="text-center">No match found!</h5>
+               </div>
+              </div>
+            <div class="row d-none">
+               <div class="col-lg-6">
+                  <div class="latest-right-box">
+                      <a href="case-study3.html">
+                     <div class="latest-right-box-inner">
+                        <div class="row ">
+                           <div class="col-lg-5 col-5">
+                             
+                              <img src="assets/img/blog/csm1.svg" class="w-100 ">
+                              <div class="tag-abs">
+                                 <span class="tag-categ-r">Case Study</span>
+                              </div>
+                           </div>
+                           <div class="col-lg-7 col-7">
+                              <p class="latest-right-box-p">Large mobile retail chain struggling 
+with trade-in program</p>
+                              <p class="latest-right-box-desc mt-1"><span>Blubirch</span> became the first ever Indian company to become one of the top 3 providers of reverse...</p>
+                              <p class="latest-right-box-date">12th Apr 2023 • 8 min</p>
+                              <div class="blog-m-tags-r ">
+                                 <button href="" class="blog-tags-r">Mobile Phone Retailer</button>
+                                                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </a>
+                    <a href="case-study4.html">
+                     <div class="latest-right-box-inner">
+                        <div class="row ">
+                           <div class="col-lg-5 col-5">
+                              
+                              <img src="assets/img/blog/csm1.svg" class="w-100 ">
+                              <div class="tag-abs">
+                                 <span class="tag-categ-r">Case Study</span>
+                              </div>
+                           </div>
+                           <div class="col-lg-7 col-7">
+                              <p class="latest-right-box-p">Creating sustainable value in reverse supply chain</p>
+                              <p class="latest-right-box-desc"><span>Blubirch</span> became the first ever Indian company to become one of the top 3 providers of reverse...</p>
+                              <p class="latest-right-box-date">12th Apr 2023 • 8 min</p>
+                              <div class="blog-m-tags-r ">
+                                 <button href="" class="blog-tags-r">Multi-brand Retailer</button>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </a>
+                     
+                    
+                  </div>
+               </div>
+               <div class="col-lg-6">
+                  <div class="latest-right-box">
+                    <a href="blog3.html">
+                     <div class="latest-right-box-inner">
+                        <div class="row ">
+                           <div class="col-lg-5 col-5">
+                              
+                              <img src="assets/img/blog/bbm3.svg" class="w-100 ">
+                              <div class="tag-abs">
+                                 <span class="tag-categ-r">Blog</span>
+                              </div>
+                           </div>
+                           <div class="col-lg-7 col-7">
+                              <p class="latest-right-box-p">How manual returns management process for an OEM functions?</p>
+                              <p class="latest-right-box-desc"><span>Blubirch</span> became the first ever Indian company to become one of the top 3 providers of reverse...</p>
+                              <p class="latest-right-box-date">12th Apr 2023 • 8 min</p>
+                              <div class="blog-m-tags-r ">
+                                <button href="" class="blog-tags-r">Reverse Supply Chain</button>
+                                 <button href="" class="blog-tags-r">Speedy</button>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </a>
+                     <a href="blog4.html">
+                     <div class="latest-right-box-inner">
+                        <div class="row ">
+                           <div class="col-lg-5 col-5">
+                             
+                              <img src="assets/img/blog/bbm4.svg" class="w-100 ">
+                              <div class="tag-abs">
+                                 <span class="tag-categ-r">Blog</span>
+                              </div>
+                           </div>
+                           <div class="col-lg-7 col-7">
+                              <p class="latest-right-box-p">How technology brings transparency to the
+reverse inventory supply chain</p>
+                              <p class="latest-right-box-desc"><span>Blubirch</span> became the first ever Indian company to become one of the top 3 providers of reverse...</p>
+                              <p class="latest-right-box-date">12th Apr 2023 • 8 min</p>
+                              <div class="blog-m-tags-r ">
+                                 <button href="" class="blog-tags-r">Technology</button>
+                                 <button href="" class="blog-tags-r">Transparency</button>
+
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </a>
+                     
+                     
+                    
+                  </div>
+               </div>
+            </div>
+           
+         </div>
+      </section>
+     <footer class="dark-2-bg">
+         <div class="footer-inner container">
+            <div class="row">
+               <div class="col-lg-3 col-sm-6 col-12 fc1 fc">
+                   <a href="index.html"><img src="assets/img/home-new/logo.svg" alt="logo" class="w-100">
+                  </a>
+                  <p class="mb-0 light-2-color">Abhaya Heights, 2nd floor, Sarakki Industrial Layout, 3rd Phase,
+                     J.P.Nagar, Bengaluru, Karnataka - 560078
+                  </p>
+                  <div class="Social-media">
+                     <a href="https://in.linkedin.com/company/blubirch" target="_blank"><span><i class="fab media-icons fa-linkedin-in"></i></span></a>
+                     <a href="https://twitter.com/Blubirch_RAPaaS" target="_blank"><span><i class="fab media-icons fa-twitter"></i></span></a>
+                     <a href="https://www.youtube.com/channel/UC4k15lcbBGi2SzI39ccmHug" target="_blank"><span><i class="fab media-icons fa-youtube"></i></a></span>
+                   </div>
+               </div>
+               <div class="col-lg-2 col-sm-6 col-12 fc2 fc">
+                  <h5 class="light-2-color">Solutions</h5>
+                  <ul class="mbnn">
+                     <li><a href="solutions.html#bb1" class="light-2-color">BB Markdown</a></li>
+                     <li><a href="solutions.html#bb2" class="light-2-color">BB Customer Returns</a></li>
+                     <li><a href="solutions.html#bb3" class="light-2-color">BB Warranty Returns</a></li>
+                     <li><a href="solutions.html#bb4" class="light-2-color">BB EOL Returns</a></li>
+                     <li><a href="solutions.html#bb5" class="light-2-color">BB Trade-in</a></li>
+                     <li><a href="solutions.html#bb6" class="light-2-color">BB Returns Processing</a></li>
+                     <li><a href="solutions.html#bb7" class="light-2-color">BB Remarketing</a></li>
+                     <li><a href="solutions.html#bb8" class="light-2-color">BB Renewed</a></li>
+                     <li><a href="https://bbgrading.blubirch.com"  class="light-2-color">BB Grading</a></li>
+                  </ul>
+                  <ul class="dsknn">
+                     <li><a href="solutions.html#bbmb1" class="light-2-color">BB Markdown</a></li>
+                     <li><a href="solutions.html#bbmb2" class="light-2-color">BB Customer Returns</a></li>
+                     <li><a href="solutions.html#bbmb3" class="light-2-color">BB Warranty Returns</a></li>
+                     <li><a href="solutions.html#bbmb4" class="light-2-color">BB EOL Returns</a></li>
+                     <li><a href="solutions.html#bbmb5" class="light-2-color">BB Trade-in</a></li>
+                     <li><a href="solutions.html#bbmb6" class="light-2-color">BB Returns Processing</a></li>
+                     <li><a href="solutions.html#bbmb7" class="light-2-color">BB Remarketing</a></li>
+                     <li><a href="solutions.html#bbmb8" class="light-2-color">BB Renewed</a></li>
+                     <li><a href="https://bbgrading.blubirch.com" class="light-2-color">BB Grading</a></li>
+                  </ul>
+               </div>
+               <div class="col-lg-2 col-sm-6 col-12 fc3 fc">
+                  <h5 class="light-2-color">Company</h5>
+                  <ul>
+                     <li><a href="about-us.html" class="light-2-color">About us</a></li>
+                     <li><a href="careers.html" class="light-2-color">Careers</a></li>
+                     <li><a href="technology.html" class="light-2-color">Technology</a></li>
+                  </ul>
+               </div>
+               <div class="col-lg-2 col-sm-6 col-12 fc4 fc">
+                  <h5 class="light-2-color">Resources</h5>
+                  <ul>
+                     <li><a href="blog.html" class="light-2-color">Blogs</a></li>
+                     <li><a href="blog.html" class="light-2-color">Case studies</a></li>
+                     <li><a href="news.html" class="light-2-color">News</a></li>
+                  </ul>
+               </div>
+               <div class="col-lg-3 col-sm-6 col-12 fc4 fc">
+                  <h5 class="light-2-color">Tools</h5>
+                  <ul>
+                     <li><a href="self-assessment.html" class="light-2-color">Self assessment</a></li>
+                      <li><a href="returns-impact-calculator.html" class="light-2-color">Returns Impact calculator</a></li>
+                  </ul>
+               </div>
+            </div>
+            <hr>
+            <div class="copy-bar d-md-flex d-block justify-content-between">
+               <div class="copyright-text">
+                  <p class="mb-0 f-color"><span class="f-color">© Blubirch - </span>Trademark of Green Enabled IT Solutions Pvt. Ltd.</p>
+               </div>
+               <div class="privacy-a">
+                  <a href="privacy-policy.html" class="f-color">Privacy & Security Policy</a>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <div class="modal fade" id="writeauthor" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+         <div class="modal-dialog">
+          <div>
+             <div class="alert alert-success w-100" style="display: none" role="alert" id="success-alert">
+               Successfully submitted.
+             </div>
+             <div class="alert alert-danger w-100" style="display: none" role="alert" id="error-alert">
+               Something went wrong.
+             </div>
+          </div>
+           <div class="modal-content">
+             <div class="modal-header">         
+               <h5 class="modal-title" id="staticBackdropLabel">Write to the author/s</h5>
+               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" id="closeModalButton"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+         <path d="M7.29289 7.29289C7.68342 6.90237 8.31658 6.90237 8.70711 7.29289L12 10.5857L15.2929 7.2928C15.6834 6.90228 16.3166 6.90228 16.7071 7.2928C17.0976 7.68332 17.0976 8.31649 16.7071 8.70701L13.4142 12L16.7071 15.2929C17.0976 15.6834 17.0976 16.3166 16.7071 16.7071C16.3166 17.0976 15.6834 17.0976 15.2929 16.7071L12 13.4142L8.70711 16.707C8.31658 17.0975 7.68342 17.0975 7.29289 16.707C6.90237 16.3165 6.90237 15.6833 7.29289 15.2928L10.5857 12L7.29289 8.70711C6.90237 8.31658 6.90237 7.68342 7.29289 7.29289Z" fill="#1E1E1E"/>
+         <path fill-rule="evenodd" clip-rule="evenodd" d="M12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24ZM12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" fill="#1E1E1E"/>
+       </svg></button>
+             </div>
+             <div class="modal-body">
+                <div class="author-form">
+               <div class="row">
+                         <div class="col-lg-6">
+                            <label class="custom-label">First name <span>*</span></label>
+                            <input type="text" name="" class="form-control placehold join-netwk-frm required-field" placeholder="Akul" id='name'>
+                         </div>
+                         <div class="col-lg-6">
+                            <label class="custom-label">Last name <span>*</span></label>
+                            <input type="text" name="" class="form-control placehold join-netwk-frm required-field" placeholder="Raj" id="last_name">
+                         </div>
+                          <div class="col-lg-6">
+                            <label class="custom-label">Phone Number<span>*</span></label>
+                            <input type="text" name="" class="form-control placehold join-netwk-frm required-field" placeholder="9740227494" id="phone">
+                         </div>
+                         <div class="col-lg-6">
+                            <label class="custom-label">Email ID <span>*</span></label>
+                            <input type="text" name="" class="form-control placehold join-netwk-frm required-field" placeholder="akulraj@gmail.com" id="email">
+                         </div>
+                        
+                         <div class="col-lg-12">
+                            <label class="custom-label">Message for the author <span>*</span></label>
+                            <!-- <textarea  name="" class="form-control placehold join-netwk-frm" placeholder="Ex: Senior Business Associate"></textarea> -->
+                            <textarea class="form-control sales-textarea aut-textarea required-field" placeholder="Ex: How can the product help me improve profits" id="message"></textarea>
+                         </div>
+                        
+                         
+                      </div>
+            </div>
+             </div>
+             <div class="modal-footer">
+               <button type="button" class="btn btn-cancel" data-bs-dismiss="modal">Cancel</button>
+               <button type="button" class="btn btn-send jeby-submit-api" id="sendApi" disabled>Send</button>
+             </div>
+           </div>
+         </div>
+       </div>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+         crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/jquery.slick/1.4.1/slick.min.js"></script>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+         var input = document.querySelector("#phone");
+         intlTelInput(input, {
+           initialCountry: "auto",
+           geoIpLookup: function (success, failure) {
+             $.get("https://ipinfo.io", function () { }, "jsonp").always(function (resp) {
+               var countryCode = (resp && resp.country) ? resp.country : "us";
+               success(countryCode);
+             });
+           },
+         });
+      </script>
+      <script>
+         AOS.init({
+         duration: 1200,
+         })
+      </script>
+      <script>
+         // fade in grid items  ==================================
+         
+         $(document).on("scroll", function () {
+         var pageTop = $(document).scrollTop()
+         var pageBottom = pageTop + $(window).height()
+         var tags = $(".fadein")
+         
+         for (var i = 0; i < tags.length; i++) {
+         var tag = tags[i]
+         
+         if ($(tag).offset().top < pageBottom) {
+          $(tag).addClass("visible")
+         } else {
+          $(tag).removeClass("visible")
+         }
+         }
+         })      
+      </script>
+      <script>
+         $('.res-news-slider').slick({
+            centerMode: false,
+                 centerPadding: '60px',
+                 slidesToShow: 2,
+                 arrows: true,
+                 order:1,
+                 responsive: [
+                     {
+                         breakpoint: 768,
+                         settings: {
+                             arrows: false,
+                             dots:true,
+                             centerMode: true,
+                             centerPadding: '40px',
+                             slidesToShow: 1
+                         }
+                     }
+                 ]
+             });
+      </script>
+      <script>
+         $(".jeby-submit-api").click(function (event) {
+              event.preventDefault();
+              var formData = {
+                 name: $("#name").val(),
+                 last_name: $("#last_name").val(),
+                 phone: $("#phone").val(),
+                 email: $("#email").val(),
+                 message: $("#message").val(),
+                 blog_name: "Effective management of decommissioned IT assets - CSR or CR"
+              };
+              $.ajax({
+                 type: "POST",
+                 dataType: "json",
+                 url: "https://beam.blubirch.com/reseller_registrations/write_to_author",
+                 data: formData,
+                 success: function (data) {
+                    if (data.status == "success") {
+                       $("#name").val(''),
+                       $("#last_name").val(''),
+                       $("#phone").val(''),
+                       $("#email").val(''),
+                       $("#message").val(''),
+                       $("#error-alert").hide();
+                       $("#success-alert").show();
+                       setTimeout(function () {
+                       $('#success-alert').hide();
+                   }, 4000);
+                    } else {
+                       $("#success-alert").hide();
+                       $("#error-alert").show();
+                       setTimeout(function () {
+                       $('#error-alert').hide();
+                   }, 4000);
+                    }
+                 },
+                 error: function (error) {
+                    $("#success-alert").hide();
+                    $("#error-alert").show();
+                    setTimeout(function () {
+                       $('#error-alert').hide();
+                   }, 4000);
+                 },
+              });
+           });
+     </script>
+     <script>
+        document.addEventListener("DOMContentLoaded", function() {
+              const requiredFields = document.querySelectorAll(".required-field");
+              const sendButton = document.getElementById("sendApi");
+              function checkFields() {
+                 let allFieldsFilled = true;
+                 requiredFields.forEach(field => {
+                    if (field.value.trim() === "") {
+                    allFieldsFilled = false;
+                    }
+                 });
+
+                 if (allFieldsFilled) {
+                    sendButton.disabled = false;
+                 } else {
+                    sendButton.disabled = true;
+                 }
+              }
+
+              requiredFields.forEach(field => {
+                 field.addEventListener("input", checkFields);
+              });ds
+              checkFields();
+              });
+
+              document.addEventListener("DOMContentLoaded", function() {
+                 const requiredFields = document.querySelectorAll(".required-field");
+                 const sendButton = document.getElementById("sendApi");
+                 const closeModalButton = document.getElementById("closeModalButton");
+                 function resetFields() {
+                    requiredFields.forEach(field => {
+                       field.value = "";
+                    });
+
+                    sendButton.disabled = true;
+                 }
+                 closeModalButton.addEventListener("click", resetFields);
+                 });
+        </script>
+   </body>
+</html>

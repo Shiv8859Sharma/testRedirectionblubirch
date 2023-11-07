@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>News | Blubirch</title>
+      <link rel="stylesheet" href="assets/css/style.css">
+      <link rel="stylesheet" href="assets/css/responsive.css">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+      <link rel="shortcut icon" href="assets/img/favicon.ico" />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+         rel="stylesheet">
+      <link
+         href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+         rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+         crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.3/css/intlTelInput.min.css" />
+      <!-- JS -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.3/js/intlTelInput.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.3/js/utils.min.js"></script>
+   </head>
+   <body>
+      <section class="header" id="myHeader">
+         <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+               <a class="navbar-brand" href="index.html">
+                  <img src="assets/img/home-new/logo.svg" alt="logo">
+               </a>
+               <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                  aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+               </button>
+               <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                     <li class="nav-item">
+                        <a class="nav-link" href="solutions.html">
+                        Solutions
+                        </a>
+                     </li>
+                     <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                           data-bs-toggle="dropdown" aria-expanded="false">
+                        Company
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                           <li>
+                              <a href="about-us.html" class="dropdown-item d-flex li-cus">
+                                 <img src="assets/img/menu/hi1.svg"
+                                    alt="icon" class="w-100">
+                                 <p>About Us <br><span>Get to know us better</span></p>
+                              </a>
+                           </li>
+                           <li>
+                              <a href="careers.html" class="dropdown-item d-flex li-cus">
+                                 <img src="assets/img/menu/hi2.svg"
+                                    alt="icon" class="w-100">
+                                 <p>Careers <br><span>Join our talent network</span></p>
+                              </a>
+                           </li>
+                           <li>
+                              <a href="technology.html" class="dropdown-item d-flex li-cus">
+                        <img src="assets/img/menu/hi3.svg"
+                                    alt="icon" class="w-100">
+                        <p>Technology <br><span>Learn about security, scalability <br>
+                                    and integration</span>
+                                 </p>
+                              </a>
+                           </li>
+                           <li>
+                              <a href="privacy-policy.html" class="dropdown-item d-flex li-cus">
+                                 <img src="assets/img/menu/hi4.svg"
+                                    alt="icon" class="w-100">
+                                 <p>Privacy policy <br><span></span></p>
+                              </a>
+                           </li>
+                        </ul>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="impact.html">
+                        Impact
+                        </a>
+                     </li><li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                           data-bs-toggle="dropdown" aria-expanded="false">
+                        Resources
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                           <li>
+                              <a class="dropdown-item d-flex li-cus" href="blog.html">
+                                 <img src="assets/img/menu/hi5.svg"
+                                    alt="icon" class="w-100">
+                                 <p>Blogs<br><span>Delve into topics that may <br>
+                                    interest you</span>
+                                 </p>
+                              </a>
+                           </li>
+                           <li>
+                              <a class="dropdown-item d-flex li-cus" href="blog.html">
+                                 <img src="assets/img/menu/hi6.svg"
+                                    alt="icon" class="w-100">
+                                 <p>Case studies <br><span>Insights on industry-specific <br>
+                                    scenarios</span>
+                                 </p>
+                              </a>
+                           </li>
+                           <li>
+                              <a class="dropdown-item d-flex li-cus" href="news.html">
+                                 <img src="assets/img/menu/hi7.svg"
+                                    alt="icon" class="w-100">
+                                 <p>News <br><span>Press releases, announcements <br>
+                                    and articles</span>
+                                 </p>
+                              </a>
+                           </li>
+                        </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                           data-bs-toggle="dropdown" aria-expanded="false">
+                        Tools
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                           <li>
+                              <a href="self-assessment.html" class="dropdown-item d-flex li-cus">
+                                 <img src="assets/img/menu/hi8.svg"
+                                    alt="icon" class="w-100">
+                                 <p>Self assessment <br><span>Evaluate your returns journey</span></p>
+                              </a>
+                           </li>
+                           <li>
+                              <a href="returns-impact-calculator.html" class="dropdown-item d-flex li-cus">
+                                 <img src="assets/img/menu/hi9.svg"
+                                    alt="icon" class="w-100">
+                                 <p>Returns impact calculator <br><span>Reality check on the returns issue</span>
+                                 </p>
+                              </a>
+                           </li>
+                        </ul>
+                        </li>
+                  </ul>
+                  <div class="nav-btn">
+                     <a href="contact-us.html" class="mc-btn">Get in touch</a>
+                      <a href="book-a-demo.html" class="c-btn ">Book a demo</a>
+                  </div>
+               </div>
+            </div>
+         </nav>
+      </section>
+      <section class="resources-blog">
+         <div class="container">
+            <div class="row">
+               <h2>In News</h2>
+            </div>
+         </div>
+      </section>
+      <section class="resources-latest blog-resources-latest">
+         <div class="container">
+            <h2>Latest</h2>
+            <div class="row">
+               <div class="col-lg-6 mb-4">
+                  <div class="h-100">
+                     <div class="latest-left-box">
+                         <a href="https://www.cxotoday.com/interviews/blubirchs-cutting-edge-ra-paas-solution-optimizes-returns-process-maximizes-revenue-and-enhances-customer-experience/" target="_blank">
+                        <img src="assets/img/news/jeby.png" class="w-100">
+                        <span class="tag-categ-r">CXOtoday</span>
+                        <div class="latest-content">
+                           <h2>Blubirch’s Cutting-Edge RA-PaaS Solution Optimizes Returns...</h2>
+                           <ul class="latest-content-inner">
+                              <!-- <li class="d-flex justify-content-center align-items-center">
+                                 <a href="" class="latest-content-para">
+                                 <img src="assets/img/blog/blog-img1.svg">
+                                 <img src="assets/img/blog/blog-img2.svg" style="    margin-left: -15px;">
+                                 </a>
+                                 <p class="text-content ps-2">By Jeby Cherian, Sapan</p>
+
+                              </li> -->
+                              <!-- <li>
+                                 <p class="text-content">By Cherian, Sapan</p>
+                              </li> -->
+                              <li><p class="text-content" style="text-align: right;">26th Jul 2023 • 8 min</p></li>
+                           </ul>
+                           <ul class="blog-m-tags mt-2 blog-rapass">
+                              <a href="" class="blog-tags">RA-PaaS</a>
+                              <a href="" class="blog-tags">Returns Optimization</a>
+                              <a href="" class="blog-tags">Data-Driven</a>
+                           </ul>
+                        </div>
+                     </a>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-6">
+                  
+                   <a href="https://www.linkedin.com/pulse/cb-insights-report-reverse-supply-chain-jeby-cherian/" target="_blank">
+                     <div class="latest-right-box-inner">
+                        <div class="row ">
+
+                           <div class="col-lg-5 col-md-2 col-sm-3 col-4">
+                              <img src="assets/img/news/cb.png" class="w-100 mbnn">
+                              <img src="assets/img/news/cb.png" class="w-100 dsknn">
+                              <div class="tag-abs">
+                                 <span class="tag-categ-r">Linkedin</span>
+                              </div>
+                           </div>
+                           <div class="col-lg-7 col-md-10 col-sm-9 col-8">
+                              <p class="latest-right-box-p">CB Insights Report On Reverse Supply Chain</p>
+                              <p class="latest-right-box-date">Dec 2020 • 8 min</p>
+                              <div class="blog-m-tags mt-2">
+                                 <button  class="blog-tags">Reverse Supply Chain</button>
+                                 <!-- <button  class="blog-tags">E-waste</button> -->
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </a>
+                   <a href="https://www.dqchannels.com/interaction-sapan-jain-ceo-co-founder-blubirch/" target="_blank">
+
+                     <div class="latest-right-box-inner">
+                        <div class="row ">
+                           <div class="col-lg-5 col-md-2 col-sm-3 col-4">
+                              <img src="assets/img/news/sapan.png" class="w-100 mbnn">
+                              <img src="assets/img/news/sapan.png" class="w-100 dsknn">
+                              <div class="tag-abs">
+                                 <span class="tag-categ-r">DQChannels</span>
+                              </div>
+                           </div>
+                           <div class="col-lg-7 col-md-10 col-sm-9 col-8">
+                              <p class="latest-right-box-p">Interaction – Sapan Jain, CEO, Blubirch</p>
+                              <p class="latest-right-box-date">Aug 2023 • 8 min</p>
+                              <div class="blog-m-tags mt-2">
+                                 <button href="" class="blog-tags">Returns Reduction</button>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </a>
+                   <a href="https://smestreet-in.cdn.ampproject.org/c/s/smestreet.in/smestreet-exclusive/authored-article/leveraging-data-and-technology-for-sound-returns-management/amp/" target="_blank">
+
+                     <div class="latest-right-box-inner">
+                        <div class="row ">
+                           <div class="col-lg-5 col-md-2 col-sm-3 col-4">
+                              <img src="assets/img/news/leveraging.png" class="w-100 mbnn">
+                              <img src="assets/img/news/leveraging.png" class="w-100 dsknn">
+                              <div class="tag-abs">
+                                 <span class="tag-categ-r">SMEStreet</span>
+                              </div>
+                           </div>
+                           <div class="col-lg-7 col-md-10 col-sm-9 col-8">
+                              <p class="latest-right-box-p">Leveraging data and technology for sound returns management</p>
+                              <p class="latest-right-box-date">Aug 2023 • 8 min</p>
+                              <div class="blog-m-tags mt-2">
+                                 <button href="" class="blog-tags">Technology for SMES</button>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </a>
+                
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section class="resources-all-res">
+         <div class="container">
+            <h2>Past articles</h2>
+            <div class="row">
+               <div class="col-6 col-lg-3 col-md-6 col-sm-6">
+                  <div class="form-group has-search">
+                     <i class="fa fa-search form-control-feedback"></i>
+                     <input type="search" class="form-control search-place searchInput" id="search-close" placeholder="Search">
+                  </div>
+               </div>
+               <div class="col-6 col-lg-6 mbnn pe-0">
+                  <ul class="list-unstyled pe-0 search-tags filter-list-items">
+                    <!-- filter items -->
+                  </ul>
+               </div>
+               <div class="col-6 col-lg-3 col-md-6 col-sm-6 pl-0">
+                  <ul class="filter-tags filter-optn news-filter-optn pl-0">
+                     <li class="w-100 pl-0"> 
+                        <img src="assets/img/blog-details/filter-btn.svg" class="filter-btn1">
+                        <select class="form-control  pl-a fitler-selection">
+                           <option value="Entrepreneurs"> Entrepreneurs</option>
+                           <option value="AI-Retail Revolution">AI-Retail Revolution</option>
+                           <option value="AI and machine learning">AI and machine learning</option>
+                           <option value="reverse supply chain">reverse supply chain</option>
+                           <option value="Returns Processes">Returns Processes</option>
+                           <option value="Recommerce Expo 2023">Recommerce Expo 2023</option>
+                           <option value="Recommerce Expo 2023">Innovation</option>
+                        </select>
+                     </li>
+                  </ul>
+               </div>
+               <div class="col-12 dsknn">
+                  <ul class="filter-tags filter-list-items">
+                  
+                  </ul>
+               </div>
+      
+            </div>
+
+            <div class="row past-articles">
+               <div class="col-lg-6 article">
+                  <div class="latest-right-box">
+                     <a href="https://www.siliconindia.com/news/general/world-entrepreneurs-day-2023-endeavoring-to-propel-growth-to-create-a-better-world-nid-224846-cid-1.html"
+                        target="_blank">
+                        <div class="latest-right-box-inner">
+                           <div class="row">
+                              <div class="col-lg-5 col-md-2 col-sm-3 col-4">
+                                 <img src="assets/img/news/silicon.png" class="w-100 mbnn">
+                                 <img src="assets/img/news/silican1.png" class="w-100 dsknn">
+                                 <div class="tag-abs">
+                                    <span class="tag-categ-r">SiliconIndia</span>
+                                 </div>
+                              </div>
+                              <div class="col-lg-7 col-md-10 col-sm-9 col-8">
+                                 <p class="latest-right-box-p">World Entrepreneurs Day 2023: Endeavouring to Propel Growth...
+                                 </p>
+                                 <p class="latest-right-box-desc">Well, in this increasingly advancing world, where economies
+                                    have profusely globalized and...</p>
+                                 <p class="latest-right-box-date"><span>21st Aug 2023 •</span> 8 min</p>
+                                 <div class="blog-m-tags-r mt-2">
+                                    <button href="" class="blog-tags-r overflow-hidden">Entrepreneurs</button>
+                                    <button href="" class="blog-tags-r overflow-hidden">Innovation</button>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </a>
+                  </div>
+               </div>
+               <div class="col-lg-6 article">
+                  <div class="latest-right-box ">
+                     <a href="https://smefutures.com/ai-is-transforming-the-indian-retail-sector-heres-how/" target="_blank">
+                        <div class="latest-right-box-inner">
+                           <div class="row ">
+                              <div class="col-lg-5 col-md-2 col-sm-3 col-4">
+                                 <img src="assets/img/blog/csd1.png" class="w-100 mbnn">
+                                 <img src="assets/img/blog/csdm2.png" class="w-100 dsknn">
+                                 <div class="tag-abs">
+                                    <span class="tag-categ-r">SME FUTURE</span>
+                                 </div>
+                              </div>
+                              <div class="col-lg-7 col-md-10 col-sm-9 col-8">
+                                 <p class="latest-right-box-p">AI is transforming the Indian retail sector, here’s how</p>
+                                 <p class="latest-right-box-desc">Understanding the futuristic retail experience with
+                                    visionary retailers in collaboration with AI...</p>
+                                 <p class="latest-right-box-date"><span>19th Aug 2023 •</span> 8 min</p>
+                                 <div class="blog-m-tags-r mt-2">
+                                    <button href="" class="blog-tags-r">AI-Retail Revolution</button>
+                                    <!-- <button href="" class="blog-tags-r">E-waste</button> -->
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </a>
+                  </div>
+               </div>
+      
+               <div class="col-lg-6 article">
+                  <div class="latest-right-box">
+                     <a href="https://www.expresscomputer.in/artificial-intelligence-ai/the-advantage-of-ai-in-b2b-retail/102344/"
+                        target="_blank">
+                        <div class="latest-right-box-inner">
+                           <div class="row ">
+                              <div class="col-lg-5 col-md-2 col-sm-3 col-4">
+                                 <img src="assets/img/blog/bbd1.png" class="w-100 mbnn">
+                                 <img src="assets/img/blog/bbm1.png" class="w-100 dsknn">
+                                 <div class="tag-abs">
+                                    <span class="tag-categ-r">Express Computer</span>
+                                 </div>
+                              </div>
+                              <div class="col-lg-7 col-md-10 col-sm-9 col-8">
+                                 <p class="latest-right-box-p">The Advantage of AI in B2B Retail</p>
+                                 <p class="latest-right-box-desc">The integration of machine learning and artificial
+                                    intelligence (AI) with customer-centric big...</p>
+                                 <p class="latest-right-box-date"><span>16th Aug 2023 •</span> 8 min</p>
+                                 <div class="blog-m-tags-r mt-2">
+                                    <button href="" class="blog-tags-r">AI and machine learning</button>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </a>
+                  </div>
+               </div>
+      
+               <div class="col-lg-6 article">
+                  <div class="latest-right-box ">
+                     <a href="https://thecsruniverse.com/articles/interview-with-amit-goel-chief-business-officer-blubirch-our-platform-advances-sustainability-consolidating-data-optimizing-supply-chains-and-curbing-emissions-"
+                        target="_blank">
+                        <div class="latest-right-box-inner">
+                           <div class="row ">
+                              <div class="col-lg-5 col-md-2 col-sm-3 col-4">
+                                 <img src="assets/img/blog/bbd3.png" class="w-100 mbnn">
+                                 <img src="assets/img/blog/bbdm3.png" class="w-100 dsknn">
+                                 <div class="tag-abs">
+                                    <span class="tag-categ-r">TheCSRUniverse</span>
+                                 </div>
+                              </div>
+                              <div class="col-lg-7 col-md-10 col-sm-9 col-8">
+                                 <p class="latest-right-box-p">Interview with Amit Goel, Chief Business Officer, Blubirch...
+                                 </p>
+                                 <p class="latest-right-box-desc">The Indian commerce industry grapples with the complexities
+                                    of waste and resource...</p>
+                                 <p class="latest-right-box-date"><span>02nd Sep 2023 •</span> 8 min</p>
+                                 <div class="blog-m-tags-r mt-2">
+                                    <button href="" class="blog-tags-r">Effective Inventory Management</button>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </a>
+                  </div>
+               </div>
+      
+               <div class="col-lg-6 article">
+                  <div class="latest-right-box ">
+                     <a href="https://technuter.com/interview/interview-with-blubirch-ceo-sapan-jain.html" target="_blank">
+                        <div class="latest-right-box-inner">
+                           <div class="row ">
+                              <div class="col-lg-5 col-md-2 col-sm-3 col-4">
+                                 <img src="assets/img/blog/csd11.png" class="w-100 mbnn">
+                                 <img src="assets/img/blog/csdm1.png" class="w-100 dsknn">
+                                 <div class="tag-abs">
+                                    <span class="tag-categ-r">Technuter</span>
+                                 </div>
+                              </div>
+                              <div class="col-lg-7 col-md-10 col-sm-9 col-8">
+                                 <p class="latest-right-box-p">The reverse supply chain software supports automated returns...
+                                 </p>
+                                 <p class="latest-right-box-desc">Blubirch’s unique Returns Automation and Monetization
+                                    platform (RAMP) is...</p>
+                                 <p class="latest-right-box-date"><span>28th Aug 2023 •</span> 8 min</p>
+                                 <div class="blog-m-tags-r mt-2">
+                                    <button href="" class="blog-tags-r">Reverse Supply Chain Solution</button>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </a>
+                  </div>
+               </div>
+      
+               <div class="col-lg-6 article">
+                  <div class="latest-right-box ">
+                     <a href="https://indianspectator.com/pressrelease/blubirch-unveils-groundbreaking-returns-management-innovations-at-recommerce-expo-2023/"
+                        target="_blank">
+                        <div class="latest-right-box-inner">
+                           <div class="row ">
+                              <div class="col-lg-5 col-md-2 col-sm-3 col-4">
+                                 <img src="assets/img/blog/csd12.png" class="w-100 mbnn">
+                                 <img src="assets/img/blog/csdm12.png" class="w-100 dsknn">
+                                 <div class="tag-abs">
+                                    <span class="tag-categ-r">Indian Spectator</span>
+                                 </div>
+                              </div>
+                              <div class="col-lg-7 col-md-10 col-sm-9 col-8">
+                                 <p class="latest-right-box-p">Blubirch Unveils Groundbreaking Returns Management
+                                    Innovations...</p>
+                                 <p class="latest-right-box-desc">Blubirch, a frontrunner in the realm of Returns Automation
+                                    Platform as a Service (RA-PaaS)...</p>
+                                 <p class="latest-right-box-date"><span>14th Aug 2023 •</span> 8 min</p>
+                                 <div class="blog-m-tags-r mt-2">
+                                    <button href="" class="blog-tags-r">Returns Processes</button> <button href=""
+                                       class="blog-tags-r">RA–PaaS</button>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </a>
+                  </div>
+               </div>
+      
+               <div class="col-lg-6 article">
+                  <div class="latest-right-box">
+                     <a href="https://www.cxotoday.com/press-release/blubirch-pioneer-in-ra-paas-and-innovating-returns-processes-showcases-success-at-recommerce-expo/"
+                        target="_blank">
+                        <div class="latest-right-box-inner">
+                           <div class="row ">
+                              <div class="col-lg-5 col-md-2 col-sm-3 col-4">
+                                 <img src="assets/img/blog/bbd2.png" class="w-100 mbnn">
+                                 <img src="assets/img/blog/bbdm2.png" class="w-100 dsknn">
+                                 <div class="tag-abs">
+                                    <span class="tag-categ-r">CXOToday</span>
+                                 </div>
+                              </div>
+                              <div class="col-lg-7 col-md-10 col-sm-9 col-8">
+                                 <p class="latest-right-box-p">Blubirch: Pioneer in RA–PaaS and Innovating Returns
+                                    Processes...</p>
+                                 <p class="latest-right-box-desc">Blubirch, a market leader in Returns Automation Platform as
+                                    a Service (RA–PaaS), garnered...</p>
+                                 <p class="latest-right-box-date"><span>11th Aug 2023 •</span> 8 min</p>
+                                 <div class="blog-m-tags-r mt-2">
+                                    <button href="" class="blog-tags-r">Recommerce Expo 2023</button>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </a>
+                  </div>
+               </div>
+      
+               <div class="col-lg-6 article">
+                  <div class="latest-right-box">
+                     <a href="https://www.siliconindia.com/news/enterpriseit/blubirch-pioneer-in-rapaas-and-innovating-returns-processes-showcases-success-at-recommerce-expo-nid-224700-cid-7.html"
+                        target="_blank">
+                        <div class="latest-right-box-inner">
+                           <div class="row ">
+                              <div class="col-lg-5 col-md-2 col-sm-3 col-4">
+                                 <img src="assets/img/blog/bbd4.png" class="w-100 mbnn">
+                                 <img src="assets/img/blog/bbdm4.png" class="w-100 dsknn">
+                                 <div class="tag-abs">
+                                    <span class="tag-categ-r">SiliconIndia</span>
+                                 </div>
+                              </div>
+                              <div class="col-lg-7 col-md-10 col-sm-9 col-8">
+                                 <p class="latest-right-box-p">Blubirch: Pioneer in RA–PaaS and Innovating Returns
+                                    Processes...</p>
+                                 <p class="latest-right-box-desc">Blubirch, a market leader in Returns Automation Platform as
+                                    a Service (RA–PaaS), garnered...</p>
+                                 <p class="latest-right-box-date"><span>11th Aug 2023 •</span> 8 min</p>
+                                 <div class="blog-m-tags-r mt-2">
+                                    <button href="" class="blog-tags-r mr-2">Returns Processes</button> <button href=""
+                                       class="blog-tags-r">RA–PaaS</button>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </a>
+                  </div>
+               </div>
+            </div>
+            <div class="row mt-4">
+               <div class="col-lg-12">
+                  <center><a href="javascript:void(0)" class="loadmr-res">Load more articles</a></center>
+               </div>
+            </div>
+         </div>
+      </section>
+      
+      <footer class="dark-2-bg">
+         <div class="footer-inner container">
+            <div class="row">
+               <div class="col-lg-3 col-sm-6 col-12 fc1 fc">
+                   <a href="index.html"><img src="assets/img/home-new/logo.svg" alt="logo" class="w-100">
+                  </a>
+                  <p class="mb-0 light-2-color">Abhaya Heights, 2nd floor, Sarakki Industrial Layout, 3rd Phase,
+                     J.P.Nagar, Bengaluru, Karnataka - 560078
+                  </p>
+                  <div class="Social-media">
+                     <a href="https://in.linkedin.com/company/blubirch" target="_blank"><span><i class="fab media-icons fa-linkedin-in"></i></span></a>
+                     <a href="https://twitter.com/Blubirch_RAPaaS" target="_blank"><span><i class="fab media-icons fa-twitter"></i></span></a>
+                     <a href="https://www.youtube.com/channel/UC4k15lcbBGi2SzI39ccmHug" target="_blank"><span><i class="fab media-icons fa-youtube"></i></a></span>
+                   </div>
+               </div>
+               <div class="col-lg-2 col-sm-6 col-12 fc2 fc">
+                  <h5 class="light-2-color">Solutions</h5>
+                   <ul class="mbnn">
+                     <li><a href="solutions.html#bb1" class="light-2-color">BB Markdown</a></li>
+                     <li><a href="solutions.html#bb2" class="light-2-color">BB Customer Returns</a></li>
+                     <li><a href="solutions.html#bb3" class="light-2-color">BB Warranty Returns</a></li>
+                     <li><a href="solutions.html#bb4" class="light-2-color">BB EOL Returns</a></li>
+                     <li><a href="solutions.html#bb5" class="light-2-color">BB Trade-in</a></li>
+                     <li><a href="solutions.html#bb6" class="light-2-color">BB Returns Processing</a></li>
+                     <li><a href="solutions.html#bb7" class="light-2-color">BB Remarketing</a></li>
+                     <li><a href="solutions.html#bb8" class="light-2-color">BB Renewed</a></li>
+                     <li><a href="https://bbgrading.blubirch.com"  class="light-2-color">BB Grading</a></li>
+                  </ul>
+                  <ul class="dsknn">
+                     <li><a href="solutions.html#bbmb1" class="light-2-color">BB Markdown</a></li>
+                     <li><a href="solutions.html#bbmb2" class="light-2-color">BB Customer Returns</a></li>
+                     <li><a href="solutions.html#bbmb3" class="light-2-color">BB Warranty Returns</a></li>
+                     <li><a href="solutions.html#bbmb4" class="light-2-color">BB EOL Returns</a></li>
+                     <li><a href="solutions.html#bbmb5" class="light-2-color">BB Trade-in</a></li>
+                     <li><a href="solutions.html#bbmb6" class="light-2-color">BB Returns Processing</a></li>
+                     <li><a href="solutions.html#bbmb7" class="light-2-color">BB Remarketing</a></li>
+                     <li><a href="solutions.html#bbmb8" class="light-2-color">BB Renewed</a></li>
+                     <li><a href="https://bbgrading.blubirch.com" class="light-2-color">BB Grading</a></li>
+                  </ul>
+               </div>
+               <div class="col-lg-2 col-sm-6 col-12 fc3 fc">
+                  <h5 class="light-2-color">Company</h5>
+                  <ul>
+                     <li><a href="about-us.html" class="light-2-color">About us</a></li>
+                     <li><a href="careers.html" class="light-2-color">Careers</a></li>
+                     <li><a href="technology.html" class="light-2-color">Technology</a></li>
+                  </ul>
+               </div>
+               <div class="col-lg-2 col-sm-6 col-12 fc4 fc">
+                  <h5 class="light-2-color">Resources</h5>
+                  <ul>
+                     <li><a href="blog.html" class="light-2-color">Blogs</a></li>
+                     <li><a href="blog.html" class="light-2-color">Case studies</a></li>
+                     <li><a href="news.html" class="light-2-color">News</a></li>
+                  </ul>
+               </div>
+               <div class="col-lg-3 col-sm-6 col-12 fc4 fc">
+                  <h5 class="light-2-color">Tools</h5>
+                  <ul>
+                     <li><a href="self-assessment.html" class="light-2-color">Self assessment</a></li>
+                      <li><a href="returns-impact-calculator.html" class="light-2-color">Returns Impact calculator</a></li>
+                  </ul>
+               </div>
+            </div>
+            <hr>
+            <div class="copy-bar d-md-flex d-block justify-content-between">
+               <div class="copyright-text">
+                  <p class="mb-0 f-color"><span class="f-color">© Blubirch - </span>Trademark of Green Enabled IT Solutions Pvt. Ltd.</p>
+               </div>
+               <div class="privacy-a">
+                  <a href="privacy-policy.html" class="f-color">Privacy & Security Policy</a>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+         crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/jquery.slick/1.4.1/slick.min.js"></script>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script src="./assets/js/news.js"></script>
+      <script>
+         AOS.init({
+         duration: 1200,
+         })
+      </script>
+      <script>
+         // fade in grid items  ==================================
+         
+         $(document).on("scroll", function () {
+         var pageTop = $(document).scrollTop()
+         var pageBottom = pageTop + $(window).height()
+         var tags = $(".fadein")
+         
+         for (var i = 0; i < tags.length; i++) {
+         var tag = tags[i]
+         
+         if ($(tag).offset().top < pageBottom) {
+          $(tag).addClass("visible")
+         } else {
+          $(tag).removeClass("visible")
+         }
+         }
+         })      
+      </script>
+      <script>
+         $('.res-news-slider').slick({
+            centerMode: false,
+                 centerPadding: '60px',
+                 slidesToShow: 2,
+                 arrows: true,
+                 order:1,
+                 responsive: [
+                     {
+                         breakpoint: 768,
+                         settings: {
+                             arrows: false,
+                             dots:true,
+                             centerMode: true,
+                             centerPadding: '40px',
+                             slidesToShow: 1
+                         }
+                     }
+                 ]
+             });
+      </script>
+   </body>
+</html>

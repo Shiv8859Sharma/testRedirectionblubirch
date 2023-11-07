@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Returns Impact Calculator | Blubirch</title>
+   <link rel="stylesheet" href="assets/css/style.css">
+   <link rel="stylesheet" href="assets/css/responsive.css">
+   <link rel="stylesheet" href="assets/css/returnsImpact.css">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+   <link rel="shortcut icon" href="assets/img/favicon.ico" />
+   <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet">
+   <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+   <!-- <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.3/css/intlTelInput.min.css" /> -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/css/intlTelInput.css">
+   <!-- JS -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.3/js/intlTelInput.min.js"></script> -->
+   <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/js/intlTelInput.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/18.1.1/js/utils.min.js"></script>
+   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+</head>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+   integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery.slick/1.4.1/slick.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-B88FY5DTWG"></script>
+
+<body>
+
+   <section class="header" id="myHeader">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+         <div class="container">
+            <a class="navbar-brand" href="index.html">
+               <img src="assets/img/home-new/logo.svg" alt="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+               data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+               aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                     <a class="nav-link" href="solutions.html">
+                        Solutions
+                     </a>
+                  </li>
+                  <li class="nav-item dropdown">
+                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Company
+                     </a>
+                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li>
+                           <a href="about-us.html" class="dropdown-item d-flex li-cus">
+                              <img src="assets/img/menu/hi1.svg" alt="icon" class="w-100">
+                              <p>About Us <br><span>Get to know us better</span></p>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="careers.html" class="dropdown-item d-flex li-cus">
+                              <img src="assets/img/menu/hi2.svg" alt="icon" class="w-100">
+                              <p>Careers <br><span>Join our talent network</span></p>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="technology.html" class="dropdown-item d-flex li-cus">
+                              <img src="assets/img/menu/hi3.svg" alt="icon" class="w-100">
+                              <p>Technology <br><span>Learn about security, scalability <br>
+                                    and integration</span>
+                              </p>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="privacy-policy.html" class="dropdown-item d-flex li-cus">
+                              <img src="assets/img/menu/hi4.svg" alt="icon" class="w-100">
+                              <p>Privacy policy <br><span></span></p>
+                           </a>
+                        </li>
+                     </ul>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="impact.html">
+                        Impact
+                     </a>
+                  </li>
+                  <li class="nav-item dropdown">
+                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Resources
+                     </a>
+                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li>
+                           <a class="dropdown-item d-flex li-cus" href="blog.html">
+                              <img src="assets/img/menu/hi5.svg" alt="icon" class="w-100">
+                              <p>Blogs<br><span>Delve into topics that may <br>
+                                    interest you</span>
+                              </p>
+                           </a>
+                        </li>
+                        <li>
+                           <a class="dropdown-item d-flex li-cus" href="blog.html">
+                              <img src="assets/img/menu/hi6.svg" alt="icon" class="w-100">
+                              <p>Case studies <br><span>Insights on industry-specific <br>
+                                    scenarios</span>
+                              </p>
+                           </a>
+                        </li>
+                        <li>
+                              <a class="dropdown-item d-flex li-cus" href="news.html">
+                                 <img src="assets/img/menu/hi7.svg"
+                                    alt="icon" class="w-100">
+                                 <p>News <br><span>Press releases, announcements <br>
+                                    and articles</span>
+                                 </p>
+                              </a>
+                        </li> 
+                     </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Tools
+                     </a>
+                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li>
+                           <a href="self-assessment.html" class="dropdown-item d-flex li-cus">
+                              <img src="assets/img/menu/hi8.svg" alt="icon" class="w-100">
+                              <p>Self assessment <br><span>Evaluate your returns journey</span></p>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="returns-impact-calculator.html" class="dropdown-item d-flex li-cus">
+                              <img src="assets/img/menu/hi9.svg" alt="icon" class="w-100">
+                              <p>Returns impact calculator <br><span>Reality check on the returns issue</span>
+                              </p>
+                           </a>
+                        </li>
+                     </ul>
+                  </li>
+               </ul>
+               <div class="nav-btn">
+                  <a href="contact-us.html" class="mc-btn">Get in touch</a>
+                  <a href="book-a-demo.html" class="c-btn ">Book a demo</a>
+               </div>
+            </div>
+         </div>
+      </nav>
+   </section>
+
+   <section class="my-5" id="returns_impact_calculator">
+      <div class="container">
+         <div class="row column-reverse ">
+            <div class="col-lg-6">
+               <div class="left-side my-md-4">
+                  <div class="htec-title">
+                     <h4 class="text-left"><span class="secondary-color">Returns Impact</span><br> calculator</h4>
+                     <p class="mbnn">Check the impact of returns on your bottom line</p>
+                  </div>
+                  <div class="self-assess-list">
+                     <div class="row align-items-center ">
+                        <div class="col-lg-2 col-3 pddng0">
+                           <img src="assets/img/self-assess/edit.png" style="width: 70px">
+                        </div>
+                        <div class="col-lg-9 col-8 pddng0">
+                           <p> Take the assessment </p>
+                        </div>
+                     </div>
+                     <div class="row align-items-center ">
+                        <div class="col-lg-2 col-3 pddng0">
+                           <img src="assets/img/self-assess/star.png" style="width: 70px">
+                        </div>
+                        <div class="col-lg-7 col-8 pddng0">
+                           <p> Check the impact of returns on your supply chain metrics</p>
+                        </div>
+                     </div>
+                     <div class="row align-items-center ">
+                        <div class="col-lg-2 col-3 pddng0">
+                           <img src="assets/img/self-assess/phone.png" style="width: 60px">
+                        </div>
+                        <div class="col-lg-9 col-8 pddng0">
+                           <p class="mb-0 pt-2"> Get in touch with us to<br> transform your reverse supply chain</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="action-btns1">
+                     <a href="javascript:void(0)" class="lets-begin">Let's begin <img
+                           src="assets/img/self-assess/arrow.png"></a>
+                  </div>
+               </div>
+            </div>
+            <div class="col-lg-6 col-12 hj-r d-lg-block mb-4">
+               <div class="self-assess-right-side p-0">
+                  <!-- <img src="./assets/img/returnImpactCalculator/graphImg.svg" alt="graph image" class="w-100" /> -->
+                  <div class="self-assess-right-side_inner">
+                     <h4 class="text-white mb-5">“Each returned unit has a direct impact on your
+                        bottom line, affecting both revenue and profitability”</h4>
+                     <div class="row align-items-end returns-impact_animation-container m-0">
+                        <div class="col-lg-7 col-md-7 col-6 p-0">
+                           <div class="position-relative">
+                              <div class="green-bar">
+                              </div>
+                              <p class="bar-label">RETURNS</p>
+                           </div>
+                        </div>
+                        <div class="col-lg-5 col-md-5 col-6 p-0">
+                           <div class="position-relative">
+                              <div class="blue-bar">
+                              </div>
+                              <p class="bar-label mb-0">PROFIT <br /> MARGIN</p>
+                              <div class="blue-bar2">
+                              </div>
+                              <p class="bar-label bar-last_label">REVENUE</p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="returns-impact-bottom_bar mb-5">
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <section class="mb-2" id="returns_impact_calculator-form">
+      <section class="business-details">
+         <div class="container">
+            <div class="row">
+               <h2>Returns impact calculator</h2>
+               <p>Check the impact of returns on your bottom line</p>
+            </div>
+      </section>
+      <section class="business-form-inner">
+         <div class="business-form">
+            <!-- <div class="b-alert-msg">
+               <p><span>*</span> All fields are required to be filled so that we can assess your returns journey accurately 🙂</p>
+            </div> -->
+            <main>
+               <div class="container grey-text text-darken-2">
+                  <div class="row">
+                     <div class="section col-12 s12 m9 l10">
+                        <div class="section scrollspy" id="linear">
+                           <div class="row">
+                              <div class="col l6 m12 s12">
+                                 <form>
+                                    <ul class="stepper linear returnImpactstepForm">
+                                       <li class="step active" id="assessment">
+                                          <div class="step-title waves-effect waves-dark">Business details</div>
+                                          <div class="step-content">
+                                             <div class="row">
+                                                <div class="col-lg-6">
+                                                   <div class="mb-2">
+                                                      <label class="custom-label">Name
+                                                   </div>
+                                                   <!-- <span>*</span> -->
+                                                   </label>
+                                                   <input type="text" name="name"
+                                                      class="form-control placehold required check-alphabet"
+                                                      placeholder="Ex.: John Doe" required>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                   <div class="mb-2">
+                                                      <label class="custom-label">Designation</label>
+                                                   </div>
+                                                   <input type="text" name="designation"
+                                                      class="form-control placehold required check-alphabet"
+                                                      placeholder="Ex.: Chief Financial Officer">
+                                                </div>
+                                                
+                                                <div class="col-lg-6">
+                                                   <div class="mb-2">
+                                                      <label class="custom-label">Business name / website link </label>
+                                                   </div>
+                                                   <input type="text" name="business_name"
+                                                      class="form-control placehold required check-url"
+                                                      placeholder="Ex.: Company name / https:company.com">
+                                                </div>
+                                                <div class="col-lg-6">
+                                                   <div class="mb-2">
+                                                      <label class="custom-label">Email ID</label>
+                                                   </div>
+                                                   <input type="text" name="email" class="form-control placehold required check-email" placeholder="Ex.: johndoe@gmail.com">
+                                                </div>
+                                                <div class="col-lg-6">
+                                                   <div class="mb-2">
+                                                      <label class="custom-label">Phone number</label>
+                                                   </div>
+                                                   <input type="text" name="phone_number"
+                                                      class="form-control placehold required check-number"
+                                                      placeholder="9740227494" id="phone" required>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                   <div class="mb-2">
+                                                      <label class="custom-label">Location</label>
+                                                      <!-- <div class="custom-label-description">Operating profit as
+                                                         percentage
+                                                         of revenue</div> -->
+                                                   </div>
+                                                   <input type="text" class="form-control placehold    required" name="location" placeholder="Ex.: Bengaluru">
+                                                </div>
+                                             </div>
+                                             <div class="step-actions">
+                                                <button
+                                                   class="waves-effect waves-dark btn blue next-step next-sbtn">Next</button>
+                                             </div>
+                                          </div>
+                                       </li>
+                                       <li class="step" id="assets_input">
+                                          <div class="row justify-content-between ">
+                                             <div class="col-6 col-lg-6 col-md-6 pe-0">
+                                                <div class="step-title waves-effect waves-dark">Assets input</div>
+                                             </div>
+                                             <div class="col-3 col-lg-1 col-md-3 currency_dropdown">
+                                                <select class="form-control required py-0 px-3" name="currency" id="currency_list">
+                                                </select>
+                                             </div>
+                                          </div>
+                                          <div class="step-content">
+                                             <div class="row justify-content-center align-items-center mt-4">
+                                                <div class="row mt-3 justify-content-start align-items-center">
+                                                   <div class="col-lg-6 pl-0">
+                                                      <div class="mb-2">
+                                                         <label class="custom-label">Assets Type</label>
+                                                      </div>
+                                                      <select class="form-control required" name="asset_type" id="categories_list">
+                                                         <option value="" disabled selected>Enter asset type</option>
+                                                      </select>
+                                                   </div>
+                                                   <div class="col-lg-6 pl-0">
+                                                      <div class="mb-2">
+                                                         <label class="custom-label">Avg. Unit Sales Price [ <span class="currency_type" style="color: #000;">Rs</span> ]</label>
+                                                      </div>
+                                                      <input type="text" name="avg_unit_sales_price"
+                                                         class="form-control placehold required check-number format_in_currency"
+                                                         placeholder="Ex.: 30,000">
+                                                   </div>
+                                                </div>
+                                             </div>
+                                             <div class="row">
+                                                <div class="col-lg-6">
+                                                   <div class="mb-2">
+                                                      <label class="custom-label">Annual Revenue [ <span class="currency_type" style="color: #000;">Rs</span> <span class="currency_tens" style="color: #000;"></span> ]</label>
+                                                      <div class="custom-label-description">Of the selected asset type
+                                                      </div>
+                                                   </div>
+                                                   <input type="text" name="annual_revenue_in_cr"
+                                                      class="form-control placehold required check-number format_in_currency"
+                                                      placeholder="Ex.: 3,500">
+                                                </div>
+                                                <div class="col-lg-6">
+                                                   <div class="mb-2">
+                                                      <label class="custom-label">COGS [% of Rev]</label>
+                                                      <div class="custom-label-description">Cost of goods sold as
+                                                         percentage of revenue</div>
+                                                   </div>
+                                                   <div class="position-relative impact-form">
+                                                      <input type="text" name="cost_of_goods_sold_as_percentage"
+                                                      class="form-control placehold required check-number"
+                                                      placeholder="Ex.: 10">
+                                                      <span class="input-post-icon position-absolute">%</span>
+                                                   </div>
+                                                   
+                                                </div>
+                                             </div>
+
+                                             <div class="row">
+                                                <div class="col-lg-6">
+                                                   <div class="mb-2">
+                                                      <label class="custom-label">Operating Profit [% of Rev] </label>
+                                                      <div class="custom-label-description">Operating profit as
+                                                         percentage
+                                                         of revenue</div>
+                                                   </div>
+                                                   <div class="position-relative impact-form">
+                                                      <input type="text" name="operating_profit_as_percentage"
+                                                      class="form-control placehold required check-number"
+                                                      placeholder="Ex.: 10">
+                                                      <span class="input-post-icon position-absolute">%</span>
+                                                   </div>
+                                                  
+                                                </div>
+                                           
+                                             </div>
+
+                                             <div class="step-actions">
+                                                <button class=" previous-step btn-sprev">Previous</button>
+                                                <!-- <button
+                                                   class="waves-effect waves-dark btn blue next-step next-sbtn">Next</button> -->
+                                                <button
+                                                   class="waves-effect waves-dark btn blue submit-generate-results next-sbtn"
+                                                   type="submit">Next</button>
+
+                                             </div>
+                                          </div>
+                                       </li>
+                                    </ul>
+                                 </form>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </main>
+         </div>
+      </section>
+
+   </section>
+
+
+   <footer class="dark-2-bg">
+      <div class="footer-inner container">
+         <div class="row">
+            <div class="col-lg-3 col-sm-6 col-12 fc1 fc">
+               <a href="index.html"><img src="assets/img/home-new/logo.svg" alt="logo" class="w-100">
+               </a>
+               <p class="mb-0 light-2-color">Abhaya Heights, 2nd floor, Sarakki Industrial Layout, 3rd Phase,
+                  J.P.Nagar, Bengaluru, Karnataka - 560078
+               </p>
+               <div class="Social-media">
+                  <a href="https://in.linkedin.com/company/blubirch" target="_blank"><span><i
+                           class="fab media-icons fa-linkedin-in"></i></span></a>
+                  <a href="https://twitter.com/Blubirch_RAPaaS" target="_blank"><span><i
+                           class="fab media-icons fa-twitter"></i></span></a>
+                  <a href="https://www.youtube.com/channel/UC4k15lcbBGi2SzI39ccmHug" target="_blank"><span><i
+                           class="fab media-icons fa-youtube"></i></a></span>
+               </div>
+            </div>
+            <div class="col-lg-2 col-sm-6 col-12 fc2 fc">
+               <h5 class="light-2-color">Solutions</h5>
+               <ul class="mbnn">
+                  <li><a href="solutions.html#bb1" class="light-2-color">BB Markdown</a></li>
+                  <li><a href="solutions.html#bb2" class="light-2-color">BB Customer Returns</a></li>
+                  <li><a href="solutions.html#bb3" class="light-2-color">BB Warranty Returns</a></li>
+                  <li><a href="solutions.html#bb4" class="light-2-color">BB EOL Returns</a></li>
+                  <li><a href="solutions.html#bb5" class="light-2-color">BB Trade-in</a></li>
+                  <li><a href="solutions.html#bb6" class="light-2-color">BB Returns Processing</a></li>
+                  <li><a href="solutions.html#bb7" class="light-2-color">BB Remarketing</a></li>
+                  <li><a href="solutions.html#bb8" class="light-2-color">BB Renewed</a></li>
+                  <li><a href="https://bbgrading.blubirch.com" class="light-2-color">BB Grading</a></li>
+               </ul>
+               <ul class="dsknn">
+                  <li><a href="solutions.html#bbmb1" class="light-2-color">BB Markdown</a></li>
+                  <li><a href="solutions.html#bbmb2" class="light-2-color">BB Customer Returns</a></li>
+                  <li><a href="solutions.html#bbmb3" class="light-2-color">BB Warranty Returns</a></li>
+                  <li><a href="solutions.html#bbmb4" class="light-2-color">BB EOL Returns</a></li>
+                  <li><a href="solutions.html#bbmb5" class="light-2-color">BB Trade-in</a></li>
+                  <li><a href="solutions.html#bbmb6" class="light-2-color">BB Returns Processing</a></li>
+                  <li><a href="solutions.html#bbmb7" class="light-2-color">BB Remarketing</a></li>
+                  <li><a href="solutions.html#bbmb8" class="light-2-color">BB Renewed</a></li>
+                  <li><a href="https://bbgrading.blubirch.com" class="light-2-color">BB Grading</a></li>
+               </ul>
+            </div>
+            <div class="col-lg-2 col-sm-6 col-12 fc3 fc">
+               <h5 class="light-2-color">Company</h5>
+               <ul>
+                  <li><a href="about-us.html" class="light-2-color">About us</a></li>
+                  <li><a href="careers.html" class="light-2-color">Careers</a></li>
+                  <li><a href="technology.html" class="light-2-color">Technology</a></li>
+               </ul>
+            </div>
+            <div class="col-lg-2 col-sm-6 col-12 fc4 fc">
+               <h5 class="light-2-color">Resources</h5>
+               <ul>
+                  <li><a href="blog.html" class="light-2-color">Blogs</a></li>
+                  <li><a href="blog.html" class="light-2-color">Case studies</a></li>
+                  <li><a href="news.html" class="light-2-color">News</a></li>
+               </ul>
+            </div>
+            <div class="col-lg-3 col-sm-6 col-12 fc4 fc">
+               <h5 class="light-2-color">Tools</h5>
+               <ul>
+                  <li><a href="self-assessment.html" class="light-2-color">Self assessment</a></li>
+                  <li><a href="returns-impact-calculator.html" class="light-2-color">Returns Impact calculator</a></li>
+               </ul>
+            </div>
+         </div>
+         <hr>
+         <div class="copy-bar d-md-flex d-block justify-content-between">
+            <div class="copyright-text">
+               <p class="mb-0 f-color"><span class="f-color">© Blubirch - </span>Trademark of Green Enabled IT Solutions
+                  Pvt. Ltd.</p>
+            </div>
+            <div class="privacy-a">
+               <a href="privacy-policy.html" class="f-color">Privacy & Security Policy</a>
+            </div>
+         </div>
+      </div>
+   </footer>
+   <script src="./assets/js/returnImpactCalculator.js"></script>
+   <script src="./assets/js/formValidation.js"></script>
+
+   <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+      gtag('config', 'G-B88FY5DTWG');
+   </script>
+   <script>
+      $(window).scroll(function () {
+         var scroll = $(window).scrollTop();
+         if (scroll >= 150) {
+            $("#myHeader").addClass("sticky");
+         } else {
+            $("#myHeader").removeClass("sticky");
+         }
+      });
+   </script>
+</body>
+</html>

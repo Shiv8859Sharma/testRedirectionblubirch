@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Self Assessment Result | Blubirch</title>
+   <link rel="stylesheet" href="assets/css/style.css">
+   <link rel="stylesheet" href="assets/css/responsive.css">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+   <link rel="shortcut icon" href="assets/img/favicon.ico" />
+   <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet">
+   <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+   <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.3/css/intlTelInput.min.css" />
+   <!-- JS -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.3/js/intlTelInput.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.3/js/utils.min.js"></script>
+   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+</head>
+
+<body>
+
+   <section class="header" id="myHeader">
+         <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+               <a class="navbar-brand" href="index.html">
+                  <img src="assets/img/home-new/logo.svg" alt="logo">
+               </a>
+               <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                  aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+               </button>
+               <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                     <li class="nav-item">
+                        <a class="nav-link" href="solutions.html">
+                        Solutions
+                        </a>
+                     </li>
+                     <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                           data-bs-toggle="dropdown" aria-expanded="false">
+                        Company
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                           <li>
+                              <a href="about-us.html" class="dropdown-item d-flex li-cus">
+                                 <img src="assets/img/menu/hi1.svg"
+                                    alt="icon" class="w-100">
+                                 <p>About Us <br><span>Get to know us better</span></p>
+                              </a>
+                           </li>
+                           <li>
+                              <a href="careers.html" class="dropdown-item d-flex li-cus">
+                                 <img src="assets/img/menu/hi2.svg"
+                                    alt="icon" class="w-100">
+                                 <p>Careers <br><span>Join our talent network</span></p>
+                              </a>
+                           </li>
+                           <li>
+                              <a href="technology.html" class="dropdown-item d-flex li-cus">
+                        <img src="assets/img/menu/hi3.svg"
+                                    alt="icon" class="w-100">
+                        <p>Technology <br><span>Learn about security, scalability <br>
+                                    and integration</span>
+                                 </p>
+                              </a>
+                           </li>
+                           <li>
+                              <a href="privacy-policy.html" class="dropdown-item d-flex li-cus">
+                                 <img src="assets/img/menu/hi4.svg"
+                                    alt="icon" class="w-100">
+                                 <p>Privacy policy <br><span></span></p>
+                              </a>
+                           </li>
+                        </ul>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="impact.html">
+                        Impact
+                        </a>
+                     </li><li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                           data-bs-toggle="dropdown" aria-expanded="false">
+                        Resources
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                           <li>
+                              <a class="dropdown-item d-flex li-cus" href="blog.html">
+                                 <img src="assets/img/menu/hi5.svg"
+                                    alt="icon" class="w-100">
+                                 <p>Blogs<br><span>Delve into topics that may <br>
+                                    interest you</span>
+                                 </p>
+                              </a>
+                           </li>
+                           <li>
+                              <a class="dropdown-item d-flex li-cus" href="blog.html">
+                                 <img src="assets/img/menu/hi6.svg"
+                                    alt="icon" class="w-100">
+                                 <p>Case studies <br><span>Insights on industry-specific <br>
+                                    scenarios</span>
+                                 </p>
+                              </a>
+                           </li>
+                           <li>
+                              <a class="dropdown-item d-flex li-cus" href="news.html">
+                                 <img src="assets/img/menu/hi7.svg"
+                                    alt="icon" class="w-100">
+                                 <p>News <br><span>Press releases, announcements <br>
+                                    and articles</span>
+                                 </p>
+                              </a>
+                           </li>
+                        </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                           data-bs-toggle="dropdown" aria-expanded="false">
+                        Tools
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                           <li>
+                              <a href="self-assessment.html" class="dropdown-item d-flex li-cus">
+                                 <img src="assets/img/menu/hi8.svg"
+                                    alt="icon" class="w-100">
+                                 <p>Self assessment <br><span>Evaluate your returns journey</span></p>
+                              </a>
+                           </li>
+                           <li>
+                              <a href="returns-impact-calculator.html" class="dropdown-item d-flex li-cus">
+                                 <img src="assets/img/menu/hi9.svg"
+                                    alt="icon" class="w-100">
+                                 <p>Returns impact calculator <br><span>Reality check on the returns issue</span>
+                                 </p>
+                              </a>
+                           </li>
+                        </ul>
+                        </li>
+                  </ul>
+                  <div class="nav-btn">
+                     <a href="contact-us.html" class="mc-btn">Get in touch</a>
+                      <a href="book-a-demo.html" class="c-btn ">Book a demo</a>
+                  </div>
+               </div>
+            </div>
+         </nav>
+      </section>
+   <section class="business-details">
+      <div class="container">
+         <div class="row align-items-center justify-content-center">
+            <div class="col-xl-7 col-lg-6 col-md-4 col-sm-12 col-12">
+               <h2>Your scores</h2>
+            </div>
+            <div class="col-xl-5 col-lg-6 col-md-8 col-sm-12 col-12">
+               <div class="business-btns">
+                  <div class="row">
+                     <div class="col-lg-6 col-12 col-md-6 mb-mob">
+                        <a href="self-assessment-details.html"><img src="assets/img/self-assess/refresh.png"> Retake assessment</a>
+                     </div>
+                     <div class="col-lg-6 col-12 col-md-6">
+                        <a id="download-report" href="" download><img src="assets/img/self-assess/download.png"> Download
+                           Report</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <section class="business-form-inner">
+      <div class="business-form-result">
+         <div class="b-alert-msg">
+            <p>Congratulations on accessing your returns journey, you are already a step closer to achieving reverse
+               supply chain excellence!</p>
+         </div>
+      </div>
+      <div class="b-i-a">
+            <div class="container-fluid mb-5">
+               <div class="row justify-content-center">
+                  <div class="col-lg-4 col-md-4 col-sm-4 col-4">
+                     <div class="d-lg-flex d-md-flex align-items-center text-center text-lg-left ">
+                        <div class="prog pe-lg-3 pe-md-3 p-0">
+                           <div class="box">
+                              <div class="chart demo-chart m-auto" data-percent="30" data-scale-color="#ffb400">B</div>
+                           </div>
+                        </div>
+                        <p class="py-3 py-lg-0">Basic:<br><span>0 to 50</span></p>
+                        <sup><img src="assets/img/self-assess/tooltip-icon.png"></sup>
+                     </div>
+                  </div>
+                  <div class="col-lg-4 col-md-4 col-sm-4 col-4">
+                     <div class="d-lg-flex d-md-flex align-items-center text-center text-lg-left ">
+                        <div class="prog pe-lg-3 pe-md-3 p-0">
+                           <div class="box">
+                              <div class="chart demo-chart m-auto" data-percent="70" data-scale-color="#ffb400">&nbsp;I</div>
+                           </div>
+                        </div>
+                        <p class="py-3 py-lg-0">Intermediate:<br><span>51 to 80</span></p>
+                        <sup><img src="assets/img/self-assess/tooltip-icon.png"></sup>
+                     </div>
+                  </div>
+                  <div class="col-lg-4 col-md-4 col-sm-4 col-4">
+                     <div class="d-lg-flex d-md-flex align-items-center text-center text-lg-left">
+                        <div class="prog pe-lg-3 pe-md-3 p-0">
+                           <div class="box">
+                              <div class="chart demo-chart m-auto" data-percent="100" data-scale-color="#ffb400">A</div>
+                           </div>
+                        </div>
+                        <p class="py-3 py-lg-0">Advanced:<br> <span>81 to 100</span></p>
+                        <sup><img src="assets/img/self-assess/tooltip-icon.png"></sup>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         <br>
+         <div class="accordion-grade">
+            <div class="panel-group" id="accordionGroupOpen" role="tablist" aria-multiselectable="true">
+               <div class="panel panel-default assement-tab">
+                  <div class="policy-tab">
+                     <div class="panel-heading panel-heading1" role="tab" id="headingTwo">
+                        <h4 class="panel-title">
+                           <a class="collapsed" role="button" data-bs-toggle="collapse"
+                              data-parent="#accordionGroupOpen" href="#collapse1" aria-expanded="false"
+                              aria-controls="collapseTwo">
+                              Policy
+                              <div class="prog" style="position: absolute; right: 50px;top: 20px;">
+                                 <div class="box">
+                                    <div class="chart" data-percent="30" data-scale-color="#ffb400">B</div>
+                                 </div>
+                              </div>
+                           </a>
+                        </h4>
+                     </div>
+                     <div id="collapse1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                        <div class="panel-body">
+                           <div class="row">
+                              <div class="col-lg-6 border-rtl">
+                                 <div class="panel-blside">
+                                    <h2>What’s going well</h2>
+                                    <ul class="goingWellList">
+
+                                    </ul>
+                                 </div>
+                              </div>
+                              <div class="col-lg-6">
+                                 <div class="panel-blside">
+                                    <h2>What can be improved</h2>
+                                    <ul class="improveList">
+
+                                    </ul>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="panel panel-default assement-tab">
+                  <div class="initiation-of-returns-tab">
+                     <div class="panel-heading panel-heading1" role="tab" id="headingTwo">
+                        <h4 class="panel-title">
+                           <a class="collapsed mbnn" role="button" data-bs-toggle="collapse"
+                              data-parent="#accordionGroupOpen" href="#collapse2" aria-expanded="false"
+                              aria-controls="collapseTwo">
+                              Customer initiation of returns
+                              <div class="prog" style="position: absolute; right: 50px;top: 20px;">
+                                 <div class="box">
+                                    <div class="chart" data-percent="100" data-scale-color="#ffb400">A</div>
+                                 </div>
+                              </div>
+                           </a>
+                           <a class="collapsed dsknn" role="button" data-bs-toggle="collapse"
+                              data-parent="#accordionGroupOpen" href="#collapse2" aria-expanded="false"
+                              aria-controls="collapseTwo">
+                              Customer initiation of <br>returns
+                              <div class="prog" style="position: absolute; right: 50px;top: 20px;">
+                                 <div class="box">
+                                    <div class="chart" data-percent="100" data-scale-color="#ffb400">A</div>
+                                 </div>
+                              </div>
+                           </a>
+                        </h4>
+                     </div>
+                     <div id="collapse2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                        <div class="panel-body">
+                           <div class="row">
+                              <div class="col-lg-6 border-rtl">
+                                 <div class="panel-blside">
+                                    <h2>What’s going well</h2>
+                                    <ul class="goingWellList">
+
+                                    </ul>
+                                 </div>
+                              </div>
+                              <div class="col-lg-6">
+                                 <div class="panel-blside">
+                                    <h2>What can be improved</h2>
+                                    <ul class="improveList">
+
+                                    </ul>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="panel panel-default assement-tab">
+                  <div class="in-warding-process-tab">
+                     <div class="panel-heading panel-heading1" role="tab" id="headingTwo">
+                        <h4 class="panel-title">
+                           <a class="collapsed" role="button" data-bs-toggle="collapse"
+                              data-parent="#accordionGroupOpen" href="#collapse3" aria-expanded="false"
+                              aria-controls="collapseTwo">
+                              In-warding process
+                              <div class="prog" style="position: absolute; right: 50px;top: 20px;">
+                                 <div class="box">
+                                    <div class="chart" data-percent="70" data-scale-color="#ffb400">&nbsp;I</div>
+                                 </div>
+                              </div>
+                           </a>
+                        </h4>
+                     </div>
+                     <div id="collapse3" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingTwo">
+                        <div class="panel-body">
+                           <div class="row">
+                              <div class="col-lg-6 border-rtl">
+                                 <div class="panel-blside">
+                                    <h2>What’s going well</h2>
+                                    <ul class="goingWellList">
+
+                                    </ul>
+                                 </div>
+                              </div>
+                              <div class="col-lg-6">
+                                 <div class="panel-blside">
+                                    <h2>What can be improved</h2>
+                                    <ul class="improveList">
+
+                                    </ul>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="panel panel-default assement-tab">
+                  <div class="testing-and-grading-tab">
+                     <div class="panel-heading panel-heading1" role="tab" id="headingTwo">
+                        <h4 class="panel-title">
+                           <a class="collapsed" role="button" data-bs-toggle="collapse"
+                              data-parent="#accordionGroupOpen" href="#collapse4" aria-expanded="false"
+                              aria-controls="collapseTwo">
+                              Testing and grading
+                              <div class="prog" style="position: absolute; right: 50px;top: 20px;">
+                                 <div class="box">
+                                    <div class="chart" data-percent="70" data-scale-color="#ffb400">&nbsp;I</div>
+                                 </div>
+                              </div>
+                           </a>
+                        </h4>
+                     </div>
+                     <div id="collapse4" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingTwo">
+                        <div class="panel-body">
+                           <div class="row">
+                              <div class="col-lg-6 border-rtl">
+                                 <div class="panel-blside">
+                                    <h2>What’s going well</h2>
+                                    <ul class="goingWellList">
+
+                                    </ul>
+                                 </div>
+                              </div>
+                              <div class="col-lg-6">
+                                 <div class="panel-blside">
+                                    <h2>What can be improved</h2>
+                                    <ul class="improveList">
+
+                                    </ul>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="panel panel-default assement-tab">
+                  <div class="disposition-tab">
+                     <div class="panel-heading panel-heading1" role="tab" id="headingTwo">
+                        <h4 class="panel-title">
+                           <a class="collapsed" role="button" data-bs-toggle="collapse" data-parent="#accordionGroupOpen"
+                              href="#collapse5" aria-expanded="false" aria-controls="collapseTwo">
+                              Disposition
+                              <div class="prog" style="position: absolute; right: 50px;top: 20px;">
+                                 <div class="box">
+                                    <div class="chart" data-percent="100" data-scale-color="#ffb400">A</div>
+                                 </div>
+                              </div>
+                           </a>
+                        </h4>
+                     </div>
+                     <div id="collapse5" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                        <div class="panel-body">
+                           <div class="row">
+                              <div class="col-lg-6 border-rtl">
+                                 <div class="panel-blside">
+                                    <h2>What’s going well</h2>
+                                    <ul class="goingWellList">
+
+                                    </ul>
+                                 </div>
+                              </div>
+                              <div class="col-lg-6">
+                                 <div class="panel-blside">
+                                    <h2>What can be improved</h2>
+                                    <ul class="improveList">
+
+                                    </ul>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="panel panel-default assement-tab">
+                  <div class="operational-efficiency-tab">
+                     <div class="panel-heading panel-heading1" role="tab" id="headingTwo">
+                        <h4 class="panel-title">
+                           <a class="collapsed" role="button" data-bs-toggle="collapse"
+                              data-parent="#accordionGroupOpen" href="#collapse6" aria-expanded="false"
+                              aria-controls="collapseTwo">
+                              Operational efficiency
+                              <div class="prog" style="position: absolute; right: 50px;top: 20px;">
+                                 <div class="box">
+                                    <div class="chart" data-percent="30" data-scale-color="#ffb400">B</div>
+                                 </div>
+                              </div>
+                           </a>
+                        </h4>
+                     </div>
+                     <div id="collapse6" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                        <div class="panel-body">
+                           <div class="row">
+                              <div class="col-lg-6 border-rtl">
+                                 <div class="panel-blside">
+                                    <h2>What’s going well</h2>
+                                    <ul class="goingWellList">
+
+                                    </ul>
+                                 </div>
+                              </div>
+                              <div class="col-lg-6">
+                                 <div class="panel-blside">
+                                    <h2>What can be improved</h2>
+                                    <ul class="improveList">
+
+                                    </ul>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="panel panel-default assement-tab">
+                  <div class="Reporting-tab">
+                     <div class="panel-heading panel-heading1" role="tab" id="headingTwo">
+                        <h4 class="panel-title">
+                           <a class="collapsed" role="button" data-bs-toggle="collapse"
+                              data-parent="#accordionGroupOpen" href="#collapse7" aria-expanded="false"
+                              aria-controls="collapseTwo">
+                              Reporting
+                              <div class="prog" style="position: absolute; right: 50px;top: 20px;">
+                                 <div class="box">
+                                    <div class="chart" data-percent="30" data-scale-color="#ffb400">B</div>
+                                 </div>
+                              </div>
+                           </a>
+                        </h4>
+                     </div>
+                     <div id="collapse7" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                        <div class="panel-body">
+                           <div class="row">
+                              <div class="col-lg-6 border-rtl">
+                                 <div class="panel-blside">
+                                    <h2>What’s going well</h2>
+                                    <ul class="goingWellList">
+
+                                    </ul>
+                                 </div>
+                              </div>
+                              <div class="col-lg-6">
+                                 <div class="panel-blside">
+                                    <h2>What can be improved</h2>
+                                    <ul class="improveList">
+
+                                    </ul>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <footer class="dark-2-bg">
+         <div class="footer-inner container">
+            <div class="row">
+               <div class="col-lg-3 col-sm-6 col-12 fc1 fc">
+                   <a href="index.html"><img src="assets/img/home-new/logo.svg" alt="logo" class="w-100">
+                  </a>
+                  <p class="mb-0 light-2-color">Abhaya Heights, 2nd floor, Sarakki Industrial Layout, 3rd Phase,
+                     J.P.Nagar, Bengaluru, Karnataka - 560078
+                  </p>
+                  <div class="Social-media">
+                     <a href="https://in.linkedin.com/company/blubirch" target="_blank"><span><i class="fab media-icons fa-linkedin-in"></i></span></a>
+                     <a href="https://twitter.com/Blubirch_RAPaaS" target="_blank"><span><i class="fab media-icons fa-twitter"></i></span></a>
+                     <a href="https://www.youtube.com/channel/UC4k15lcbBGi2SzI39ccmHug" target="_blank"><span><i class="fab media-icons fa-youtube"></i></a></span>
+                   </div>
+               </div>
+               <div class="col-lg-2 col-sm-6 col-12 fc2 fc">
+                  <h5 class="light-2-color">Solutions</h5>
+                  <ul class="mbnn">
+                     <li><a href="solutions.html#bb1" class="light-2-color">BB Markdown</a></li>
+                     <li><a href="solutions.html#bb2" class="light-2-color">BB Customer Returns</a></li>
+                     <li><a href="solutions.html#bb3" class="light-2-color">BB Warranty Returns</a></li>
+                     <li><a href="solutions.html#bb4" class="light-2-color">BB EOL Returns</a></li>
+                     <li><a href="solutions.html#bb5" class="light-2-color">BB Trade-in</a></li>
+                     <li><a href="solutions.html#bb6" class="light-2-color">BB Returns Processing</a></li>
+                     <li><a href="solutions.html#bb7" class="light-2-color">BB Remarketing</a></li>
+                     <li><a href="solutions.html#bb8" class="light-2-color">BB Renewed</a></li>
+                     <li><a href="https://bbgrading.blubirch.com"  class="light-2-color">BB Grading</a></li>
+                  </ul>
+                  <ul class="dsknn">
+                     <li><a href="solutions.html#bbmb1" class="light-2-color">BB Markdown</a></li>
+                     <li><a href="solutions.html#bbmb2" class="light-2-color">BB Customer Returns</a></li>
+                     <li><a href="solutions.html#bbmb3" class="light-2-color">BB Warranty Returns</a></li>
+                     <li><a href="solutions.html#bbmb4" class="light-2-color">BB EOL Returns</a></li>
+                     <li><a href="solutions.html#bbmb5" class="light-2-color">BB Trade-in</a></li>
+                     <li><a href="solutions.html#bbmb6" class="light-2-color">BB Returns Processing</a></li>
+                     <li><a href="solutions.html#bbmb7" class="light-2-color">BB Remarketing</a></li>
+                     <li><a href="solutions.html#bbmb8" class="light-2-color">BB Renewed</a></li>
+                     <li><a href="https://bbgrading.blubirch.com" class="light-2-color">BB Grading</a></li>
+                  </ul>
+               </div>
+               <div class="col-lg-2 col-sm-6 col-12 fc3 fc">
+                  <h5 class="light-2-color">Company</h5>
+                  <ul>
+                     <li><a href="about-us.html" class="light-2-color">About us</a></li>
+                     <li><a href="careers.html" class="light-2-color">Careers</a></li>
+                     <li><a href="technology.html" class="light-2-color">Technology</a></li>
+                  </ul>
+               </div>
+               <div class="col-lg-2 col-sm-6 col-12 fc4 fc">
+                  <h5 class="light-2-color">Resources</h5>
+                  <ul>
+                     <li><a href="blog.html" class="light-2-color">Blogs</a></li>
+                     <li><a href="blog.html" class="light-2-color">Case studies</a></li>
+                     <li><a href="news.html" class="light-2-color">News</a></li>
+                  </ul>
+               </div>
+               <div class="col-lg-3 col-sm-6 col-12 fc4 fc">
+                  <h5 class="light-2-color">Tools</h5>
+                  <ul>
+                     <li><a href="self-assessment.html" class="light-2-color">Self assessment</a></li>
+                      <li><a href="returns-impact-calculator.html" class="light-2-color">Returns Impact calculator</a></li>
+                  </ul>
+               </div>
+            </div>
+            <hr>
+            <div class="copy-bar d-md-flex d-block justify-content-between">
+               <div class="copyright-text">
+                  <p class="mb-0 f-color"><span class="f-color">© Blubirch - </span>Trademark of Green Enabled IT Solutions Pvt. Ltd.</p>
+               </div>
+               <div class="privacy-a">
+                  <a href="privacy-policy.html" class="f-color">Privacy & Security Policy</a>
+               </div>
+            </div>
+         </div>
+      </footer>
+
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/jquery.slick/1.4.1/slick.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/easy-pie-chart/2.1.6/jquery.easypiechart.min.js"></script>
+   
+   <script>
+      $(function () {
+         $('.demo-chart').easyPieChart({
+            size: 44,
+            barColor: "#09a16c",
+            scaleLength: 0,
+            lineWidth: 5,
+            trackColor: "#d8d9e4",
+            lineCap: "round",
+            animate: 2000,
+         });
+      });
+   </script>
+   <script>
+      $.fn.handleGrade = function (tab, data) {
+         let $chart = tab.find(".chart")
+         $chart.attr('data-percent', `${data.points}`);
+         $chart.text(`${data.grade}`);
+         tab.find('.chart').easyPieChart({
+            size: 44,
+            barColor: "#09a16c",
+            scaleLength: 0,
+            lineWidth: 5,
+            trackColor: "#d8d9e4",
+            lineCap: "round",
+            animate: 2000,
+         });
+      }
+
+      $.fn.handleImprovedList = function (tab, data, key) {
+         var $list = tab.find('.improveList');
+         data[key].forEach(function (item) {
+            var $li = $('<li>').text(item);
+            $list.append($li);
+         });
+      }
+
+      $.fn.handleWellList = function (tab, data, key) {
+         var $list = tab.find('.goingWellList');
+         data[key].forEach(function (item) {
+            var $li = $('<li>').text(item);
+            $list.append($li);
+         });
+      }
+
+      $.fn.activateStepper = function () {
+         $(this).each(function () {
+            var $stepper = $(this);
+            let $assement_tabs = $stepper.find('.assement-tab')
+            let $policy_tab = $assement_tabs.find('.policy-tab')
+            let $return_initiation = $assement_tabs.find('.initiation-of-returns-tab')
+            let $inwarding_process = $assement_tabs.find('.in-warding-process-tab')
+            let $testing_and_grading_tab = $assement_tabs.find('.testing-and-grading-tab')
+            let $disposition_tab = $assement_tabs.find('.disposition-tab')
+            let $operational_efficiency_tab = $assement_tabs.find('.operational-efficiency-tab')
+            let $Reporting_tab = $assement_tabs.find('.Reporting-tab')
+
+            let tabs = [
+               { tab: $policy_tab, dataKey: 'policies', improveList: "what_can_be_improved", goingWellList: "what_is_going_well" },
+               { tab: $return_initiation, dataKey: 'return_initiation', improveList: "what_can_be_improved", goingWellList: "what_is_going_well" },
+               { tab: $inwarding_process, dataKey: 'inwarding_process', improveList: "what_can_be_improved", goingWellList: "what_is_going_well" },
+               { tab: $testing_and_grading_tab, dataKey: 'testing_and_grading', improveList: "what_can_be_improved", goingWellList: "what_is_going_well" },
+               { tab: $disposition_tab, dataKey: 'disposition', improveList: "what_can_be_improved", goingWellList: "what_is_going_well" },
+               { tab: $operational_efficiency_tab, dataKey: 'operational_efficiency', improveList: "what_can_be_improved", goingWellList: "what_is_going_well" },
+               { tab: $Reporting_tab, dataKey: 'reporting', improveList: "what_can_be_improved", goingWellList: "what_is_going_well" },
+            ]
+
+            let id = Number(window.location.search.split("=")[1])
+            fetch(`https://qa-docker.blubirch.com:3064/assessment_results/${id}.json`)
+               .then(response => response.json())
+               .then(result => {
+                  if (result.assessment_id) {
+                     $('#download-report').attr('href', result.pdf_url)
+                     tabs.forEach((value, index) => {
+                        $stepper.handleGrade(value.tab, result[value.dataKey])
+                        $stepper.handleImprovedList(value.tab, result[value.dataKey], value.improveList)
+                        $stepper.handleWellList(value.tab, result[value.dataKey], value.goingWellList)
+                     })
+                  }
+               })
+         });
+      };
+
+      $(document).ready(function () {
+         $('.accordion-grade').activateStepper();
+      });
+
+   </script>
+   <script>
+      $(window).scroll(function () {
+         var scroll = $(window).scrollTop();
+         if (scroll >= 150) {
+            $("#myHeader").addClass("sticky");
+         } else {
+            $("#myHeader").removeClass("sticky");
+         }
+      });
+   </script>
+</body>
+
+</html>

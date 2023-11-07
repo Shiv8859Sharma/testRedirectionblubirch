@@ -1,0 +1,2117 @@
+#story-section {
+    height: 400vh;
+    /* overflow: hidden; */
+}
+
+#zoom-section {
+    height: 100vh;
+    position: sticky;
+    top: 0%;
+    overflow: hidden;
+}
+
+.image-container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.zoom-scale-image {
+    animation: scaleImage 1.5s ease-out 0.2s both;
+}
+
+@keyframes scaleImage {
+    from {
+        scale: 1;
+        opacity: 1;
+    }
+
+    to {
+        scale: 20;
+        opacity: 0;
+    }
+}
+
+.zoom-in-scale-image {
+    animation: scaleInImage 1.5s ease-out 0.2s both;
+}
+
+@keyframes scaleInImage {
+    from {
+        scale: 20;
+        opacity: 0;
+    }
+
+    to {
+        scale: 1;
+        opacity: 1;
+    }
+}
+
+.zoom-flow-2 {
+    width: 100%;
+    height: 100%;
+    display: none;
+    background: url(../img/about/our-story/3.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hexagon-container {
+    width: 100%;
+    margin: auto;
+    /* background: url('../img/our-story/forest.svg');
+    background-repeat: no-repeat; */
+    background: linear-gradient(5deg, #000000ba, transparent);
+    height: 100%;
+}
+
+.hexagon-sub-container,
+.hexagon-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.gallery {
+    display: block;
+    height: 100%;
+    margin-top: 100px;
+}
+
+.img1 {
+    position: absolute;
+    top: 10%;
+    right: 50%;
+    transform: translate(50%, 10%);
+}
+.img2 {
+    position: absolute;
+    top: calc(10% + 110px);
+    right: 50%;
+    transform: translate(50%, calc(10% + 110px));
+}
+
+.img3 {
+    position: absolute;
+    top: calc(10% + 55px);
+    right: calc(50% + 218px);
+    transform: translate(50%, calc(10% + 55px));
+}
+
+.img4 {
+    position: absolute;
+    top: calc(10% + 56px);
+    right: calc(50% - 219px);
+    transform: translate(50%, calc(10% + 56px));
+}
+
+.img5 {
+    position: absolute;
+    top: calc(10% + 166px);
+    right: calc(50% - 219px);
+    transform: translate(50%, calc(10% + 166px));
+}
+
+.img6 {
+    position: absolute;
+    top: calc(10% + 220px);
+    right: 50%;
+    transform: translate(50%, calc(10% + 220px));
+}
+
+.gallery>.img {
+    grid-area: 1/1;
+    width: 100%;
+    aspect-ratio: 1.15;
+    object-fit: cover;
+    /* clip-path: polygon(25% 0%, 75% 0%, 100% 50%,75% 100%,25% 100%,0 50%); */
+    /* cursor: pointer; */
+    /* filter: grayscale(80%); */
+    transition: .2s linear;
+}
+
+.tr-1 {
+    animation: tr-1 1.5s ease-out 0.2s both;
+    animation-fill-mode: forwards;
+    position: absolute;
+}
+
+@keyframes tr-1 {
+    from {
+        top: 20%;
+        right: 50%;
+        transform: translate(50%, 20%);
+    }
+   
+    to {
+        top: 0%;
+        right: 0%;
+        transform: translate(0, 0%);
+    }
+}
+
+.tr-4 {
+    animation: tr-4 1.5s ease-out 0.2s both;
+    animation-fill-mode: forwards;
+    position: absolute;
+}
+
+@keyframes tr-4 {
+    from {
+        top: calc(20% + 56px);
+        right: calc(50% - 219px);
+        transform: translate(50%, calc(20% + 56px));
+    }
+   
+    to {
+        top: calc(0% + 110px);
+        right: 0%;
+        transform: translate(0, calc(0% + 110px));
+    }
+}
+
+.tr-2 {
+    animation: tr-2 1.5s ease-out 0.2s both;
+    animation-fill-mode: forwards;
+    position: absolute;
+}
+
+@keyframes tr-2 {
+    from {
+        top: calc(20% + 110px);
+        right: 50%;
+        transform: translate(50%, calc(20% + 110px));
+    }
+   
+    to {
+        top: calc(0% + 220px);
+        right: 0%;
+        transform: translate(0, calc(0% + 220px));
+    }
+}
+
+.tr-3 {
+    animation: tr-3 1.5s ease-out 0.2s both;
+    animation-fill-mode: forwards;
+    position: absolute;
+}
+
+@keyframes tr-3 {
+    from {
+        top: calc(10% + 55px);
+        right: calc(50% + 218px);
+        transform: translate(50%, calc(10% + 55px));
+    }
+   
+    to {
+        top: calc(0% + 330px);
+        right: 0%;
+        transform: translate(0, calc(0% + 330px));
+    }
+}
+
+.hexagon-details {
+    width: 70%;
+    font-family: Red Hat Display;
+    padding-left: 10rem;
+    padding-top: 10rem;
+}
+
+.hexagon-details p {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #fff;
+}
+
+.hexagon-details h1 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 45px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #fff;
+}
+.hexagon-details{
+    display: none;
+}
+.hexagon_details-show{
+    display: block !important;
+    animation: detailsShow 1.5s ease-out 0.5s both;
+}
+
+@keyframes detailsShow {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.tr-back-1 {
+    animation: tr-back-1 1.5s ease-out 0.2s both;
+    animation-fill-mode: forwards;
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    transform: translate(0, 0%);
+}
+
+@keyframes tr-back-1 {
+    from {
+        top: 0%;
+        right: 0%;
+        transform: translate(0, 0%);
+    }
+    
+    to {
+        top: 10%;
+        right: 50%;
+        transform: translate(50%, 10%);
+    }    
+}
+
+.tr-back-4 {
+    animation: tr-back-4 1.5s ease-out 0.2s both;
+    animation-fill-mode: forwards;
+    position: absolute;
+    top: calc(0% + 110px);
+    right: 0%;
+    transform: translate(0, calc(0% + 110px));
+}
+
+@keyframes tr-back-4 {
+    from {
+        top: calc(0% + 110px);
+        right: 0%;
+        transform: translate(0, calc(0% + 110px));
+    }
+    
+    to {
+        top: calc(10% + 56px);
+        right: calc(50% - 219px);
+        transform: translate(50%, calc(10% + 56px));
+    } 
+}
+
+.tr-back-2 {
+    animation: tr-back-2 1.5s ease-out 0.2s both;
+    animation-fill-mode: forwards;
+    position: absolute;
+    top: calc(0% + 220px);
+    right: 0%;
+    transform: translate(0, calc(0% + 220px));
+}
+
+@keyframes tr-back-2 {
+    from {
+        top: calc(0% + 220px);
+        right: 0%;
+        transform: translate(0, calc(0% + 220px));
+    }
+   
+    to {
+        top: calc(10% + 110px);
+        right: 50%;
+        transform: translate(50%, calc(10% + 110px));
+    }
+}
+
+
+.tr-back-3 {
+    animation: tr-back-3 1.5s ease-out 0.2s both;
+    animation-fill-mode: forwards;
+    position: absolute;
+    top: calc(0% + 330px);
+    right: 0%;
+    transform: translate(0, calc(0% + 330px));
+}
+
+@keyframes tr-back-3 {
+    from {
+        top: calc(0% + 330px);
+        right: 0%;
+        transform: translate(0, calc(0% + 330px));
+    }
+   
+    to {
+        top: calc(10% + 55px);
+        right: calc(50% + 218px);
+        transform: translate(50%, calc(10% + 55px));
+    }
+}
+
+.details-fade-up .pera {
+    animation: first_details_up 1.5s ease-out 0.2s both;
+}
+
+@keyframes first_details_up {
+    from {
+        transform: translate(0%, 10%);
+    }
+    to {
+        transform: translate(0%, -300%);
+        display: none;
+    }
+}
+
+/* .first-details-down {
+    animation: first-details-down 1.5s ease-out 0.2s both;
+} */
+.pera2{
+    visibility: hidden;
+}
+.details-fade-up .pera2 {
+    animation: first-details2-show 2.1s ease-out 0.2s both;
+    position: absolute;
+    width: 60%;
+    /* transform: translate(0%, 1%); */
+}
+
+@keyframes first-details2-show {
+    from {
+        opacity: 0;
+        top: 100%;
+    }
+    to {
+        top: 25%;
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+.details-fade-up h1{
+    animation: first-details-h1-hide 1.5s ease-out 0.2s both;
+
+}
+
+@keyframes first-details-h1-hide {
+    from {
+        opacity: 1;
+        visibility: visible;
+    }
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+.details-fade-down h1{
+    animation: first-details-h1-show 1.5s ease-out 0.2s both;
+}
+@keyframes first-details-h1-show {
+    from {
+        opacity: 0;
+        visibility: hidden;
+    }
+    to {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+.details-fade-down .pera {
+    animation: first_details_pera1_show 1.5s ease-out 0.2s both;
+}
+
+@keyframes first_details_pera1_show {
+    from {
+        transform: translate(0%, -300%);
+        display: none;
+    }
+    to {
+        transform: translate(0%, 10%);
+        display: block;
+    }
+}
+
+.details-fade-down .pera2 {
+    animation: first-details2-hide 2.1s ease-out 0.2s both;
+    position: absolute;
+    width: 60%;
+    /* transform: translate(0%, 1%); */
+}
+
+@keyframes first-details2-hide {
+    from {
+        top: 25%;
+        opacity: 1;
+        visibility: visible;
+    }
+    to {
+        opacity: 0;
+        top: 100%;
+        visibility: hidden;
+    }
+}
+
+.blur-hexagon-image{
+    animation: blur_hexagon_image_show 1.5s ease-out 0.8s both;
+}
+
+@keyframes blur_hexagon_image_show{
+    from {
+        opacity: 0;
+    }
+   
+    to {
+        opacity: 1;
+    }
+}
+
+.mouse-image{
+    margin-top: 3rem !important;
+}
+
+@media screen and (min-width: 3840px) and (max-width: 7700px) {
+    .zoom-flow-1 .zoom-image {
+        width: 100%;
+        height: 100%;
+    }
+
+    .zoom-flow-1 h1 {
+        font-size: 76px;
+    }
+
+    .zoom-flow-1 p {
+        font-size: 25px;
+    }
+
+    .zoom-flow-1 .mouse-image {
+        width: 23%;
+        height: 23%;
+    }
+
+    .hexagon-details p {
+        font-size: 39px;
+        line-height: 50px;
+    }
+
+    .hexagon-details h1 {
+        line-height: 96px;
+        font-size: 75px;
+    }
+
+    .hexagon-image-container img {
+        width: 550px;
+        height: 473px;
+    }
+
+    /* .tr-1 {
+        animation: tr-1 1.5s ease-out 0.2s both;
+        animation-fill-mode: forwards;
+        position: absolute;
+    }
+    
+    @keyframes tr-1 {
+        from {
+            top: 20%;
+            right: 50%;
+            transform: translate(50%, 20%);
+        }
+       
+        to {
+            top: 0%;
+            right: 0%;
+            transform: translate(0, 0%);
+        }
+    } */
+
+    .img4 {
+        position: absolute;
+        top: calc(10% + 106px);
+        right: calc(50% - 418px);
+        transform: translate(50%, calc(10% + 104px));
+    }
+
+    .img2 {
+        position: absolute;
+        top: calc(10% + 211px);
+        right: 50%;
+        transform: translate(50%, calc(10% + 211px));
+    }
+
+    .img3 {
+        position: absolute;
+
+        top: calc(10% + 106px);
+        right: calc(50% + 417px);
+        transform: translate(50%, calc(10% + 106px));
+    }
+
+    .img5 {
+        position: absolute;
+        top: calc(10% + 318px);
+        right: calc(50% - 418px);
+        transform: translate(50%, calc(10% + 318px))
+    }
+
+    .img6 {
+        position: absolute;
+        top: calc(10% + 425px);
+        right: 50%;
+        transform: translate(50%, calc(10% + 425px));
+    }
+
+    .img7 {
+        position: absolute;
+        top: calc(10% + 318px);
+        right: calc(50% + 418px);
+        transform: translate(50%, calc(10% + 318px));
+    }
+
+    .tr-back-1 {
+        animation: tr-back-1 1.5s ease-out 0.2s both;
+        animation-fill-mode: forwards;
+        position: absolute;
+        top: 0%;
+        right: 0%;
+        transform: translate(0, 0%);
+    }
+
+    @keyframes tr-back-1 {
+        from {
+            top: 0%;
+            right: 0%;
+            transform: translate(0, 0%);
+        }
+
+        to {
+            top: 10%;
+            right: 50%;
+            transform: translate(50%, 10%);
+        }
+    }
+
+    .tr-2 {
+        animation: tr-2 1.5s ease-out 0.2s both;
+        animation-fill-mode: forwards;
+        position: absolute;
+    }
+
+    @keyframes tr-2 {
+        from {
+            top: calc(10% + 211px);
+            right: 50%;
+            transform: translate(50%, calc(10% + 211px));
+        }
+
+        to {
+            top: calc(0% + 417px);
+            right: 0%;
+            transform: translate(0, calc(0% + 417px));
+        }
+    }
+
+    .tr-back-2 {
+        animation: tr-back-2 1.5s ease-out 0.2s both;
+        animation-fill-mode: forwards;
+        position: absolute;
+        top: calc(0% + 417px);
+        right: 0%;
+        transform: translate(0, calc(0% + 417px));
+    }
+
+    @keyframes tr-back-2 {
+        from {
+            top: calc(0% + 417px);
+            right: 0%;
+            transform: translate(0, calc(0% + 417px));
+        }
+
+        to {
+            top: calc(10% + 211px);
+            right: 50%;
+            transform: translate(50%, calc(10% + 211px));
+        }
+    }
+
+    .tr-3 {
+        animation: tr-3 1.5s ease-out 0.2s both;
+        animation-fill-mode: forwards;
+        position: absolute;
+    }
+
+    @keyframes tr-3 {
+        from {
+
+            top: calc(10% + 106px);
+            right: calc(50% + 417px);
+            transform: translate(50%, calc(10% + 106px));
+        }
+
+        to {
+            top: calc(0% + 629px);
+            right: 0%;
+            transform: translate(0, calc(0% + 629px));
+        }
+    }
+
+    .tr-back-3 {
+        animation: tr-back-3 1.5s ease-out 0.2s both;
+        animation-fill-mode: forwards;
+        position: absolute;
+        top: calc(0% + 629px);
+        right: 0%;
+        transform: translate(0, calc(0% + 629px));
+    }
+
+    @keyframes tr-back-3 {
+        from {
+            top: calc(0% + 629px);
+            right: 0%;
+            transform: translate(0, calc(0% + 629px));
+        }
+
+        to {
+
+            top: calc(10% + 106px);
+            right: calc(50% + 417px);
+            transform: translate(50%, calc(10% + 106px));
+        }
+    }
+
+
+
+    .tr-4 {
+        animation: tr-4 1.5s ease-out 0.2s both;
+        animation-fill-mode: forwards;
+        position: absolute;
+    }
+
+    @keyframes tr-4 {
+        from {
+            top: calc(10% + 106px);
+            right: calc(50% - 418px);
+            transform: translate(50%, calc(10% + 104px));
+        }
+
+        to {
+            top: calc(0% + 208px);
+            right: 0%;
+            transform: translate(0, calc(0% + 208px));
+        }
+    }
+
+    .tr-back-4 {
+        animation: tr-back-4 1.5s ease-out 0.2s both;
+        animation-fill-mode: forwards;
+        position: absolute;
+        top: calc(0% + 208px);
+        right: 0%;
+        transform: translate(0, calc(0% + 208px));
+    }
+
+    @keyframes tr-back-4 {
+        from {
+            top: calc(0% + 208px);
+            right: 0%;
+            transform: translate(0, calc(0% + 208px));
+        }
+
+        to {
+            top: calc(10% + 106px);
+            right: calc(50% - 418px);
+            transform: translate(50%, calc(10% + 104px));
+        }
+    }
+}
+
+@media  screen and (min-width: 2400px)  and (max-width: 3800px) {
+    .hexagon-details p {
+        font-size: 35px;
+        line-height: 46px;
+    }
+
+    .hexagon-details h1 {
+        line-height: 76px;
+        font-size: 45px;
+    }
+
+    .hexagon-image-container img {
+            width: 350px;
+            height: 273px;
+    }
+
+    /* .tr-1 {
+        animation: tr-1 1.5s ease-out 0.2s both;
+        animation-fill-mode: forwards;
+        position: absolute;
+    }
+    
+    @keyframes tr-1 {
+        from {
+            top: 20%;
+            right: 50%;
+            transform: translate(50%, 20%);
+        }
+       
+        to {
+            top: 0%;
+            right: 0%;
+            transform: translate(0, 0%);
+        }
+    } */
+
+    .img4 {
+        position: absolute;
+        top: calc(10% + 68px);
+        right: calc(50% - 267px);
+        transform: translate(50%, calc(10% + 68px));
+    }
+
+    .img2 {
+        position: absolute;
+        top: calc(10% + 134px);
+        right: 50%;
+        transform: translate(50%, calc(10% + 134px));
+    }
+
+    .img3 {
+        position: absolute;
+        top: calc(10% + 68px);
+        right: calc(50% + 267px);
+        transform: translate(50%, calc(10% + 68px));
+    }
+
+    .img5 {
+        position: absolute;
+        top: calc(10% + 200px);
+        right: calc(50% - 268px);
+        transform: translate(50%, calc(10% + 200px));
+    }
+
+    .img6 {
+        position: absolute;
+        top: calc(10% + 268px);
+        right: 50%;
+        transform: translate(50%, calc(10% + 268px));
+    }
+
+    .tr-back-1 {
+        animation: tr-back-1 1.5s ease-out 0.2s both;
+        animation-fill-mode: forwards;
+        position: absolute;
+        top: 0%;
+        right: 0%;
+        transform: translate(0, 0%);
+    }
+
+    @keyframes tr-back-1 {
+        from {
+            top: 0%;
+            right: 0%;
+            transform: translate(0, 0%);
+        }
+
+        to {
+            top: 10%;
+            right: 50%;
+            transform: translate(50%, 10%);
+        }
+    }
+
+    .tr-2 {
+        animation: tr-2 1.5s ease-out 0.2s both;
+        animation-fill-mode: forwards;
+        position: absolute;
+    }
+
+    @keyframes tr-2 {
+        from {
+            top: calc(20% + 110px);
+            right: 50%;
+            transform: translate(50%, calc(20% + 110px));
+        }
+
+        to {
+            top: calc(0% + 268px);
+            right: 0%;
+            transform: translate(0, calc(0% + 268px));
+        }
+    }
+
+    .tr-back-2 {
+        animation: tr-back-2 1.5s ease-out 0.2s both;
+        animation-fill-mode: forwards;
+        position: absolute;
+        top: calc(0% + 268px);
+        right: 0%;
+        transform: translate(0, calc(0% + 268px));
+    }
+
+    @keyframes tr-back-2 {
+        from {
+            top: calc(0% + 268px);
+            right: 0%;
+            transform: translate(0, calc(0% + 268px));
+        }
+
+        to {
+            top: calc(10% + 134px);
+            right: 50%;
+            transform: translate(50%, calc(10% + 134px));
+        }
+    }
+
+    .tr-3 {
+        animation: tr-3 1.5s ease-out 0.2s both;
+        animation-fill-mode: forwards;
+        position: absolute;
+    }
+
+    @keyframes tr-3 {
+        from {
+            top: calc(20% + 56px);
+            right: calc(50% + 220px);
+            transform: translate(50%, calc(20% + 56px));
+        }
+
+        to {
+            top: calc(0% + 402px);
+            right: 0%;
+            transform: translate(0, calc(0% + 402px));
+        }
+    }
+
+    .tr-back-3 {
+        animation: tr-back-3 1.5s ease-out 0.2s both;
+        animation-fill-mode: forwards;
+        position: absolute;
+        top: calc(0% + 402px);
+        right: 0%;
+        transform: translate(0, calc(0% + 402px));
+    }
+
+    @keyframes tr-back-3 {
+        from {
+            top: calc(0% + 402px);
+            right: 0%;
+            transform: translate(0, calc(0% + 402px));
+        }
+
+        to {
+            top: calc(10% + 68px);
+            right: calc(50% + 267px);
+            transform: translate(50%, calc(10% + 68px));
+        }
+    }
+
+
+
+    .tr-4 {
+        animation: tr-4 1.5s ease-out 0.2s both;
+        animation-fill-mode: forwards;
+        position: absolute;
+    }
+
+    @keyframes tr-4 {
+        from {
+            top: calc(20% + 56px);
+            right: calc(50% - 219px);
+            transform: translate(50%, calc(20% + 56px));
+        }
+
+        to {
+            top: calc(0% + 135px);
+            right: 0%;
+            transform: translate(0, calc(0% + 135px));
+        }
+    }
+
+    .tr-back-4 {
+        animation: tr-back-4 1.5s ease-out 0.2s both;
+        animation-fill-mode: forwards;
+        position: absolute;
+         top: calc(0% + 135px);
+        right: 0%;
+        transform: translate(0, calc(0% + 135px));
+    }
+
+    @keyframes tr-back-4 {
+        from {
+            top: calc(0% + 135px);
+            right: 0%;
+            transform: translate(0, calc(0% + 135px));
+        }
+
+        to {
+            top: calc(10% + 68px);
+            right: calc(50% - 267px);
+            transform: translate(50%, calc(10% + 68px));
+        }
+    }
+}
+
+@media only screen and (max-width: 1280px),
+(max-height: 800px) {
+    .image-container .zoom-image {
+        width: 65%;
+    }
+
+    .mouse-image {
+        margin-top: 1rem !important;
+    }
+
+    .hexagon-image-container img {
+        width: 144px;
+        height: 111px;
+    }
+    
+    .gallery{
+        margin-top: 13%;
+    }
+    .image-container .zoom-image {
+        width: 60%;
+    }
+
+    .mouse-image {
+        margin-top: 0rem !important;
+    }
+
+    .hexagon-image-container img {
+        width: 144px;
+        height: 111px;
+    }
+
+    .img2 {
+        position: absolute;
+        top: calc(10% + 55px);
+        right: 50%;
+        transform: translate(50%, calc(10% + 55px));
+    }
+
+    .img4 {
+        position: absolute;
+        top: calc(10% + 27px);
+        right: calc(50% - 109px);
+        transform: translate(50%, calc(10% + 27px));
+    }
+
+    .img3 {
+        position: absolute;
+        top: calc(10% + 27px);
+        right: calc(50% + 110px);
+        transform: translate(50%, calc(10% + 27px));
+    }
+
+    .img5 {
+        position: absolute;
+        top: calc(10% + 82px);
+        right: calc(50% - 109px);
+        transform: translate(50%, calc(10% + 82px));
+    }
+
+    .img6 {
+        position: absolute;
+        top: calc(10% + 110px);
+        right: 50%;
+        transform: translate(50%, calc(10% + 110px));
+    }
+
+    .img7 {
+        position: absolute;
+        top: calc(10% + 82px);
+        right: calc(50% + 109px);
+        transform: translate(50%, calc(10% + 82px));
+    }
+
+    .tr-4 {
+        animation: tr-4 1.5s ease-out 0.2s both;
+        animation-fill-mode: forwards;
+        position: absolute;
+    }
+
+        @keyframes tr-1 {
+        from {
+            top: 10%;
+            right: 50%;
+            transform: translate(50%, 10%);
+        }
+       
+        to {
+            top: 0%;
+            right: 3%;
+            transform: translate(3%, 0%);
+        }
+    }
+
+    @keyframes tr-4 {
+        0% {
+            top: calc(10% + 27px);
+            right: calc(50% - 109px);
+            transform: translate(50%, calc(10% + 27px));
+        }
+
+        100% {
+            top: calc(0% + 55px);
+            right: 0%;
+            transform: translate(0, calc(0% + 55px));
+        }
+    }
+
+    .tr-back-4 {
+        top: calc(0% + 55px);
+        right: 0%;
+        transform: translate(0, calc(0% + 55px));
+    }
+
+    @keyframes tr-back-4 {
+
+        from {
+            top: calc(0% + 55px);
+            right: 0%;
+            transform: translate(0, calc(0% + 55px));
+        }
+
+        to {
+            top: calc(10% + 27px);
+            right: calc(50% - 109px);
+            transform: translate(50%, calc(10% + 27px));
+        }
+    }
+
+    .tr-2 {
+        animation: tr-2 1.5s ease-out 0.2s both;
+        animation-fill-mode: forwards;
+        position: absolute;
+    }
+
+    @keyframes tr-2 {
+        0% {
+            top: calc(10% + 55px);
+            right: 50%;
+            transform: translate(50%, calc(10% + 55px));
+        }
+
+        100% {
+            top: calc(0% + 110px);
+            right: 0%;
+            transform: translate(0, calc(0% + 110px));
+        }
+    }
+
+    .tr-back-2 {
+        top: calc(0% + 110px);
+        right: 0%;
+        transform: translate(0, calc(0% + 110px));
+    }
+
+    @keyframes tr-back-2 {
+        from {
+            top: calc(0% + 110px);
+            right: 0%;
+            transform: translate(0, calc(0% + 110px));
+        }
+
+        to {
+            top: calc(10% + 55px);
+            right: 50%;
+            transform: translate(50%, calc(10% + 55px));
+        }
+    }
+
+
+
+    @keyframes tr-3 {
+        from {
+            top: calc(20% + 56px);
+            right: calc(50% + 220px);
+            transform: translate(50%, calc(20% + 56px));
+        }
+
+        to {
+            top: calc(0% + 165px);
+            right: 0%;
+            transform: translate(0, calc(0% + 165px));
+        }
+    }
+
+    .tr-back-3 {
+        top: calc(0% + 165px);
+        right: 0%;
+        transform: translate(0, calc(0% + 165px));
+    }
+    @keyframes tr-back-3 {
+        from {
+            top: calc(0% + 165px);
+            right: 0%;
+            transform: translate(0, calc(0% + 165px));
+        }
+
+        to {
+            top: calc(10% + 27px);
+            right: calc(50% + 110px);
+            transform: translate(50%, calc(10% + 27px));
+        }
+    }
+
+    .hexagon-details {
+        width: 80%;
+        font-family: Red Hat Display;
+        padding-left: 2rem;
+        padding-top: 3rem;
+    }
+
+    .details-fade-up .pera2 {
+        animation: first-details2-show 2.1s ease-out 0.2s both;
+        position: absolute;
+        width: 80%;
+    }
+
+    @keyframes first-details2-show {
+        from {
+            opacity: 0;
+            top: 100%;
+        }
+
+        to {
+            top: 20%;
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+
+    .details-fade-down .pera2 {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 1800px),
+(max-height: 800px) {
+    .image-container .zoom-image {
+        width: 65%;
+    }
+
+    .mouse-image {
+        margin-top: 1rem !important;
+    }
+
+    .hexagon-image-container img {
+        width: 180px;
+        height: 160px;
+    }
+
+
+    .hexagon-details {
+        width: 80%;
+        font-family: Red Hat Display;
+        padding-left: 2rem;
+        padding-top: 3rem;
+    }
+
+    .details-fade-up .pera2 {
+        animation: first-details2-show 2.1s ease-out 0.2s both;
+        position: absolute;
+        width: 80%;
+    }
+
+    @keyframes first-details2-show {
+        from {
+            opacity: 0;
+            top: 100%;
+        }
+
+        to {
+            top: 20%;
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+
+    .details-fade-down .pera2 {
+        width: 80%;
+    }
+
+    .gallery {
+        margin-top: 10%;
+    }
+
+    .image-container .zoom-image {
+        width: 60%;
+    }
+
+    .mouse-image {
+        margin-top: 0rem !important;
+    }
+
+    .img2 {
+        position: absolute;
+        top: calc(10% + 69px);
+        right: 50%;
+        transform: translate(50%, calc(10% + 69px));
+    }
+
+    .img4 {
+        position: absolute;
+        top: calc(10% + 34px);
+        right: calc(50% - 136px);
+        transform: translate(50%, calc(10% + 34px));
+    }
+
+    .img3 {
+        position: absolute;
+        top: calc(10% + 34px);
+        right: calc(50% + 136px);
+        transform: translate(50%, calc(10% + 34px));
+    }
+
+    .img5 {
+        position: absolute;
+        top: calc(10% + 103px);
+        right: calc(50% - 136px);
+        transform: translate(50%, calc(10% + 103px));
+    }
+
+    .img6 {
+        position: absolute;
+        top: calc(10% + 138px);
+        right: 50%;
+        transform: translate(50%, calc(10% + 138px));
+    }
+
+    .img7 {
+        position: absolute;
+        top: calc(10% + 103px);
+        right: calc(50% + 136px);
+        transform: translate(50%, calc(10% + 103px));
+    }
+
+    .tr-4 {
+        animation: tr-4 1.5s ease-out 0.2s both;
+        animation-fill-mode: forwards;
+        position: absolute;
+    }
+
+    @keyframes tr-1 {
+        from {
+            top: 10%;
+            right: 50%;
+            transform: translate(50%, 10%);
+        }
+       
+        to {
+            top: 0%;
+            right: 1%;
+            transform: translate(1%, 0%);
+        }
+    }
+
+    @keyframes tr-4 {
+        0% {
+            top: calc(10% + 34px);
+            right: calc(50% - 136px);
+            transform: translate(50%, calc(10% + 34px));
+        }
+
+        100% {
+            top: calc(0% + 69px);
+            right: 1%;
+            transform: translate(1%, calc(0% + 69px));
+        }
+    }
+
+    .tr-2 {
+        animation: tr-2 1.5s ease-out 0.2s both;
+        animation-fill-mode: forwards;
+        position: absolute;
+    }
+
+    @keyframes tr-2 {
+        0% {
+            top: calc(10% + 69px);
+            right: 50%;
+            transform: translate(50%, calc(10% + 69px));
+        }
+
+        100% {
+            top: calc(0% + 138px);
+            right: 1%;
+            transform: translate(1%, calc(0% + 138px));
+        }
+    }
+
+    @keyframes tr-3 {
+        from {
+            top: calc(10% + 34px);
+            right: calc(50% + 136px);
+            transform: translate(50%, calc(10% + 34px));
+        }
+
+        to {
+            top: calc(0% + 207px);
+            right: 1%;
+            transform: translate(1%, calc(0% + 207px));
+
+        }
+    }
+
+    .hexagon-details {
+        width: 80%;
+        font-family: Red Hat Display;
+        padding-left: 2rem;
+        padding-top: 3rem;
+    }
+
+    .details-fade-up .pera2 {
+        animation: first-details2-show 2.1s ease-out 0.2s both;
+        position: absolute;
+        width: 80%;
+    }
+
+    @keyframes first-details2-show {
+        from {
+            opacity: 0;
+            top: 100%;
+        }
+
+        to {
+            top: 20%;
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+
+    .details-fade-down .pera2 {
+        width: 80%;
+    }
+
+    .tr-back-4 {
+        top: calc(0% + 69px);
+        right: 1%;
+        transform: translate(1%, calc(0% + 69px));
+    }
+
+    .tr-back-3 {
+
+        top: calc(0% + 208px);
+        right: 1%;
+        transform: translate(1%, calc(0% + 208px));
+
+    }
+
+    .tr-back-2 {
+        top: calc(0% + 138px);
+        right: 1%;
+        transform: translate(1%, calc(0% + 138px));
+    }
+
+    @keyframes tr-back-4 {
+
+        from {
+            top: calc(0% + 69px);
+            right: 1%;
+            transform: translate(1%, calc(0% + 69px));
+        }
+
+        to {
+            top: calc(10% + 34px);
+            right: calc(50% - 136px);
+            transform: translate(50%, calc(10% + 34px));
+        }
+    }
+
+    @keyframes tr-back-2 {
+        from {
+            top: calc(0% + 138px);
+            right: 1%;
+            transform: translate(1%, calc(0% + 138px));
+        }
+
+        to {
+            top: calc(10% + 69px);
+            right: 50%;
+            transform: translate(50%, calc(10% + 69px));
+        }
+
+    }
+
+    @keyframes tr-back-3 {
+        from {
+            top: calc(0% + 208px);
+            right: 1%;
+            transform: translate(1%, calc(0% + 208px));
+        }
+
+        to {
+            top: calc(10% + 34px);
+            right: calc(50% + 136px);
+            transform: translate(50%, calc(10% + 34px));
+        }
+    }
+    @keyframes tr-back-1 {
+        from {
+            top: 0%;
+            right: 1%;
+            transform: translate(1%, 0%);
+        }
+        
+        to {
+            top: 10%;
+            right: 50%;
+            transform: translate(50%, 10%);
+        }    
+    }
+}
+
+@media only screen and (max-width: 1024px),
+(max-height: 700px) {
+    .gallery{
+        margin-top: 9.5%;
+    }
+    .image-container .zoom-image {
+        width: 60%;
+    }
+
+    .mouse-image {
+        margin-top: 0rem !important;
+    }
+
+    .hexagon-image-container img {
+        width: 144px;
+        height: 111px;
+    }
+
+    .img2 {
+        position: absolute;
+        top: calc(10% + 55px);
+        right: 50%;
+        transform: translate(50%, calc(10% + 55px));
+    }
+
+    .img4 {
+        position: absolute;
+        top: calc(10% + 27px);
+        right: calc(50% - 109px);
+        transform: translate(50%, calc(10% + 27px));
+    }
+
+    .img3 {
+        position: absolute;
+        top: calc(10% + 27px);
+        right: calc(50% + 110px);
+        transform: translate(50%, calc(10% + 27px));
+    }
+
+    .img5 {
+        position: absolute;
+        top: calc(10% + 82px);
+        right: calc(50% - 109px);
+        transform: translate(50%, calc(10% + 82px));
+    }
+
+    .img6 {
+        position: absolute;
+        top: calc(10% + 110px);
+        right: 50%;
+        transform: translate(50%, calc(10% + 110px));
+    }
+
+    .img7 {
+        position: absolute;
+        top: calc(10% + 82px);
+        right: calc(50% + 109px);
+        transform: translate(50%, calc(10% + 82px));
+    }
+
+    .tr-4 {
+        animation: tr-4 1.5s ease-out 0.2s both;
+        animation-fill-mode: forwards;
+        position: absolute;
+    }
+
+    @keyframes tr-4 {
+        0% {
+            top: calc(10% + 27px);
+            right: calc(50% - 109px);
+            transform: translate(50%, calc(10% + 27px));
+        }
+
+        100% {
+            top: calc(0% + 55px);
+            right: 1%;
+            transform: translate(1%, calc(0% + 55px));
+        }
+    }
+
+    .tr-2 {
+        animation: tr-2 1.5s ease-out 0.2s both;
+        animation-fill-mode: forwards;
+        position: absolute;
+    }
+
+    @keyframes tr-2 {
+        0% {
+            top: calc(10% + 55px);
+            right: 50%;
+            transform: translate(50%, calc(10% + 55px));
+        }
+
+        100% {
+            top: calc(0% + 110px);
+            right: 1%;
+            transform: translate(1%, calc(0% + 110px));
+        }
+    }
+
+    @keyframes tr-3 {
+        from {
+            top: calc(20% + 56px);
+            right: calc(50% + 220px);
+            transform: translate(50%, calc(20% + 56px));
+        }
+
+        to {
+            top: calc(0% + 165px);
+            right: 1%;
+            transform: translate(1%, calc(0% + 165px));
+        }
+    }
+
+    .hexagon-details {
+        width: 80%;
+        font-family: Red Hat Display;
+        padding-left: 2rem;
+        padding-top: 3rem;
+    }
+
+    .details-fade-up .pera2 {
+        animation: first-details2-show 2.1s ease-out 0.2s both;
+        position: absolute;
+        width: 80%;
+    }
+
+    @keyframes first-details2-show {
+        from {
+            opacity: 0;
+            top: 100%;
+        }
+
+        to {
+            top: 20%;
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+
+    .details-fade-down .pera2 {
+        width: 80%;
+    }
+
+    .tr-back-4 {
+        top: calc(0% + 55px);
+        right: 1%;
+        transform: translate(1%, calc(0% + 55px));
+    }
+
+    .tr-back-3 {
+        top: calc(0% + 165px);
+        right: 1%;
+        transform: translate(1%, calc(0% + 165px));
+    }
+
+    .tr-back-2 {
+        top: calc(0% + 110px);
+        right: 1%;
+        transform: translate(1%, calc(0% + 110px));
+    }
+    .tr-back-1 {
+        top: 0% ;
+        right: 1%;
+        transform: translate(1%, 0%);
+    }
+    @keyframes tr-back-4 {
+
+        from {
+            top: calc(0% + 55px);
+            right: 1%;
+            transform: translate(1%, calc(0% + 55px));
+        }
+
+        to {
+            top: calc(10% + 27px);
+            right: calc(50% - 109px);
+            transform: translate(50%, calc(10% + 27px));
+        }
+    }
+
+    @keyframes tr-back-2 {
+        from {
+            top: calc(0% + 110px);
+            right: 1%;
+            transform: translate(1%, calc(0% + 110px));
+        }
+
+        to {
+            top: calc(10% + 55px);
+            right: 50%;
+            transform: translate(50%, calc(10% + 55px));
+        }
+
+    }
+
+    @keyframes tr-back-3 {
+        from {
+            top: calc(0% + 165px);
+            right: 1%;
+            transform: translate(1%, calc(0% + 165px));
+        }
+
+        to {
+            top: calc(10% + 27px);
+            right: calc(50% + 110px);
+            transform: translate(50%, calc(10% + 27px));
+        }
+
+
+    }
+    @keyframes tr-back-1 {
+        from {
+            top: 0%;
+            right: 1%;
+            transform: translate(1%, 0%);
+        }
+        
+        to {
+            top: 10%;
+            right: 50%;
+            transform: translate(50%, 10%);
+        }    
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .hexagon-details {
+        width: auto;
+        font-family: Red Hat Display;
+        padding: 4rem 1rem;
+    }
+    .hexagon-details h1 {
+        font-size: 22px;
+    }
+    .hexagon-details p {
+        font-size: 17px;
+        line-height: 26px;
+    }
+    .details-fade-up .pera2 {
+        animation: first-details2-show 2.1s ease-out 0.2s both;
+        position: absolute;
+        width: 90%;
+    }
+
+
+    .details-fade-down .pera2 {
+        width: auto;
+    }
+    @keyframes first-details2-show {
+        0% {
+            opacity: 0;
+            top: 100%;
+        }
+        
+        100% {
+            top: 50%;
+            opacity: 1;
+            visibility: visible;
+            transform: translate(0, -50%);
+        }       
+    }
+    .zoom-image{
+       width: 76%;
+    }
+    .mouse-image{
+        margin-top: 0px !important;
+    }
+    .details-fade-down .pera{
+        animation: first_details_pera1_show 1.5s ease-out 0.2s both;   
+    }
+    @keyframes  first_details_pera1_show {
+        0% {
+            transform: translate(0%, -300%);
+            display: none;
+        }
+        
+        100% {
+            transform: translate(0%, 1%);
+            display: block;
+        }
+    }
+    .hexagon-image-main-container{
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: -70px;
+    }
+    .show-step3{
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 1800px) and (min-height: 900px) {
+    .hexagon-details p {
+        width: 80%;
+    }
+
+    .gallery {
+        margin-top: 10%;
+    }
+
+    .hexagon-image-container img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .img2 {
+        position: absolute;
+        top: calc(10% + 95px);
+        right: 50%;
+        transform: translate(50%, calc(10% + 95px))
+    }
+
+    .img4 {
+        position: absolute;
+        top: calc(10% + 47px);
+        right: calc(50% - 191px);
+        transform: translate(50%, calc(10% + 47px));
+    }
+
+    .img3 {
+        position: absolute;
+        top: calc(10% + 47px);
+        right: calc(50% + 191px);
+        transform: translate(50%, calc(10% + 47px));
+    }
+
+    .img5 {
+        position: absolute;
+        top: calc(10% + 142px);
+        right: calc(50% - 190px);
+        transform: translate(50%, calc(10% + 142px));
+    }
+
+    .img6 {
+        position: absolute;
+        top: calc(10% + 190px);
+        right: 50%;
+        transform: translate(50%, calc(10% + 190px));
+    }
+
+    .img7 {
+        position: absolute;
+        top: calc(10% + 142px);
+        right: calc(50% + 191px);
+        transform: translate(50%, calc(10% + 142px));
+    }
+
+    .tr-2 {
+        animation: tr-2 1.5s ease-out 0.2s both;
+        animation-fill-mode: forwards;
+        position: absolute;
+    }
+
+    @keyframes tr-2 {
+        0% {
+            top: calc(10% + 95px);
+            right: 50%;
+            transform: translate(50%, calc(10% + 95px))
+        }
+
+        100% {
+            top: calc(0% + 190px);
+            right: 1%;
+            transform: translate(1%, calc(0% + 190px));
+        }
+    }
+
+    .tr-back-2 {
+        top: calc(0% + 190px);
+        right: 1%;
+        transform: translate(1%, calc(0% + 190px));
+    }
+
+    @keyframes tr-back-2 {
+        from {
+            top: calc(0% + 190px);
+            right: 1%;
+            transform: translate(1%, calc(0% + 190px));
+        }
+
+        to {
+            top: calc(10% + 95px);
+            right: 50%;
+            transform: translate(50%, calc(10% + 95px))
+        }
+    }
+
+    .tr-3 {
+        animation: tr-3 1.5s ease-out 0.2s both;
+        animation-fill-mode: forwards;
+        position: absolute;
+    }
+
+    @keyframes tr-3 {
+        0% {
+            top: calc(10% + 47px);
+            right: calc(50% + 191px);
+            transform: translate(50%, calc(10% + 47px));
+        }
+
+        100% {
+            top: calc(0% + 285px);
+            right: 1%;
+            transform: translate(1%, calc(0% + 285px));
+        }
+    }
+
+    .tr-back-3 {
+        top: calc(0% + 285px);
+        right: 1%;
+        transform: translate(1%, calc(0% + 285px));
+    }
+
+    @keyframes tr-back-3 {
+        from {
+            top: calc(0% + 285px);
+            right: 1%;
+            transform: translate(1%, calc(0% + 285px));
+        }
+
+        to {
+            top: calc(10% + 47px);
+            right: calc(50% + 191px);
+            transform: translate(50%, calc(10% + 47px));
+        }
+    }
+
+    .tr-4 {
+        animation: tr-4 1.5s ease-out 0.2s both;
+        animation-fill-mode: forwards;
+        position: absolute;
+    }
+
+    @keyframes tr-4 {
+        0% {
+            top: calc(10% + 47px);
+            right: calc(50% - 191px);
+            transform: translate(50%, calc(10% + 47px));
+        }
+
+        100% {
+            top: calc(0% + 95px);
+            right: 1%;
+            transform: translate(1%, calc(0% + 95px));
+        }
+    }
+
+    .tr-back-4 {
+        top: calc(0% + 95px);
+        right: 1%;
+        transform: translate(1%, calc(0% + 95px));
+    }
+
+    @keyframes tr-back-4 {
+
+        from {
+            top: calc(0% + 95px);
+            right: 1%;
+            transform: translate(1%, calc(0% + 95px));
+        }
+
+        to {
+            top: calc(10% + 47px);
+            right: calc(50% - 191px);
+            transform: translate(50%, calc(10% + 47px));
+        }
+    }
+
+}
+
+@media only screen and (min-height: 700px) and (max-height: 900px) {
+    
+    .hexagon-details p {
+        width: 90%;
+    }
+
+    .gallery {
+        margin-top: 7%;
+    }
+
+    .hexagon-image-container img {
+        width: 210px;
+        height: 210px;
+    }
+
+    .img2 {
+        position: absolute;
+        top: calc(10% + 80px);
+        right: 50%;
+        transform: translate(50%, calc(10% + 80px));
+    }
+
+    .img4 {
+        position: absolute;
+        top: calc(10% + 40px);
+        right: calc(50% - 159px);
+        transform: translate(50%, calc(10% + 40px));
+    }   
+
+    .img3 {
+        position: absolute;
+        top: calc(10% + 40px);
+        right: calc(50% + 159px);
+        transform: translate(50%, calc(10% + 40px));
+    }
+
+    .img5 {
+        position: absolute;
+        top: calc(10% + 121px);
+        right: calc(50% - 159px);
+        transform: translate(50%, calc(10% + 121px));
+    }
+
+    .img6 {
+        position: absolute;
+        top: calc(10% + 161px);
+        right: 50%;
+        transform: translate(50%, calc(10% + 161px));
+    }
+
+    .img7 {
+        position: absolute;
+        top: calc(10% + 121px);
+        right: calc(50% + 159px);
+        transform: translate(50%, calc(10% + 121px));
+    }
+
+    .tr-2 {
+        animation: tr-2 1.5s ease-out 0.2s both;
+        animation-fill-mode: forwards;
+        position: absolute;
+    }
+
+    @keyframes tr-2 {
+        0% {
+            top: calc(10% + 80px);
+            right: 50%;
+            transform: translate(50%, calc(10% + 80px));
+        }
+
+        100% {
+            top: calc(0% + 160px);
+            right: 1%;
+            transform: translate(1%, calc(0% + 160px));
+        }
+    }
+
+    .tr-back-2 {
+        top: calc(0% + 160px);
+        right: 1%;
+        transform: translate(1%, calc(0% + 160px));
+    }
+
+    @keyframes tr-back-2 {
+        from {
+            top: calc(0% + 160px);
+            right: 1%;
+            transform: translate(1%, calc(0% + 160px));
+        }
+
+        to {
+            top: calc(10% + 80px);
+            right: 50%;
+            transform: translate(50%, calc(10% + 80px));
+        }
+    }
+
+    .tr-3 {
+        animation: tr-3 1.5s ease-out 0.2s both;
+        animation-fill-mode: forwards;
+        position: absolute;
+    }
+
+    @keyframes tr-3 {
+        0% {
+            top: calc(10% + 40px);
+            right: calc(50% + 159px);
+            transform: translate(50%, calc(10% + 40px));
+        }
+
+        100% {
+            top: calc(0% + 240px);
+            right: 1%;
+            transform: translate(1%, calc(0% + 240px));
+        }
+    }
+
+    .tr-back-3 {
+        top: calc(0% + 240px);
+        right: 1%;
+        transform: translate(1%, calc(0% + 240px));
+    }
+
+    @keyframes tr-back-3 {
+        from {
+            top: calc(0% + 240px);
+            right: 1%;
+            transform: translate(1%, calc(0% + 240px));
+        }
+
+        to {
+            top: calc(10% + 40px);
+            right: calc(50% + 159px);
+            transform: translate(50%, calc(10% + 40px));
+        }
+    }
+
+    .tr-4 {
+        animation: tr-4 1.5s ease-out 0.2s both;
+        animation-fill-mode: forwards;
+        position: absolute;
+    }
+
+    @keyframes tr-4 {
+        0% {
+            top: calc(10% + 40px);
+            right: calc(50% - 159px);
+            transform: translate(50%, calc(10% + 40px));
+        }
+
+        100% {
+            top: calc(0% + 80px);
+            right: 1%;
+            transform: translate(1%, calc(0% + 80px));
+        }
+    }
+
+    .tr-back-4 {
+        top: calc(0% + 80px);
+        right: 1%;
+        transform: translate(1%, calc(0% + 80px));
+    }
+
+    @keyframes tr-back-4 {
+
+        from {
+            top: calc(0% + 80px);
+            right: 1%;
+            transform: translate(1%, calc(0% + 80px));
+        }
+
+        to {
+            top: calc(10% + 40px);
+            right: calc(50% - 159px);
+            transform: translate(50%, calc(10% + 40px));
+        }
+    }
+
+}
+

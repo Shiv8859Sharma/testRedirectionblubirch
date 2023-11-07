@@ -1,0 +1,429 @@
+.mbnn { 
+    position: relative;
+    overflow: hidden;
+
+ }  
+ .item-bbmark {
+     position: relative;    
+     height: 730px;
+     margin-top: 20px;
+ } 
+ .image-container {
+     height: 10%;    
+     bottom: 0;   
+     overflow: hidden;    
+     /* transition: height 0.5s, bottom 0.5s;  */
+ }  
+ /* .image-container.active {
+     height: auto;    bottom: 0; 
+     transition: height 1.5s; 
+ }  */
+ .image-container img {
+     width: 100%;    
+     height: auto;    
+     cursor: pointer; 
+ }
+
+
+ .gallery {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.gallery .image-container {
+    position: absolute;
+    width: 100%;
+    height: 80%;
+}
+
+.gallery .hide-other-image {
+    opacity: 0;
+    z-index: -1;
+}
+
+.gallery .show-top-image {
+    width: 90%;
+    margin: 0px 75px;
+    z-index: 2;
+    top: 0%;
+    opacity: 0.5;
+}
+
+.gallery .active{
+    top: 7%;
+    height: 85%;
+    z-index: 3;
+}
+
+.gallery .show-bottom-image {
+    z-index: 1;
+    top: 22%;
+    width: 90%;
+    margin: 0px 75px;
+    opacity: 0.5;
+}
+
+.section {
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.part {
+    height: 100% !important;
+    width: 100% !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    transition: transform 0.5s ease;
+    background-image: url(../img/sol1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.part:nth-child(2) {
+    background-image: url(../img/sol1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.part:nth-child(3) {
+    background-image: url(../img/sol2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.solution-top-slider {
+    position: relative;
+    height: 300vh;
+}
+
+.solution-top-slider .top-slider-container {
+    position: sticky;
+    top: calc(2% + 50px);
+    height: 100vh;
+}
+
+.top-slider-container .top-slider-first {
+    height: 100%;
+    background-image: url(../img/sol1.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.top-slider-container .top-slider-second {
+    height: 100% !important;
+    width: 100% !important;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    transition: transform 0.5s ease;
+    background-image: url(../img/sol2.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: none;
+}
+
+.top-slider-first-details .section-scroll-text {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(-10%, -50%);
+    font-family: Red Hat Display;
+    font-size: 4rem;
+    font-weight: 600;
+    line-height: 84px;
+    letter-spacing: -0.01em;
+    text-align: left;
+}
+
+
+.fade-up-first-details-text {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(-10%, -50%);
+    width: 100%;
+    animation: first-details-fade-up 1.5s ease-out 0.2s both;
+}
+
+@keyframes first-details-fade-up {
+    from {
+        top: 50%;
+        opacity: 1;
+    }
+
+    to {
+        top: 0%;
+        opacity: 0;
+        display: none;
+    }
+}
+
+.fade-down-first-details-text {
+    position: absolute;
+    top: 0%;
+    left: 10%;
+    transform: translate(-10%, -0%);
+    width: 100%;
+    animation: first-details-fade-down 1.5s ease-out 0.2s both;
+}
+
+@keyframes first-details-fade-down {
+    from {
+        top: 0%;
+        opacity: 0;
+        display: none;
+    }
+
+    to {
+        top: 50%;
+        opacity: 1;
+        transform: translate(-10%, -50%);
+        display: block;
+    }
+}
+
+.top-slider-second-details {
+    display: none;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 10%;
+    transform: translate(-10%, -50%);
+    animation: second-details-show 1.5s ease-in 0.2s both;
+}
+
+@keyframes second-details-show {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.show-second-detail-h3 {
+    opacity: 0;
+    animation: second-details-show-h3 2s ease-in 1s both;
+}
+
+.show-second-detail-a1 {
+    opacity: 0;
+    animation: second-details-show-h3 1s ease-in 1.5s both;
+}
+
+.show-second-detail-a2 {
+    opacity: 0;
+    animation: second-details-show-h3 2s ease-in 2s both;
+}
+
+.show-second-detail-a3 {
+    opacity: 0;
+    animation: second-details-show-h3 2s ease-in 3s both;
+}
+
+@keyframes second-details-show-h3 {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.hide-first-slide {
+    display: block;
+    opacity: 1;
+    animation: hide_first_slide 2s ease-in 0.5s both;
+}
+
+@keyframes hide_first_slide {
+    from {
+        display: block;
+        opacity: 1;
+    }
+
+    to {
+        display: none;
+        opacity: 0;
+    }
+}
+
+.show-second-slide {
+    height: 100%;
+    width: 100%;
+    animation: show_second_slide 2s ease-in 1s both;
+    display: none;
+}
+
+@keyframes show_second_slide {
+    from {
+        display: none;
+        opacity: 0;
+    }
+
+    to {
+        display: flex;
+        opacity: 1;
+    }
+}
+
+.second-details-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 991px) {
+    .top-slider-container .top-slider-first {
+        background-image: url(../img/sol-mob1.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        height: 100%;
+    }
+
+    .top-slider-first-details {
+        position: absolute;
+        bottom: 20%;
+        left: 10%;
+        width: 100%;
+        transform: translate(-10%, -20%);
+    }
+
+    .top-slider-first-details .section-scroll-text {
+        font-family: Red Hat Display;
+        color: white;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 140%;
+        letter-spacing: -0.6px;
+    }
+
+    .top-slider-second-details {
+        position: absolute;
+        bottom: 10%;
+        display: none;
+    }
+
+    .second-details_mob h2 {
+        font-family: Red Hat Display;
+        font-size: 30px;
+        color: white;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 0;
+        letter-spacing: 0.4px;
+    }
+
+    .second-details .section-scroll-btn {
+        font-family: Red Hat Display;
+        font-size: 19px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 140%;
+        padding: 8px 36px;
+        background: #003C9E;
+        border-radius: 40px;
+        color: #EDEDF8 !important;
+        text-decoration: none;
+        line-height: 48px;
+    }
+
+    .top-slider-container .top-slider-second {
+        background-image: url(../img/sol-mob2.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        height: 100%;
+        display: none;
+    }
+
+    .top-slider-second .section-scroll-text1 {
+        position: absolute;
+        bottom: 10%;
+        right: 10%;
+        width: 78%;
+        color: #FFF;
+        margin-top: 60px;
+        text-align: right;
+        font-family: Red Hat Display;
+        font-size: 21px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 140%;
+        letter-spacing: -0.6px;
+        padding: 0 !important;
+    }
+
+    .fade-up-first-details-text {
+        position: absolute;
+        bottom: 20%;
+        left: 10%;
+        transform: translate(-10%, -20%);
+        width: 100%;
+        animation: first-details-fade-up 1.5s ease-out 0.2s both;
+    }
+
+    @keyframes first-details-fade-up {
+        from {
+            bottom: 20%;
+            opacity: 1;
+        }
+
+        to {
+            top: 0%;
+            opacity: 0;
+            display: none;
+        }
+    }
+
+    .fade-down-first-details-text {
+        position: absolute;
+        top: 0%;
+        left: 10%;
+        transform: translate(-10%, -0%);
+        width: 100%;
+        animation: first-details-fade-down 1.5s ease-out 0.2s both;
+    }
+
+    @keyframes first-details-fade-down {
+        from {
+            top: 0%;
+            opacity: 0;
+            display: none;
+        }
+
+        to {
+            bottom: 20%;
+            opacity: 1;
+            transform: translate(-10%, -20%);
+            display: block;
+            top: unset;
+        }
+    }
+
+    .top-slider-second-details {
+        display: none;
+        position: absolute;
+        bottom: 10%;
+        top: unset;
+        transform: translate(-10%, -10%);
+        animation: second-details-show 1.5s ease-in 0.2s both;
+    }
+
+    .second-details-text {
+        display: flex;
+
+        justify-content: left;
+        align-items: start;
+    }
+    .second-details-text .section-scroll-text{
+        color: #ffffff;
+    }
+
+}
