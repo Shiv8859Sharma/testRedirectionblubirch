@@ -79,7 +79,7 @@ formatInCurrency.on('blur' , function (){
     let inputValue = parseFloat($(this).val().replace(/,/g, ''));
     let returns_calculator = JSON.parse(localStorage.getItem("returns_calculator"))
 
-    let currency_type = $("#currency_list").val() || returns_calculator.currency
+    let currency_type = $("#currency_list").val() || returns_calculator?.currency
     if(!inputValue) return
     let formmatingType = ["INR", "₹", "Rs", "₨"].includes(currency_type) ? 'en-IN' : 'en-US' 
     var formattedValue = parseFloat(inputValue).toLocaleString(formmatingType);
