@@ -3,44 +3,6 @@ let returns_impact_calculator = $("#returns_impact_calculator")
 let returns_impact_calculator_form = $("#returns_impact_calculator-form")
 var input = document.querySelector("#phone");
 
-let previousPage = JSON.parse(localStorage.getItem("previousPage"))
-if(previousPage){
-    let returns_calculator = JSON.parse(localStorage.getItem("returns_calculator"))
-    var element = document.getElementsByName("phone_number")[0]
-    element.value = returns_calculator["phone_number"];
-}   
-// if(returns_impact_calculator_form_data){
-//     let data = {
-//         ...returns_impact_calculator_form_data,
-//         ...returns_impact_calculator_form_data.asset_inputs
-//     }
-//     delete data.asset_inputs
-
-//     // for (var key in data) {
-//     //     if (data.hasOwnProperty(key)) {
-//     //         var element = document.getElementsByName(key)[0];
-
-//     //         if (element) {
-//     //             // if (element.tagName.toLowerCase() === 'input' || element.tagName.toLowerCase() === 'select') {
-//     //                 element.value = data[key];
-//     //             // }
-//     //         }
-//     //     }
-//     // }
-//     const iti = window.intlTelInput(input, {
-//         utilsScript: "/intl-tel-input/js/utils.js?1695806485509",
-//         separateDialCode: true,
-//         initialCountry: "auto",
-//         geoIpLookup: function(callback) {
-//          fetch("https://ipapi.co/json/")
-//          .then(function(res) { return res.json(); })
-//         .then(function(data) { callback(data.country_code); })
-//     .catch(function() { callback("IN"); });
-//     }
-//     });
-//     console.log(data , ":::: data");
-// }
-
 const iti = window.intlTelInput(input, {
     utilsScript: "/intl-tel-input/js/utils.js?1695806485509",
     separateDialCode: true,
@@ -337,11 +299,71 @@ $.fn.activateStepper = function () {
     });
 };
 function getCategoriesList() {
-    // localStorage.removeItem("returns_calculator")
-    console.log("this is runnnn getCategoriesList");
+    localStorage.removeItem("returns_calculator")
     fetch("https://qa-docker.blubirch.com:3064/returns_calculator/categories_list")
         .then(response => response.json())
         .then(result => {
+            let option = $("#categories_list")
+            let optionList = result.map(value => `<option value="${value}">${value}</option>`)
+            option.append(optionList)
+        }).catch((error) => {
+            let result = [
+                "Large Appliances",
+                "Small Appliances",
+                "AC Split 1 ton",
+                "AC Split 1.5 ton",
+                "Ac Split 2 Ton",
+                "AC Window",
+                "Microwave 20L",
+                "Microwave 28L",
+                "Refrigerator 192L",
+                "Refrigerator 850L",
+                "Refrigerator 328L",
+                "Refrigerator 185L",
+                "Refrigerator 224L",
+                "Refrigerator 628L",
+                "Washing Machine top load - 6L",
+                "Washing Machine top load - 7L",
+                "Washing Machine Top Load 8L",
+                "Washing Machine Front Load 6L",
+                "Washing Machine Front Load 7L",
+                "Dishwasher 6Place",
+                "Dishwasher 8 Place",
+                "Dishwasher 13 Place",
+                "Dryer 5 Kg",
+                "Dryer 8 Kg",
+                "TV 32 Inches",
+                "TV 43 Inches",
+                "TV 65 Inches",
+                "LCD TFT 24",
+                "LCD TFT 30",
+                "Tower AC 2 Ton",
+                "Tower AC 3 Ton",
+                "Room Cooler 12L",
+                "Room Cooler 75L",
+                "Room Cooler 90L",
+                "Room Heater 800W",
+                "Room Heater 1500W",
+                "Speakers - Bluetooth",
+                "Speakers - Echo",
+                "Deep Freezer 192L",
+                "Deep Freezer 320L",
+                "Deep Freezer 500L",
+                "Android Phones",
+                "Iphones",
+                "Ceiling Fans",
+                "Gyser 5L",
+                "Gyser 10L",
+                "Gyser 15L",
+                "Gas Stoves/Cooktops",
+                "Hobs",
+                "Induction Cookers",
+                "Printer - Small",
+                "Printer - Mideum",
+                "PC - 24ich i3",
+                "Laptop i5 15inch",
+                "Iron"
+            ]
             let option = $("#categories_list")
             let optionList = result.map(value => `<option value="${value}">${value}</option>`)
             option.append(optionList)
@@ -513,8 +535,6 @@ $(document).ready(function () {
     $('.stepper').activateStepper();
     //$(selector).nextStep();
     // /returns_calculator/categories_list 
-    localStorage.removeItem("returns_calculator_data")
-
     getCategoriesList()
     getCurrencyList()
 
